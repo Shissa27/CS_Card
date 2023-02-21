@@ -1,2 +1,2 @@
 # CS_Card
-project by Towich
+project by Towich & Leo York

@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefab_T_SAWEDOFF;
     public GameObject prefab_T_MAC10;
     public GameObject prefab_T_NEGEV;
+
+    public GameObject prefab_T_bomb;
     
     public GameObject[] CT_prefabs_cards;
     public GameObject prefab_CT_M4A1S;
@@ -64,6 +66,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             TakeCard();
         }
+
+        // taking a bomb
+        if(!_teamCt)
+            TakeCard(prefab_T_bomb);
     }
 
     private void InitVariables()
@@ -83,13 +89,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     public int GetMoney()
     {
         return _money;
-        
     }
 
     public void AddMoney(int money)
     {
-        this._money += money;
-        textMoney.GetComponent<Text>().text = this._money + "$";
+        _money += money;
+        textMoney.GetComponent<Text>().text = 
+            _money + "$";
     }
 
     public int GetCardsOnHand()
@@ -184,9 +190,9 @@ public class GameManager : MonoBehaviourPunCallbacks
         // if it now my turn
         if (!_myTurn)
         {
-            AddMoney(2);                // receive +2$
-            RestoreMovementPoints();    // set 1 MP to all our figures on board
-            TakeCard();                 // take one card on the hand
+            AddMoney(2);                        // receive +2$
+            RestoreMovementPoints(2);    // set 1 MP to all our figures on board
+            TakeCard();                         // take one card on the hand
         }
         else if(_teamCt)
             photonView.RPC("IncreaseRound", RpcTarget.All);
@@ -202,11 +208,11 @@ public class GameManager : MonoBehaviourPunCallbacks
         textRound.GetComponent<Text>().text = "Round: " + _round;
     }
 
-    private void RestoreMovementPoints()
+    private void RestoreMovementPoints(int toSetMp)
     {
         foreach (var f in ourFigures)
         {
-            f.GetComponent<TapCharacter>().SetMovementPoints(1);
+            f.GetComponent<TapCharacter>().SetMovementPoints(toSetMp);
         }
     }
     
@@ -336,5 +342,26 @@ public class GameManager : MonoBehaviourPunCallbacks
         GameObject newCard = Instantiate(cardToCreate);
         AddCardOnHand(newCard);
     }
-    
+    private void TakeCard(GameObject cardToTake)
+    {
+        // if we have chosen object now
+        if(_chosenObj.transform.childCount != 0){
+            Transform children = _chosenObj.transform.GetChild(0);
+            if(children.GetComponent<TapCard>()){
+                children.GetComponent<TapCard>().ClearChoosenCard();
+            }
+            return;
+        }
+
+        int cardsOnHand = GetCardsOnHand();
+
+        // overflow of cards on the hand (=5 cards)
+        if (cardsOnHand >= 5)
+        {
+            return;
+        }
+        
+        GameObject newCard = Instantiate(cardToTake);
+        AddCardOnHand(newCard);
+    }
 }

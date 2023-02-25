@@ -14,28 +14,31 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     public Sprite defaultSprite;
     public Sprite chosenSprite;
 
-    private GameObject gameManager;
+    private GameObject _gameManager;
     
-    private GameObject choosenObj;
-    private GameObject handObj;
-    private GameObject gameField;
-    private GameObject figures;
+    private GameObject _chosenObj;
+    private GameObject _handObj;
+    private GameObject _gameField;
+    private GameObject _figures;
     
-    private GameObject squareWithMP;
-    private Text hpBar;
-    private Text textMP;
+    private GameObject _squareWithMp;
+    private Text _hpBar;
+    private Text _textMp;
     
     public int hp;
     public int damage;
     public float radiusView;
     public int cost;
-    
-    private bool isChoosen;
-    private int movementPoints;
-    float increasingSize;
-    float lenToField;
-    private Color greenClr;
-    private List<GameObject> cellsGameFild;
+
+    private bool _teamCt;
+    private bool _isChosen;
+    private int _movementPoints;
+    private float _increasingSize;
+    private float _lenToField;
+    private Color _greenClr;
+    private List<GameObject> _cellsGameField;
+
+    private bool _bomber;
     
     void Start()
     {
@@ -45,37 +48,38 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     private void InitVariables()
     {
         _photonView = GetComponent<PhotonView>();
-        choosenObj = GameObject.Find("/ChoosenObj");
-        gameField = GameObject.Find("/GameField");
-        handObj = GameObject.Find("/Hand");
-        figures = GameObject.Find("/Figures");
+        _chosenObj = GameObject.Find("/ChoosenObj");
+        _gameField = GameObject.Find("/GameField");
+        _handObj = GameObject.Find("/Hand");
+        _figures = GameObject.Find("/Figures");
         
-        hpBar = transform.Find("Canvas/TextHPBar").GetComponent<Text>();
-        squareWithMP = transform.Find("Canvas/Square").gameObject;
-        textMP = transform.Find("Canvas/Square/TextMP").GetComponent<Text>();
+        _hpBar = transform.Find("Canvas/TextHPBar").GetComponent<Text>();
+        _squareWithMp = transform.Find("Canvas/Square").gameObject;
+        _textMp = transform.Find("Canvas/Square/TextMP").GetComponent<Text>();
         
         gameObject.name = "Figure";
-        transform.parent = figures.transform;
-        gameManager = GameObject.Find("/GameManager");
+        transform.parent = _figures.transform;
+        _gameManager = GameObject.Find("/GameManager");
 
-        cellsGameFild = gameManager.GetComponent<GameManager>().GetCells();
+        _cellsGameField = _gameManager.GetComponent<GameManager>().GetCells();
 
-        isChoosen = false;
-        increasingSize = 1.2f;
-        lenToField = 0.62f;
-        greenClr = new Color(0f, 255f, 0f);
+        _teamCt = _gameManager.GetComponent<GameManager>().GetTeam();
+        _isChosen = false;
+        _increasingSize = 1.2f;
+        _lenToField = 0.62f;
+        _greenClr = new Color(0f, 255f, 0f);
         radiusView *= 0.62f;
-        movementPoints = 0;
+        _movementPoints = 0;
 
-        CheckSquareWithMP();
+        CheckSquareWithMp();
         CheckVisibility();
     }
 
-    private void CheckSquareWithMP()
+    private void CheckSquareWithMp()
     {
         if (!_photonView.IsMine)
         {
-            squareWithMP.SetActive(false);
+            _squareWithMp.SetActive(false);
         }
     }
     
@@ -98,8 +102,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     {
         // Step #1: receive pos of CT and check if it cell is visible
         
-        gameManager = GameObject.Find("/GameManager");
-        GameObject currentCell = gameManager.GetComponent<GameManager>().GetCellByVector2(xCell, yCell);
+        _gameManager = GameObject.Find("/GameManager");
+        GameObject currentCell = _gameManager.GetComponent<GameManager>().GetCellByVector2(xCell, yCell);
         //Debug.Log("Current cell: " + currentCell.transform.position.x + " " + currentCell.transform.position.y);
 
         if (!currentCell)
@@ -119,7 +123,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         TurnVisibility(gameObject, visibleOfCell);
         
 
-        // Step #2: send 'x' and 'y' of all visible figures T to CT
+        // Step #2: send 'x' and 'y' of all visible _figures T to CT
         
         UpdateVisibleForAllFigures();
 
@@ -136,10 +140,10 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     public void UpdateVisibleForAllFigures()
     {
         /*
-         * There we have '(x,y)' and 'r' of CT figure and we would like to set visibilities of all T figures for CT player
+         * There we have '(x,y)' and 'r' of CT figure and we would like to set visibilities of all T _figures for CT player
          */
         
-        List<GameObject> ourFigures = gameManager.GetComponent<GameManager>().GetOurFigures(); // T figures
+        List<GameObject> ourFigures = _gameManager.GetComponent<GameManager>().GetOurFigures(); // T _figures
         
         foreach (var f in ourFigures)
         {
@@ -154,11 +158,12 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     {
         // Step #3: CT receive ==> send ray to (x,y) and turn the visibility of collided figure
         
-        List<GameObject> ourFigures = gameManager.GetComponent<GameManager>().GetOurFigures(); // CT figures
+        List<GameObject> ourFigures = _gameManager.GetComponent<GameManager>().GetOurFigures(); // CT _figures
         bool finalVisible = false;
         foreach (var f in ourFigures)
         {
-            bool mainCondition = Math.Abs(f.transform.position.x - xT) + Math.Abs(f.transform.position.y - yT) <= f.GetComponent<TapCharacter>().radiusView;
+            var position = f.transform.position;
+            bool mainCondition = Math.Abs(position.x - xT) + Math.Abs(position.y - yT) <= f.GetComponent<TapCharacter>().radiusView;
             if (mainCondition)
                 finalVisible = true;
         }
@@ -180,17 +185,17 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     
     // закрашивание 4-ех клеток вокруг выбранной фигуры
     void PaintCloseCells(bool isPainted){
+        var position = transform.position;
+        float fX = position.x;
+        float fY = position.y;
+        float fZ = position.z;
 
-        float fX = transform.position.x;
-        float fY = transform.position.y;
-        float fZ = transform.position.z;
+        Vector3 rayPosUp = new Vector3(fX, fY + _lenToField, fZ - 2f);
+        Vector3 rayPosRight = new Vector3(fX + _lenToField, fY, fZ - 2f);
+        Vector3 rayPosDown = new Vector3(fX, fY - _lenToField, fZ - 2f);
+        Vector3 rayPosLeft = new Vector3(fX - _lenToField, fY, fZ - 2f);
 
-        Vector3 rayPosUP = new Vector3(fX, fY + lenToField, fZ - 2f);
-        Vector3 rayPosRight = new Vector3(fX + lenToField, fY, fZ - 2f);
-        Vector3 rayPosDown = new Vector3(fX, fY - lenToField, fZ - 2f);
-        Vector3 rayPosLeft = new Vector3(fX - lenToField, fY, fZ - 2f);
-
-        Ray rayUp = new Ray(rayPosUP, transform.forward);
+        Ray rayUp = new Ray(rayPosUp, transform.forward);
         RaycastHit hitUp;
         if(Physics.Raycast(rayUp, out hitUp)){
             if(hitUp.collider.gameObject.GetComponent<GameField>()){
@@ -198,7 +203,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                     hitUp.collider.gameObject.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
                 }
                 else{
-                    hitUp.collider.gameObject.GetComponent<SpriteRenderer>().color = greenClr;
+                    hitUp.collider.gameObject.GetComponent<SpriteRenderer>().color = _greenClr;
                 }
             }
         }
@@ -211,7 +216,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                     hitRight.collider.gameObject.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
                 }
                 else{
-                    hitRight.collider.gameObject.GetComponent<SpriteRenderer>().color = greenClr;
+                    hitRight.collider.gameObject.GetComponent<SpriteRenderer>().color = _greenClr;
                 }
             }
         }
@@ -224,7 +229,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                     hitDown.collider.gameObject.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
                 }
                 else{
-                    hitDown.collider.gameObject.GetComponent<SpriteRenderer>().color = greenClr;
+                    hitDown.collider.gameObject.GetComponent<SpriteRenderer>().color = _greenClr;
                 }
             }
         }
@@ -237,7 +242,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                     hitLeft.collider.gameObject.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
                 }
                 else{
-                    hitLeft.collider.gameObject.GetComponent<SpriteRenderer>().color = greenClr;
+                    hitLeft.collider.gameObject.GetComponent<SpriteRenderer>().color = _greenClr;
                 }
             }
         }
@@ -247,7 +252,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     // visualizing radius view of figure
     void PaintRadiusView(bool isPainted)
     {
-        foreach (var c in cellsGameFild)
+        foreach (var c in _cellsGameField)
         {
             if (Math.Abs(c.transform.position.x - transform.position.x) +
                 Math.Abs(c.transform.position.y - transform.position.y) <=
@@ -265,19 +270,19 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     public void DeleteChoose(){
         PaintRadiusView(true);
         PaintCloseCells(true);
-        transform.parent = figures.transform;
-        transform.localScale /= increasingSize;
+        transform.parent = _figures.transform;
+        transform.localScale /= _increasingSize;
         GetComponent<SpriteRenderer>().sprite = defaultSprite;
-        isChoosen = false;
+        _isChosen = false;
     }
 
     // перемещение стороннего текущего объекта
     public void ClearChoosenCard(){
-        Transform children = choosenObj.transform.GetChild(0);
+        Transform children = _chosenObj.transform.GetChild(0);
 
         // if we have chosen card right now
         if(children.GetComponent<TapCard>()){
-            children.parent = handObj.transform;
+            children.parent = _handObj.transform;
             children.localScale /= 1.15f;
             children.position = new Vector3(children.position.x, children.position.y, children.position.z + 1);
             children.GetComponent<TapCard>().isChoosen = false;
@@ -294,13 +299,13 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     void TakeDamage(int _damage)
     {
         hp -= _damage;
-        hpBar.text = hp.ToString();
+        _hpBar.text = hp.ToString();
     }
 
     [PunRPC]
     void RunRemoveVisibilityOfAllEnemies()
     {
-        List<GameObject> l1 = gameManager.GetComponent<GameManager>().GetOurFigures();
+        List<GameObject> l1 = _gameManager.GetComponent<GameManager>().GetOurFigures();
         foreach (var figure in l1)
         {
             _photonView.RPC("GetGameObjectFigureByCoords", RpcTarget.Others ,figure.transform.position.x, figure.transform.position.y);
@@ -331,8 +336,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     [PunRPC]
     void SendDeleteObj()
     {
-        gameManager.GetComponent<GameManager>().RemoveFigureFromList(gameObject);
-        List<GameObject> l1 = gameManager.GetComponent<GameManager>().GetOurFigures();
+        _gameManager.GetComponent<GameManager>().RemoveFigureFromList(gameObject);
+        List<GameObject> l1 = _gameManager.GetComponent<GameManager>().GetOurFigures();
         gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, 5f);
         
         _photonView.RPC("RunRemoveVisibilityOfAllEnemies", RpcTarget.Others);
@@ -340,11 +345,11 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         // if (l1.Count == 0)
         // {
         //     Debug.Log("ourFigures are empty!");
-        //     gameManager.GetComponent<GameManager>().ResetFogOfWar();
+        //     _gameManager.GetComponent<GameManager>().ResetFogOfWar();
         //     
         // }
         //
-        gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
+        _gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
         UpdateVisibleForAllFigures();
         
         
@@ -356,7 +361,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     void OnMouseDown(){
         
         // if it's not our turn
-        if (!gameManager.GetComponent<GameManager>().IsMyTurn())
+        if (!_gameManager.GetComponent<GameManager>().IsMyTurn())
         {
             return;
         }
@@ -364,17 +369,18 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         // if we clicked on enemy
         if(!_photonView.IsMine)
         {
-            GameObject ourFigure = choosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj();
+            GameObject ourFigure = _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj();
             // if we have in hand chosen figure
             if(ourFigure)
             {
-                if (ourFigure.GetComponent<TapCharacter>().GetMovementPoints() > 0)
+                var currentPoints = ourFigure.GetComponent<TapCharacter>().GetMovementPoints();
+                if (currentPoints > 1)
                 {
                     if (Math.Abs(transform.position.x - ourFigure.transform.position.x) +
                         Math.Abs(transform.position.y - ourFigure.transform.position.y) <=
                         ourFigure.GetComponent<TapCharacter>().radiusView)
                     {
-                        int localDmg = choosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().damage;
+                        int localDmg = _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().damage;
                         _photonView.RPC("TakeDamage", RpcTarget.All, localDmg);
                         //Debug.Log("SHOT! Remaining hp: " + hp);
                         ourFigure.GetComponent<TapCharacter>().SetMovementPoints(0);
@@ -389,27 +395,36 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             else{
                 return;
             }
-            choosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().ClearChoosenCard();
+            _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().ClearChoosenCard();
             return;
         }
 
+        // if we chose bomb card and clicked on figure
+        var bombCard = _chosenObj.GetComponentInChildren<BombCard>();
+        if(_chosenObj.transform.childCount > 0 && bombCard)
+            if (!_teamCt)
+            {
+                _bomber = true;
+                bombCard.GiveBomb();
+            }
+        
         // если есть выбранный объект и он не равен текущему
-        if(choosenObj.transform.childCount > 0 && transform.parent != choosenObj.transform)
+        if(_chosenObj.transform.childCount > 0 && transform.parent != _chosenObj.transform)
         {
             ClearChoosenCard();
         }
         // если фигура выбрана
-        if(isChoosen){
+        if(_isChosen){
             DeleteChoose();
             PaintRadiusView(true);
             PaintCloseCells(true);
         }
         // если фигура ещё не выбрана
         else{
-            transform.parent = choosenObj.transform;
-            transform.localScale *= increasingSize;
+            transform.parent = _chosenObj.transform;
+            transform.localScale *= _increasingSize;
             GetComponent<SpriteRenderer>().sprite = chosenSprite;
-            isChoosen = true;
+            _isChosen = true;
             PaintRadiusView(false);
             PaintCloseCells(false);
         }
@@ -420,16 +435,16 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         newPos.z -= 0.3f;
         PaintRadiusView(true);
         PaintCloseCells(true);
-        if (movementPoints > 0)
+        if (_movementPoints > 0)
         {
             if (cell_color == new Color(0f, 255f, 0f))
             {
                 GetComponent<BoxCollider>().enabled = false;
                 transform.position = newPos;
                 GetComponent<BoxCollider>().enabled = true;
-                gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
+                _gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
                 
-                SetMovementPoints(0);
+                SetMovementPoints(_movementPoints - 1);
                 CheckVisibility();
             }
         }
@@ -461,13 +476,13 @@ public class TapCharacter : MonoBehaviour, IPunObservable
 
     public int GetMovementPoints()
     {
-        return movementPoints;
+        return _movementPoints;
     }
 
     public void SetMovementPoints(int _movementPoints)
     {
-        movementPoints = _movementPoints;
-        textMP.text = _movementPoints.ToString();
+        this._movementPoints = _movementPoints;
+        _textMp.text = _movementPoints.ToString();
         Debug.Log("* | Changed to " + _movementPoints);
     }
 }

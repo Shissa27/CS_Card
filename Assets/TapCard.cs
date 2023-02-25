@@ -13,7 +13,6 @@ public class TapCard : MonoBehaviour
     public GameObject prefabSoldier;
     private GameObject handObj;
     private GameObject choosenObj;
-    private GameObject figures;
 
     private GameObject gameManager;
 
@@ -21,7 +20,6 @@ public class TapCard : MonoBehaviour
     {
         handObj = GameObject.Find("Hand");
         choosenObj = GameObject.Find("ChoosenObj");
-        figures = GameObject.Find("Figures");
         transform.parent = handObj.transform;
         gameObject.name = "Card";
         
@@ -29,12 +27,7 @@ public class TapCard : MonoBehaviour
         
         teamCT = gameManager.GetComponent<GameManager>().GetTeam();
     }
-
-    void Update()
-    {
-
-    }
-
+    
     // Снятие выделения с текущей карты
     public void ClearChoosenCard(){
         Transform children = choosenObj.transform.GetChild(0);
@@ -120,8 +113,6 @@ public class TapCard : MonoBehaviour
 
     }
     
-    
-
     // Создание фигуры на поле и удаление карты из руки
     public void CreateFigure(Vector3 posField)
     {
@@ -143,7 +134,7 @@ public class TapCard : MonoBehaviour
         gameManager.GetComponent<GameManager>().AddMoney(-costFigure);
         
         posField.z -= 0.1f;
-
+        
         GameObject newplr = PhotonNetwork.Instantiate(prefabSoldier.name, posField, Quaternion.identity);
         gameManager.GetComponent<GameManager>().AddFigureToList(newplr);
         transform.parent = handObj.transform;

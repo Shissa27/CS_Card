@@ -1,19 +1,16 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using ExitGames.Client.Photon;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-    public GameObject plrPrefab;
     public GameObject canvasEndTurnButton;
     public GameObject textMoney;
+    public GameObject textRound;
     
     public GameObject[] T_prefabs_cards;
     public GameObject prefab_T_AK47;
@@ -31,38 +28,39 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefab_CT_MP5;
     public GameObject prefab_CT_NEGEV;
     
-    private GameObject choosenObj;
+    private GameObject _chosenObj;
         
     public List<GameObject> cellsGameField;
     public List<GameObject> ourFigures;
 
     public PhotonView _photonView;
 
-    private bool teamCT;
-    private bool myTurn;
-    private int money;
+    private bool _teamCt;
+    private bool _myTurn;
+    private int _money;
+    private int _round;
     
-    private int cardsOnHand;
-    private List<GameObject> handCards;
+    private int _cardsOnHand;
+    private List<GameObject> _handCards;
     private void Start()
     {
         InitVariables();
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
-            teamCT = false;
-            myTurn = false;
+            _teamCt = false;
+            _myTurn = true;
             Debug.Log("Second player is joined the room!");
         }
         else
         {
-            teamCT = true;
-            myTurn = true;
+            _teamCt = true;
+            _myTurn = false;
         }
-        canvasEndTurnButton.SetActive(myTurn);
+        canvasEndTurnButton.SetActive(_myTurn);
         AddMoney(5);
 
         // taking 3 cards
-        for (int i = 0; i < 3; i++)
+        for (var i = 0; i < 3; i++)
         {
             TakeCard();
         }
@@ -71,104 +69,106 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void InitVariables()
     {
         _photonView = GetComponent<PhotonView>();
-        handCards = new List<GameObject>();
-        choosenObj = GameObject.Find("/ChoosenObj");
+        _handCards = new List<GameObject>();
+        _chosenObj = GameObject.Find("/ChoosenObj");
+
+        _round = 1;
         
         T_prefabs_cards = new GameObject[] { prefab_T_AK47, prefab_T_AWP, prefab_T_GLOCK, prefab_T_SAWEDOFF, prefab_T_MAC10, prefab_T_NEGEV};
         CT_prefabs_cards = new GameObject[] { prefab_CT_M4A1S, prefab_CT_AWP, prefab_CT_USPS, prefab_CT_NOVA, prefab_CT_MP5, prefab_CT_NEGEV};
     }
      
-    public bool IsMyTurn(){ return myTurn; }
+    public bool IsMyTurn(){ return _myTurn; }
 
     public int GetMoney()
     {
-        return money;
+        return _money;
         
     }
 
-    public void AddMoney(int _money)
+    public void AddMoney(int money)
     {
-        money += _money;
-        textMoney.GetComponent<Text>().text = money + "$";
+        this._money += money;
+        textMoney.GetComponent<Text>().text = this._money + "$";
     }
 
     public int GetCardsOnHand()
     {
-        return cardsOnHand;
+        return _cardsOnHand;
     }
 
     public void AddCardsOnHand(int difference)
     {
-        cardsOnHand += difference;
+        _cardsOnHand += difference;
     }
 
     public void AddCardOnHand(GameObject toAdd)
     {
-        handCards.Add(toAdd);
-        cardsOnHand++;
+        _handCards.Add(toAdd);
+        _cardsOnHand++;
         RedrawHand();
     }
     
     public void RemoveCardFromHand(GameObject toRemove)
     {
-        handCards.Remove(toRemove);
-        cardsOnHand--;
+        _handCards.Remove(toRemove);
+        _cardsOnHand--;
         RedrawHand();
     }
     
-    public void RedrawHand()
+    private void RedrawHand()
     {
-        switch (cardsOnHand)
+        switch (_cardsOnHand)
         {
             case 1:
-                handCards[0].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
-                handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                _handCards[0].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
+                _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                 break;
             case 2:
-                handCards[0].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
-                handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
+                _handCards[0].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
+                _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
                 
-                handCards[1].transform.position = new Vector3(2.324f, -3.35f, -3.7f);
-                handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, -5.3f);
+                _handCards[1].transform.position = new Vector3(2.324f, -3.35f, -3.7f);
+                _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, -5.3f);
                 break;
             case 3:
-                handCards[0].transform.position = new Vector3(1.2f, -3.3f, -3.5f);
-                handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 9.77f);
+                _handCards[0].transform.position = new Vector3(1.2f, -3.3f, -3.5f);
+                _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 9.77f);
                 
-                handCards[1].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
-                handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                _handCards[1].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
+                _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                 
-                handCards[2].transform.position = new Vector3(2.45f, -3.3f, -3.9f);
-                handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, -9.4f);
+                _handCards[2].transform.position = new Vector3(2.45f, -3.3f, -3.9f);
+                _handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, -9.4f);
                 break;
             case 4:
-                handCards[0].transform.position = new Vector3(1f, -3.5f, -3.3f);
-                handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 16.5f);
+                _handCards[0].transform.position = new Vector3(1f, -3.5f, -3.3f);
+                _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 16.5f);
                 
-                handCards[1].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
-                handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
+                _handCards[1].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
+                _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
                 
-                handCards[2].transform.position = new Vector3(2.324f, -3.35f, -3.7f);
-                handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, -5.3f);
+                _handCards[2].transform.position = new Vector3(2.324f, -3.35f, -3.7f);
+                _handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, -5.3f);
                 
-                handCards[3].transform.position = new Vector3(2.956f, -3.5f, -3.9f);
-                handCards[3].transform.rotation = Quaternion.Euler(0f, 0f, -16.5f);
+                _handCards[3].transform.position = new Vector3(2.956f, -3.5f, -3.9f);
+                _handCards[3].transform.rotation = Quaternion.Euler(0f, 0f, -16.5f);
                 break;
             case 5:
-                handCards[0].transform.position = new Vector3(0.65f, -3.5f, -3.3f);
-                handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 18f);
+                _handCards[0].transform.position = new Vector3(0.65f, -3.5f, -3.3f);
+                _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 18f);
                 
-                handCards[1].transform.position = new Vector3(1.2f, -3.3f, -3.5f);
-                handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 9.77f);
+                _handCards[1].transform.position = new Vector3(1.2f, -3.3f, -3.5f);
+                _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 9.77f);
                 
-                handCards[2].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
-                handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                _handCards[2].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
+                _handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                 
-                handCards[3].transform.position = new Vector3(2.45f, -3.3f, -3.9f);
-                handCards[3].transform.rotation = Quaternion.Euler(0f, 0f, -9.4f);
+                _handCards[3].transform.position = new Vector3(2.45f, -3.3f, -3.9f);
+                _handCards[3].transform.rotation = Quaternion.Euler(0f, 0f, -9.4f);
                 
-                handCards[4].transform.position = new Vector3(3f, -3.5f, -4.1f);
-                handCards[4].transform.rotation = Quaternion.Euler(0f, 0f, -23.68f);
+                _handCards[4].transform.position = new Vector3(3f, -3.5f, -4.1f);
+                _handCards[4].transform.rotation = Quaternion.Euler(0f, 0f, -23.68f);
                 break;
         }
     }
@@ -182,15 +182,24 @@ public class GameManager : MonoBehaviourPunCallbacks
     public void ChangeTurn()
     {
         // if it now my turn
-        if (!myTurn)
+        if (!_myTurn)
         {
             AddMoney(2);                // receive +2$
             RestoreMovementPoints();    // set 1 MP to all our figures on board
             TakeCard();                 // take one card on the hand
         }
+        else if(_teamCt)
+            photonView.RPC("IncreaseRound", RpcTarget.All);
         
-        myTurn = !myTurn;
-        canvasEndTurnButton.SetActive(myTurn);
+        _myTurn = !_myTurn;
+        canvasEndTurnButton.SetActive(_myTurn);
+    }
+
+    [PunRPC]
+    void IncreaseRound()
+    {
+        _round++;
+        textRound.GetComponent<Text>().text = "Round: " + _round;
     }
 
     private void RestoreMovementPoints()
@@ -201,14 +210,9 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
     
-    public bool GetTeam() { return teamCT; }
+    public bool GetTeam() { return _teamCt; }
 
     public void LeaveRoom() { PhotonNetwork.LeaveRoom(); }
-
-    
-    
-    [PunRPC]
-    private void SetTeam(bool _teamCT) { teamCT = _teamCT; }
 
     public override void OnConnected() // when we connected to the room
     {
@@ -261,7 +265,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         ResetFogOfWar();
         foreach (var f in ourFigures)
         {
-            UpdateFogOfWar(f.transform.position.x, f.transform.position.y, f.GetComponent<TapCharacter>().radiusView);
+            var position = f.transform.position;
+            UpdateFogOfWar(position.x, position.y, f.GetComponent<TapCharacter>().radiusView);
         }
     }
     public void UpdateFogOfWar(float x, float y, float r)
@@ -284,7 +289,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    public void ResetFogOfWar()
+    private void ResetFogOfWar()
     {
         foreach (GameObject c in cellsGameField)
         {
@@ -308,29 +313,28 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void TakeCard()
     {
         // if we have chosen object now
-        if(choosenObj.transform.childCount != 0){
-            Transform children = choosenObj.transform.GetChild(0);
+        if(_chosenObj.transform.childCount != 0){
+            Transform children = _chosenObj.transform.GetChild(0);
             if(children.GetComponent<TapCard>()){
                 children.GetComponent<TapCard>().ClearChoosenCard();
             }
             return;
         }
 
-        int CardsOnHand = GetCardsOnHand();
-        bool teamCT = GetTeam();
+        int cardsOnHand = GetCardsOnHand();
+        bool teamCt = GetTeam();
         int cardID = UnityEngine.Random.Range(0, 6); // fix this to (0, 6)
         
-        GameObject cardToCreate = teamCT ? CT_prefabs_cards[cardID] : T_prefabs_cards[cardID];
+        GameObject cardToCreate = teamCt ? CT_prefabs_cards[cardID] : T_prefabs_cards[cardID];
         
         // overflow of cards on the hand (=5 cards)
-        if (CardsOnHand >= 5)
+        if (cardsOnHand >= 5)
         {
             return;
         }
         
         GameObject newCard = Instantiate(cardToCreate);
         AddCardOnHand(newCard);
-
     }
     
 }

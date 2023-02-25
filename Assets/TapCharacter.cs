@@ -243,6 +243,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         }
     }
 
+    
+    // visualizing radius view of figure
     void PaintRadiusView(bool isPainted)
     {
         foreach (var c in cellsGameFild)

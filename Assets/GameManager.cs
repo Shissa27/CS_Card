@@ -235,6 +235,11 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         cellsGameField.Add(cell);
     }
+
+    public List<GameObject> GetCells()
+    {
+        return cellsGameField;
+    }
     
     public void AddFigureToList(GameObject figure)
     {

@@ -35,6 +35,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     float increasingSize;
     float lenToField;
     private Color greenClr;
+    private List<GameObject> cellsGameFild;
     
     void Start()
     {
@@ -56,6 +57,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         gameObject.name = "Figure";
         transform.parent = figures.transform;
         gameManager = GameObject.Find("/GameManager");
+
+        cellsGameFild = gameManager.GetComponent<GameManager>().GetCells();
 
         isChoosen = false;
         increasingSize = 1.2f;
@@ -239,9 +242,26 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             }
         }
     }
+
+    void PaintRadiusView(bool isPainted)
+    {
+        foreach (var c in cellsGameFild)
+        {
+            if (Math.Abs(c.transform.position.x - transform.position.x) +
+                Math.Abs(c.transform.position.y - transform.position.y) <=
+                radiusView)
+            {
+                if (isPainted)
+                    c.transform.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
+                else
+                    c.transform.GetComponent<SpriteRenderer>().color = Color.cyan;
+            }
+        }
+    }
     
     // перемещение фигуры из текущего выбранного объекта
     public void DeleteChoose(){
+        PaintRadiusView(true);
         PaintCloseCells(true);
         transform.parent = figures.transform;
         transform.localScale /= increasingSize;
@@ -379,6 +399,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         // если фигура выбрана
         if(isChoosen){
             DeleteChoose();
+            PaintRadiusView(true);
             PaintCloseCells(true);
         }
         // если фигура ещё не выбрана
@@ -387,6 +408,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             transform.localScale *= increasingSize;
             GetComponent<SpriteRenderer>().sprite = chosenSprite;
             isChoosen = true;
+            PaintRadiusView(false);
             PaintCloseCells(false);
         }
     }
@@ -394,6 +416,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     // перемещение фигуры на клетку
     public void MoveFigure(Vector3 newPos, Color cell_color){
         newPos.z -= 0.3f;
+        PaintRadiusView(true);
         PaintCloseCells(true);
         if (movementPoints > 0)
         {

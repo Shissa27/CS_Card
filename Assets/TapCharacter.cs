@@ -356,6 +356,12 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         PhotonNetwork.Destroy(gameObject);
     }
 
+    // giving bomb from card to figure
+    private void TakeBomb(BombCard bombCard)
+    {
+        _bomber = true;
+        bombCard.GiveBomb(gameObject);
+    }
     
     // клик на фигуру
     void OnMouseDown(){
@@ -399,19 +405,22 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             return;
         }
 
-        // if we chose bomb card and clicked on figure
-        var bombCard = _chosenObj.GetComponentInChildren<BombCard>();
-        if(_chosenObj.transform.childCount > 0 && bombCard)
-            if (!_teamCt)
-            {
-                _bomber = true;
-                bombCard.GiveBomb();
-            }
+        
         
         // если есть выбранный объект и он не равен текущему
         if(_chosenObj.transform.childCount > 0 && transform.parent != _chosenObj.transform)
         {
+            var bombCard = _chosenObj.GetComponentInChildren<BombCard>();
             ClearChoosenCard();
+            if (bombCard) // if we chose bomb card and clicked on figure
+            {
+                if (!_teamCt)
+                {
+                    TakeBomb(bombCard);
+                    return;
+                }
+            }
+            
         }
         // если фигура выбрана
         if(_isChosen){
@@ -446,6 +455,19 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 
                 SetMovementPoints(_movementPoints - 1);
                 CheckVisibility();
+                if (_bomber)
+                {
+                    var bombPos = _gameManager.GetComponent<GameManager>().GetBombSite();
+                    if (Math.Abs(transform.position.x - bombPos.x) < 0.1f &&
+                        Math.Abs(transform.position.y - bombPos.y) < 0.1f)
+                    {
+                        _gameManager.GetComponent<GameManager>().ShowBombButton(true);
+                    }
+                    else
+                    {
+                        _gameManager.GetComponent<GameManager>().ShowBombButton(false);
+                    }
+                }
             }
         }
 

@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviourPunCallbacks
 {
     public GameObject canvasEndTurnButton;
+    public GameObject buttonBomb;
     public GameObject textMoney;
     public GameObject textRound;
     
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefab_T_NEGEV;
 
     public GameObject prefab_T_bomb;
+    private Vector3 _bombSite;
+    private GameObject _plantBombButton;
     
     public GameObject[] CT_prefabs_cards;
     public GameObject prefab_CT_M4A1S;
@@ -82,6 +85,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         
         T_prefabs_cards = new GameObject[] { prefab_T_AK47, prefab_T_AWP, prefab_T_GLOCK, prefab_T_SAWEDOFF, prefab_T_MAC10, prefab_T_NEGEV};
         CT_prefabs_cards = new GameObject[] { prefab_CT_M4A1S, prefab_CT_AWP, prefab_CT_USPS, prefab_CT_NOVA, prefab_CT_MP5, prefab_CT_NEGEV};
+
+        _bombSite = new Vector3(1.858f, 1.235f, -0.2f);
     }
      
     public bool IsMyTurn(){ return _myTurn; }
@@ -363,5 +368,28 @@ public class GameManager : MonoBehaviourPunCallbacks
         
         GameObject newCard = Instantiate(cardToTake);
         AddCardOnHand(newCard);
+    }
+
+    public Vector3 GetBombSite()
+    {
+        return _bombSite;
+    }
+    public void ShowBombButton(bool toShow)
+    {
+        if (toShow)
+        {
+            _plantBombButton = Instantiate(buttonBomb, canvasEndTurnButton.transform);
+            _plantBombButton.GetComponent<Button>().onClick.AddListener(PlantBomb);
+        }
+        else if (_plantBombButton)
+        {
+            Destroy(_plantBombButton);
+        }
+    }
+
+    public void PlantBomb()
+    {
+        Debug.Log("Planted!");
+        // for future
     }
 }

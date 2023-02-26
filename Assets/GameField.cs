@@ -41,6 +41,12 @@ public class GameField : MonoBehaviour
         }
         // текущий выбранный объект - карта
         if(crnObj.name == "Card"){
+            if (crnObj.GetComponent<BombCard>())
+            {
+                crnObj.GetComponent<TapCard>().ClearChoosenCard();
+                return;
+            }
+
             if (gameObject.GetComponent<SpriteRenderer>().color == new Color(0f, 255f, 0f))
             {
                 // создание фигуры на поле

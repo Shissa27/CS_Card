@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombCard : MonoBehaviour
 {
-    public bool isChoosen = false;
+    public GameObject bomb;
     private float increasingSize = 1.15f;
     
     private GameObject _handObj;
@@ -22,11 +22,15 @@ public class BombCard : MonoBehaviour
         
     }
 
-    public void GiveBomb()
+    public void GiveBomb(GameObject figure)
     {
         transform.parent = _handObj.transform;
         transform.parent.GetComponent<HandScript>().CardsOnHand -= 1;
         _gameManager.GetComponent<GameManager>().RemoveCardFromHand(gameObject);
+        
+        GameObject bombFig = Instantiate(bomb, figure.transform);
+        var bombPos = new Vector3(-1.42f, -1.248f, -2.9f);
+        var bombScale = new Vector3(0.6472f, 0.6314f, 0.1321f);
         Destroy(gameObject);
     }
     

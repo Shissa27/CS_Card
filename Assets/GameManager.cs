@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 {
     public GameObject canvasEndTurnButton;
     public GameObject buttonBomb;
+    public GameObject prefabBomb;
     public GameObject textMoney;
     public GameObject textRound;
     
@@ -21,9 +22,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefab_T_MAC10;
     public GameObject prefab_T_NEGEV;
 
-    public GameObject prefab_T_bomb;
+    public GameObject prefab_T_card_bomb;
     private Vector3 _bombSite;
     private GameObject _plantBombButton;
+    private GameObject _bomber;
+    private bool _planting;
+    private int _timeToPlant;
+    private const int TimeForPlant = 1;
     
     public GameObject[] CT_prefabs_cards;
     public GameObject prefab_CT_M4A1S;
@@ -72,7 +77,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         // taking a bomb
         if(!_teamCt)
-            TakeCard(prefab_T_bomb);
+            TakeCard(prefab_T_card_bomb);
     }
 
     private void InitVariables()
@@ -87,6 +92,9 @@ public class GameManager : MonoBehaviourPunCallbacks
         CT_prefabs_cards = new GameObject[] { prefab_CT_M4A1S, prefab_CT_AWP, prefab_CT_USPS, prefab_CT_NOVA, prefab_CT_MP5, prefab_CT_NEGEV};
 
         _bombSite = new Vector3(1.858f, 1.235f, -0.2f);
+        _bomber = null;
+        _planting = false;
+        _timeToPlant = TimeForPlant;
     }
      
     public bool IsMyTurn(){ return _myTurn; }
@@ -199,13 +207,61 @@ public class GameManager : MonoBehaviourPunCallbacks
             RestoreMovementPoints(2);    // set 1 MP to all our figures on board
             TakeCard();                         // take one card on the hand
         }
-        else if(_teamCt)
-            photonView.RPC("IncreaseRound", RpcTarget.All);
+        else
+        {
+            if (_teamCt)
+            {
+                photonView.RPC("IncreaseRound", RpcTarget.All);
+            }
+            if (_planting)
+            {
+                if (_timeToPlant < 1) // bomb planted
+                {
+                    SetBomb();
+                }
+                else if (_bomber.GetComponent<TapCharacter>().GetMovementPoints() > 1)
+                {
+                    // bomb planting now
+                    _timeToPlant--;
+                    Debug.Log("Current rounds to plant: " + _timeToPlant);
+                }
+                else
+                {
+                    _timeToPlant = TimeForPlant; // figure moved/shot
+                }
+            }
+        }
+        
+        
         
         _myTurn = !_myTurn;
         canvasEndTurnButton.SetActive(_myTurn);
     }
 
+    private void SetBomb()
+    {
+        Debug.Log("BOMB HAS BEEN PLANTED!");
+        _planting = false;
+                    
+        var position = _bomber.transform.position;
+        GameObject cellBombSite = GetCellByVector2(position.x, position.y);
+        var bomb = _bomber.GetComponent<TapCharacter>()._bomb;
+        _bomber.GetComponent<TapCharacter>().SetIsBomber(false);
+        var posBomb = bomb.transform.position;
+        Destroy(bomb);
+
+        _photonView.RPC("CreateBomb", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void CreateBomb()
+    {
+        var bomb = Instantiate(prefabBomb);
+        var posBomb = _bombSite;
+        bomb.transform.position = new Vector3(posBomb.x, posBomb.y, -0.21f);
+        bomb.transform.localScale = new Vector3(0.13f, 0.13f, 0.13f);
+    }
+    
     [PunRPC]
     void IncreaseRound()
     {
@@ -370,6 +426,11 @@ public class GameManager : MonoBehaviourPunCallbacks
         AddCardOnHand(newCard);
     }
 
+    public void SetBomber(GameObject bomber)
+    {
+        _bomber = bomber;
+    }
+    
     public Vector3 GetBombSite()
     {
         return _bombSite;
@@ -383,13 +444,15 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
         else if (_plantBombButton)
         {
-            Destroy(_plantBombButton);
+            Destroy(_plantBombButton.gameObject);
+            _plantBombButton = null;
         }
     }
 
     public void PlantBomb()
     {
-        Debug.Log("Planted!");
-        // for future
+        _planting = true;
+        Debug.Log("Planting!");
+        ShowBombButton(false);
     }
 }

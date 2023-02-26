@@ -28,9 +28,7 @@ public class BombCard : MonoBehaviour
         transform.parent.GetComponent<HandScript>().CardsOnHand -= 1;
         _gameManager.GetComponent<GameManager>().RemoveCardFromHand(gameObject);
         
-        GameObject bombFig = Instantiate(bomb, figure.transform);
-        var bombPos = new Vector3(-1.42f, -1.248f, -2.9f);
-        var bombScale = new Vector3(0.6472f, 0.6314f, 0.1321f);
+        Instantiate(bomb, figure.transform).name = "Bomb";
         Destroy(gameObject);
     }
     

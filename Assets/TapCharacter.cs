@@ -20,6 +20,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     private GameObject _handObj;
     private GameObject _gameField;
     private GameObject _figures;
+    public GameObject _bomb;
     
     private GameObject _squareWithMp;
     private Text _hpBar;
@@ -39,7 +40,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     private List<GameObject> _cellsGameField;
 
     private bool _bomber;
-    
+
     void Start()
     {
         InitVariables();
@@ -70,9 +71,20 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         _greenClr = new Color(0f, 255f, 0f);
         radiusView *= 0.62f;
         _movementPoints = 0;
+        
 
         CheckSquareWithMp();
         CheckVisibility();
+    }
+
+    public bool IsBomber()
+    {
+        return _bomber;
+    }
+
+    public void SetIsBomber(bool isBomber)
+    {
+        _bomber = isBomber;
     }
 
     private void CheckSquareWithMp()
@@ -361,6 +373,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     {
         _bomber = true;
         bombCard.GiveBomb(gameObject);
+        _gameManager.GetComponent<GameManager>().SetBomber(gameObject);
+        _bomb = GameObject.Find("Bomb");
     }
     
     // клик на фигуру
@@ -505,6 +519,6 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     {
         this._movementPoints = _movementPoints;
         _textMp.text = _movementPoints.ToString();
-        Debug.Log("* | Changed to " + _movementPoints);
+        //Debug.Log("* | Changed to " + _movementPoints);
     }
 }

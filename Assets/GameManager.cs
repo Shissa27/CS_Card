@@ -55,27 +55,25 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void Start()
     {
         InitVariables();
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2) // if players in room == 2
         {
             _teamCt = false;
             _myTurn = true;
             Debug.Log("Second player is joined the room!");
         }
-        else
+        else // if only 1 player in room
         {
             _teamCt = true;
             _myTurn = false;
         }
-        canvasEndTurnButton.SetActive(_myTurn);
+        canvasEndTurnButton.SetActive(_myTurn); // turning off button "End turn"
         AddMoney(5);
 
         // taking 3 cards
         for (var i = 0; i < 3; i++)
-        {
             TakeCard();
-        }
 
-        // taking a bomb
+        // taking a bomb card to T hand 
         if(!_teamCt)
             TakeCard(prefab_T_card_bomb);
     }
@@ -116,11 +114,13 @@ public class GameManager : MonoBehaviourPunCallbacks
         return _cardsOnHand;
     }
 
+    // increasing counter of cards on hand
     public void AddCardsOnHand(int difference)
     {
         _cardsOnHand += difference;
     }
 
+    // take %toAdd% card to hand
     public void AddCardOnHand(GameObject toAdd)
     {
         _handCards.Add(toAdd);
@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         RedrawHand();
     }
     
+    // remove %toRemove% card from hand
     public void RemoveCardFromHand(GameObject toRemove)
     {
         _handCards.Remove(toRemove);
@@ -135,15 +136,17 @@ public class GameManager : MonoBehaviourPunCallbacks
         RedrawHand();
     }
     
+    // redraw all card on hand:
+    //  change positions of all card on hand
     private void RedrawHand()
     {
         switch (_cardsOnHand)
         {
-            case 1:
+            case 1: // if we have only 1 card on hand
                 _handCards[0].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
                 _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                 break;
-            case 2:
+            case 2: // if we have 2 cards on hand
                 _handCards[0].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
                 _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
                 
@@ -192,22 +195,24 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
+    // method onClick of button "End Turn"
     public void OnClickEndButtonTurn()
     {
         _photonView.RPC("ChangeTurn", RpcTarget.All);
     }
 
+    // change turn 
     [PunRPC]
     public void ChangeTurn()
     {
-        // if it now my turn
+        // if it's will be my turn now
         if (!_myTurn)
         {
             AddMoney(2);                        // receive +2$
-            RestoreMovementPoints(2);    // set 1 MP to all our figures on board
-            TakeCard();                         // take one card on the hand
+            RestoreMovementPoints(2);           // set 1 MP to all our figures on board
+            TakeCard();                         // take 1 card on the hand
         }
-        else
+        else // if my turn is over
         {
             if (_teamCt)
             {
@@ -215,24 +220,21 @@ public class GameManager : MonoBehaviourPunCallbacks
             }
             if (_planting)
             {
-                if (_timeToPlant < 1) // bomb planted
+                if (_timeToPlant < 1) // bomb planted now
                 {
                     SetBomb();
                 }
-                else if (_bomber.GetComponent<TapCharacter>().GetMovementPoints() > 1)
+                else if (_bomber.GetComponent<TapCharacter>().GetMovementPoints() > 1) // bomb not planted yet
                 {
-                    // bomb planting now
                     _timeToPlant--;
                     Debug.Log("Current rounds to plant: " + _timeToPlant);
                 }
                 else
                 {
-                    _timeToPlant = TimeForPlant; // figure moved/shot
+                    _timeToPlant = TimeForPlant; // figure moved/shot, planting is over
                 }
             }
         }
-        
-        
         
         _myTurn = !_myTurn;
         canvasEndTurnButton.SetActive(_myTurn);
@@ -245,14 +247,15 @@ public class GameManager : MonoBehaviourPunCallbacks
                     
         var position = _bomber.transform.position;
         GameObject cellBombSite = GetCellByVector2(position.x, position.y);
-        var bomb = _bomber.GetComponent<TapCharacter>()._bomb;
-        _bomber.GetComponent<TapCharacter>().SetIsBomber(false);
-        var posBomb = bomb.transform.position;
-        Destroy(bomb);
+        
+        var bomb = _bomber.GetComponent<TapCharacter>()._bomb;      // bomb on figure
+        _bomber.GetComponent<TapCharacter>().SetIsBomber(false);    // bomber is not more bomber
+        Destroy(bomb);                                              // remove bomb from figure
 
         _photonView.RPC("CreateBomb", RpcTarget.All);
     }
 
+    // create bomb on bombsite
     [PunRPC]
     void CreateBomb()
     {
@@ -262,6 +265,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         bomb.transform.localScale = new Vector3(0.13f, 0.13f, 0.13f);
     }
     
+    // increase round counter
     [PunRPC]
     void IncreaseRound()
     {
@@ -269,6 +273,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         textRound.GetComponent<Text>().text = "Round: " + _round;
     }
 
+    // restore all movements points on all figures at start of round
     private void RestoreMovementPoints(int toSetMp)
     {
         foreach (var f in ourFigures)
@@ -349,13 +354,14 @@ public class GameManager : MonoBehaviourPunCallbacks
             float xPos = c.GetComponent<GameField>().GetPosX();
             float yPos = c.GetComponent<GameField>().GetPosY();
             
-            if (Math.Abs(xPos - x) + Math.Abs(yPos - y) <= r)
+            if (Math.Abs(xPos - x) + Math.Abs(yPos - y) <= r) // main condition of figure's vision 
             {
                 c.GetComponent<GameField>().SetVisible(true);
             }
         }
     }
 
+    // set all game field cells to not visible
     private void ResetFogOfWar()
     {
         foreach (GameObject c in cellsGameField)
@@ -364,6 +370,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
+    // @return cell by coordinates
     public GameObject GetCellByVector2(float xCell, float yCell)
     {
         foreach (var c in cellsGameField)
@@ -377,6 +384,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         return null;
     }
 
+    // give card to hand
     private void TakeCard()
     {
         // if we have chosen object now
@@ -403,6 +411,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         GameObject newCard = Instantiate(cardToCreate);
         AddCardOnHand(newCard);
     }
+    
+    // give %cardToTake% card to hand
     private void TakeCard(GameObject cardToTake)
     {
         // if we have chosen object now
@@ -416,7 +426,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         int cardsOnHand = GetCardsOnHand();
 
-        // overflow of cards on the hand (=5 cards)
+        // overflow of cards on the hand (cardsOnHand = 5 cards)
         if (cardsOnHand >= 5)
         {
             return;
@@ -431,24 +441,29 @@ public class GameManager : MonoBehaviourPunCallbacks
         _bomber = bomber;
     }
     
+    // @return Vector3 of bombsite
     public Vector3 GetBombSite()
     {
         return _bombSite;
     }
+    
+    // switch visibility of "Plant Bomb" button
     public void ShowBombButton(bool toShow)
     {
-        if (toShow)
+        if (toShow) // if we moved on bombsite now
         {
             _plantBombButton = Instantiate(buttonBomb, canvasEndTurnButton.transform);
             _plantBombButton.GetComponent<Button>().onClick.AddListener(PlantBomb);
         }
-        else if (_plantBombButton)
+        else if (_plantBombButton) // if we moved out from a bombsite &&
+                                   // button "Plant Bomb" exist
         {
             Destroy(_plantBombButton.gameObject);
             _plantBombButton = null;
         }
     }
 
+    // onClick of button "Plant Bomb"
     public void PlantBomb()
     {
         _planting = true;

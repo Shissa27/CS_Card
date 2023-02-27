@@ -69,6 +69,7 @@ public class TapCard : MonoBehaviour
         HighlightSpawnLine(isChoosen);
     }
 
+    // hightling line of spawn figure by 'greening' cells
     public void HighlightSpawnLine(bool toHighlight)
     {
         float x;

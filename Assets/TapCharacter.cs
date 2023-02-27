@@ -95,6 +95,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         }
     }
     
+    // Run RPC method of checking visibility of enemies
     public void CheckVisibility()
     {
         if (_photonView.IsMine)
@@ -109,46 +110,35 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         CheckVisibility();
     }
     
+    // Setting visibility of figure
     [PunRPC]
     void SetVisibleFigure(float xCell, float yCell)
     {
         // Step #1: receive pos of CT and check if it cell is visible
-        
         _gameManager = GameObject.Find("/GameManager");
         GameObject currentCell = _gameManager.GetComponent<GameManager>().GetCellByVector2(xCell, yCell);
-        //Debug.Log("Current cell: " + currentCell.transform.position.x + " " + currentCell.transform.position.y);
 
         if (!currentCell)
             return;
         
         var visibleOfCell = currentCell.GetComponent<GameField>().visible;
-        if (visibleOfCell)
-        {
-            //Debug.Log("this cell is visible!");
-        }
-        else
-        {
-            //Debug.Log("this cell isn't visible!");
-        }
-
-
+        
         TurnVisibility(gameObject, visibleOfCell);
         
-
         // Step #2: send 'x' and 'y' of all visible _figures T to CT
-        
         UpdateVisibleForAllFigures();
 
     }
 
+    // Changing visibility of %figureToTurn% in %visibility%:
+    //      SpriteRenderer + Canvas (in children)
     private void TurnVisibility(GameObject figureToTurn, bool visibility)
     {
         figureToTurn.GetComponent<SpriteRenderer>().enabled = visibility;
         figureToTurn.GetComponentInChildren<Canvas>().enabled = visibility;
-        //figureToTurn.GetComponent<BoxCollider>().enabled = visibility;
-        
     }
     
+    // Update visibility of all enemies for each ourFigure
     public void UpdateVisibleForAllFigures()
     {
         /*
@@ -157,10 +147,12 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         
         List<GameObject> ourFigures = _gameManager.GetComponent<GameManager>().GetOurFigures(); // T _figures
         
-        foreach (var f in ourFigures)
+        foreach (var f in ourFigures) // for each our figure
         {
             if(!_photonView)
                 _photonView = GetComponent<PhotonView>();
+            
+            // check distance from our figure to each enemy
             _photonView.RPC("SetVisibleEnemy", RpcTarget.Others, f.transform.position.x, f.transform.position.y);
         }
     }
@@ -172,22 +164,23 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         
         List<GameObject> ourFigures = _gameManager.GetComponent<GameManager>().GetOurFigures(); // CT _figures
         bool finalVisible = false;
-        foreach (var f in ourFigures)
+        foreach (var f in ourFigures) // for each CT figure
         {
             var position = f.transform.position;
-            bool mainCondition = Math.Abs(position.x - xT) + Math.Abs(position.y - yT) <= f.GetComponent<TapCharacter>().radiusView;
+            bool mainCondition = Math.Abs(position.x - xT) + Math.Abs(position.y - yT) 
+                                 <= f.GetComponent<TapCharacter>().radiusView;
             if (mainCondition)
                 finalVisible = true;
         }
         
         Vector3 rayPos = new Vector3(xT, yT, -5f);
         
+        // if we hit in figure by Ray ---> turning visible
         Ray ray = new Ray(rayPos, transform.forward);
         RaycastHit hit;
         if(Physics.Raycast(ray, out hit)){
-            if(hit.collider.gameObject.GetComponent<TapCharacter>())
+            if(hit.collider.gameObject.GetComponent<TapCharacter>()) 
             {
-                //Debug.Log("Ray: " + xT + ";" + yT + " visibility: " + finalVisible);
                 TurnVisibility(hit.collider.gameObject, finalVisible);
             }
         }
@@ -264,16 +257,16 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     // visualizing radius view of figure
     void PaintRadiusView(bool isPainted)
     {
-        foreach (var c in _cellsGameField)
+        foreach (var c in _cellsGameField) // checking every game cell
         {
             if (Math.Abs(c.transform.position.x - transform.position.x) +
                 Math.Abs(c.transform.position.y - transform.position.y) <=
-                radiusView)
+                radiusView) // main condition of visibility
             {
                 if (isPainted)
-                    c.transform.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
+                    c.transform.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f); // paint cell in white
                 else
-                    c.transform.GetComponent<SpriteRenderer>().color = Color.cyan;
+                    c.transform.GetComponent<SpriteRenderer>().color = Color.cyan;                  // paint cell in cyan
             }
         }
     }
@@ -314,6 +307,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         _hpBar.text = hp.ToString();
     }
 
+    // Remove all visibility
     [PunRPC]
     void RunRemoveVisibilityOfAllEnemies()
     {
@@ -324,6 +318,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         }
     }
 
+    // Check if we have figure in (xT,yT)
+    // if we found figure ---> turning off visibility
     [PunRPC]
     void GetGameObjectFigureByCoords(float xT, float yT)
     {
@@ -339,12 +335,13 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         }
     }
 
-    // remove object
+    // Remove object
     void RemoveFigure()
     {
         _photonView.RPC("SendDeleteObj", RpcTarget.Others);
     }
 
+    // Removing figure
     [PunRPC]
     void SendDeleteObj()
     {
@@ -354,13 +351,6 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         
         _photonView.RPC("RunRemoveVisibilityOfAllEnemies", RpcTarget.Others);
         
-        // if (l1.Count == 0)
-        // {
-        //     Debug.Log("ourFigures are empty!");
-        //     _gameManager.GetComponent<GameManager>().ResetFogOfWar();
-        //     
-        // }
-        //
         _gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
         UpdateVisibleForAllFigures();
         
@@ -368,7 +358,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         PhotonNetwork.Destroy(gameObject);
     }
 
-    // giving bomb from card to figure
+    // Giving bomb from card to figure
     private void TakeBomb(BombCard bombCard)
     {
         _bomber = true;
@@ -398,16 +388,15 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 {
                     if (Math.Abs(transform.position.x - ourFigure.transform.position.x) +
                         Math.Abs(transform.position.y - ourFigure.transform.position.y) <=
-                        ourFigure.GetComponent<TapCharacter>().radiusView)
+                        ourFigure.GetComponent<TapCharacter>().radiusView) // if enemy in our radiusView
                     {
                         int localDmg = _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().damage;
                         _photonView.RPC("TakeDamage", RpcTarget.All, localDmg);
-                        //Debug.Log("SHOT! Remaining hp: " + hp);
                         ourFigure.GetComponent<TapCharacter>().SetMovementPoints(0);
                     }
                 }
                 
-                if (hp <= 0)
+                if (hp <= 0) // Enemy is dead
                 {
                     RemoveFigure();
                 }
@@ -428,7 +417,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             ClearChoosenCard();
             if (bombCard) // if we chose bomb card and clicked on figure
             {
-                if (!_teamCt)
+                if (!_teamCt) // if we playing on T side
                 {
                     TakeBomb(bombCard);
                     return;
@@ -458,28 +447,29 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         newPos.z -= 0.3f;
         PaintRadiusView(true);
         PaintCloseCells(true);
-        if (_movementPoints > 0)
+        if (_movementPoints > 0) // if we have at least 1 MP
         {
-            if (cell_color == new Color(0f, 255f, 0f))
+            if (cell_color == new Color(0f, 255f, 0f)) // if color of cell is 'green'
             {
                 GetComponent<BoxCollider>().enabled = false;
-                transform.position = newPos;
+                transform.position = newPos;                    // moving figure
                 GetComponent<BoxCollider>().enabled = true;
                 _gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
                 
                 SetMovementPoints(_movementPoints - 1);
                 CheckVisibility();
-                if (_bomber)
+                if (_bomber) // if it figure has a bomb
                 {
                     var bombPos = _gameManager.GetComponent<GameManager>().GetBombSite();
+                    
                     if (Math.Abs(transform.position.x - bombPos.x) < 0.1f &&
-                        Math.Abs(transform.position.y - bombPos.y) < 0.1f)
+                        Math.Abs(transform.position.y - bombPos.y) < 0.1f) // if bomber staying on bombsite
                     {
-                        _gameManager.GetComponent<GameManager>().ShowBombButton(true);
+                        _gameManager.GetComponent<GameManager>().ShowBombButton(true); // show button "Plant Bomb"
                     }
                     else
                     {
-                        _gameManager.GetComponent<GameManager>().ShowBombButton(false);
+                        _gameManager.GetComponent<GameManager>().ShowBombButton(false);// disable button "Plant Bomb"
                     }
                 }
             }
@@ -519,6 +509,5 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     {
         this._movementPoints = _movementPoints;
         _textMp.text = _movementPoints.ToString();
-        //Debug.Log("* | Changed to " + _movementPoints);
     }
 }

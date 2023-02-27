@@ -23,11 +23,6 @@ public class GameField : MonoBehaviour
     }
 
     
-    void Update()
-    {
-        
-    }
-
     // нажатие на клетку поля
     void OnMouseDown(){ // взаимодействие выбранного объекта с полем
         crnObj = choosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj(); // текущий выбранный объект

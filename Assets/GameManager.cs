@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefabBomb;
     public GameObject textMoney;
     public GameObject textRound;
+    public GameObject prefabTextBombRound;
+    public GameObject textBombRound;
+
+    public GameObject gameOverMenu;
     
     public GameObject[] T_prefabs_cards;
     public GameObject prefab_T_AK47;
@@ -29,6 +33,9 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool _planting;
     private int _timeToPlant;
     private const int TimeForPlant = 1;
+    
+    private bool _bombPlanted;
+    private int _timeToExplode;
     
     public GameObject[] CT_prefabs_cards;
     public GameObject prefab_CT_M4A1S;
@@ -93,8 +100,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         _bomber = null;
         _planting = false;
         _timeToPlant = TimeForPlant;
+        _bombPlanted = false;
+        _timeToExplode = 5;
     }
-     
+
     public bool IsMyTurn(){ return _myTurn; }
 
     public int GetMoney()
@@ -240,6 +249,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         canvasEndTurnButton.SetActive(_myTurn);
     }
 
+    // plant the bomb
     private void SetBomb()
     {
         Debug.Log("BOMB HAS BEEN PLANTED!");
@@ -248,14 +258,15 @@ public class GameManager : MonoBehaviourPunCallbacks
         var position = _bomber.transform.position;
         GameObject cellBombSite = GetCellByVector2(position.x, position.y);
         
-        var bomb = _bomber.GetComponent<TapCharacter>()._bomb;      // bomb on figure
-        _bomber.GetComponent<TapCharacter>().SetIsBomber(false);    // bomber is not more bomber
-        Destroy(bomb);                                              // remove bomb from figure
+        var bomb = _bomber.GetComponent<TapCharacter>()._bomb;     // bomb on figure
+        _bomber.GetComponent<TapCharacter>().SetIsBomber(false);            // bomber is not more bomber
+        Destroy(bomb);                                                      // remove bomb from figure
 
         _photonView.RPC("CreateBomb", RpcTarget.All);
     }
 
     // create bomb on bombsite
+    // sending to each player
     [PunRPC]
     void CreateBomb()
     {
@@ -263,6 +274,9 @@ public class GameManager : MonoBehaviourPunCallbacks
         var posBomb = _bombSite;
         bomb.transform.position = new Vector3(posBomb.x, posBomb.y, -0.21f);
         bomb.transform.localScale = new Vector3(0.13f, 0.13f, 0.13f);
+        
+        _bombPlanted = true;
+        textBombRound = Instantiate(prefabTextBombRound, GameObject.Find("/Canvas").transform);
     }
     
     // increase round counter
@@ -271,8 +285,43 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         _round++;
         textRound.GetComponent<Text>().text = "Round: " + _round;
+
+        CheckForBombExplode();
     }
 
+    private void CheckForBombExplode()
+    {
+        // if bomb is planted
+        if (_bombPlanted)
+        {
+            _timeToExplode--;
+            textBombRound.GetComponent<Text>().text = "Bomb " + _timeToExplode;
+            
+            // if it is time to explode the bomb
+            if (_timeToExplode < 1)
+            {
+                // game over (bomb exploded) ---> show menu
+                GameObject menuGameOver = Instantiate(gameOverMenu);
+                menuGameOver.name = "CanvasMenu";
+                
+                GameObject textWinnerObj = GameObject.Find("/CanvasMenu/TextWinner");
+                var textWinner = textWinnerObj.GetComponent<Text>();
+            
+                // if we played on CT side
+                if (_teamCt)
+                {
+                    textWinner.text = "You lost!";
+                    textWinner.color = Color.red;
+                }
+                else
+                {
+                    textWinner.text = "Your win!";
+                    textWinner.color = Color.green;
+                }
+            }
+        }
+    }
+    
     // restore all movements points on all figures at start of round
     private void RestoreMovementPoints(int toSetMp)
     {

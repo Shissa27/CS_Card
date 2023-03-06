@@ -442,14 +442,14 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         }
     }
     
-    // перемещение фигуры на клетку
-    public void MoveFigure(Vector3 newPos, Color cell_color){
+    // move figure
+    public void MoveFigure(Vector3 newPos, Color cellColor){
         newPos.z -= 0.3f;
         PaintRadiusView(true);
         PaintCloseCells(true);
         if (_movementPoints > 0) // if we have at least 1 MP
         {
-            if (cell_color == new Color(0f, 255f, 0f)) // if color of cell is 'green'
+            if (cellColor == new Color(0f, 255f, 0f)) // if color of cell is 'green'
             {
                 GetComponent<BoxCollider>().enabled = false;
                 transform.position = newPos;                    // moving figure
@@ -458,26 +458,45 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 
                 SetMovementPoints(_movementPoints - 1);
                 CheckVisibility();
-                if (_bomber) // if it figure has a bomb
-                {
-                    var bombPos = _gameManager.GetComponent<GameManager>().GetBombSite();
-                    
-                    if (Math.Abs(transform.position.x - bombPos.x) < 0.1f &&
-                        Math.Abs(transform.position.y - bombPos.y) < 0.1f) // if bomber staying on bombsite
-                    {
-                        _gameManager.GetComponent<GameManager>().ShowBombButton(true); // show button "Plant Bomb"
-                    }
-                    else
-                    {
-                        _gameManager.GetComponent<GameManager>().ShowBombButton(false);// disable button "Plant Bomb"
-                    }
-                }
+                CheckForEnterBombsite();
             }
         }
 
         DeleteChoose();
     }
 
+    private void CheckForEnterBombsite()
+    {
+        if (_bomber) // if it figure has a bomb
+        {
+            var bombPos = _gameManager.GetComponent<GameManager>().GetBombSite();
+                    
+            if (Math.Abs(transform.position.x - bombPos.x) < 0.1f &&
+                Math.Abs(transform.position.y - bombPos.y) < 0.1f) // if bomber staying on bombsite
+            {
+                _gameManager.GetComponent<GameManager>().ShowBombButton(true); // show button "Plant Bomb"
+            }
+            else
+            {
+                _gameManager.GetComponent<GameManager>().ShowBombButton(false);// disable button "Plant Bomb"
+            }
+        }
+        else if (_teamCt && _gameManager.GetComponent<GameManager>().GetBombPlanted()) // if we CT and bomb planted
+        {
+            var bombPos = _gameManager.GetComponent<GameManager>().GetBombSite();
+                    
+            if (Math.Abs(transform.position.x - bombPos.x) < 0.1f &&
+                Math.Abs(transform.position.y - bombPos.y) < 0.1f) // if CT stay on bombsite
+            {
+                _gameManager.GetComponent<GameManager>().ShowDefuseButton(true); // show button "Defuse Bomb"
+            }
+            else
+            {
+                _gameManager.GetComponent<GameManager>().ShowDefuseButton(false);// disable button "Defuse Bomb"
+            }
+        }
+    }
+    
     private void OnEnable()
     {
         PhotonNetwork.AddCallbackTarget(this);

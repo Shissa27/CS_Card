@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 {
     public GameObject canvasEndTurnButton;
     public GameObject buttonBomb;
+    public GameObject buttonDefuse;
     public GameObject prefabBomb;
     public GameObject textMoney;
     public GameObject textRound;
@@ -26,16 +27,22 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefab_T_MAC10;
     public GameObject prefab_T_NEGEV;
 
+    private const int TimeForPlant = 1;
+    private const int TimeForDefuse = 3;
+    
     public GameObject prefab_T_card_bomb;
     private Vector3 _bombSite;
     private GameObject _plantBombButton;
     private GameObject _bomber;
     private bool _planting;
     private int _timeToPlant;
-    private const int TimeForPlant = 1;
     
     private bool _bombPlanted;
     private int _timeToExplode;
+
+    private GameObject _toDefuseButton;
+    private int _timeToDefuse;
+    private bool _defusing;
     
     public GameObject[] CT_prefabs_cards;
     public GameObject prefab_CT_M4A1S;
@@ -107,6 +114,16 @@ public class GameManager : MonoBehaviourPunCallbacks
         _timeToExplode = 5;
     }
 
+    public bool GetBombPlanted()
+    {
+        return _bombPlanted;
+    }
+
+    public void SetBombPlanted(bool bombPlanted)
+    {
+        _bombPlanted = bombPlanted;
+    }
+    
     public bool IsMyTurn(){ return _myTurn; }
 
     public int GetMoney()
@@ -518,11 +535,31 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
+    public void ShowDefuseButton(bool toShow)
+    {
+        if (toShow) // if we moved on bombsite now
+        {
+            _toDefuseButton = Instantiate(buttonDefuse, canvasEndTurnButton.transform); // create a button "Defuse bomb"
+            _toDefuseButton.GetComponent<Button>().onClick.AddListener(DefuseBomb);
+        }
+        else if (_toDefuseButton) // if we moved out from a bombsite && button "Defuse bomb" exist
+        {
+            Destroy(_toDefuseButton.gameObject);
+            _toDefuseButton = null;
+        }
+    }
+
     // onClick of button "Plant Bomb"
-    public void PlantBomb()
+    private void PlantBomb()
     {
         _planting = true;
         Debug.Log("Planting!");
         ShowBombButton(false);
+    }
+    private void DefuseBomb()
+    {
+        _defusing = true;
+        Debug.Log("Defusing!");
+        ShowDefuseButton(false);
     }
 }

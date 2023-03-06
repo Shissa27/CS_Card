@@ -62,25 +62,28 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void Start()
     {
         InitVariables();
+        
+        // setup our team
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) // if players in room == 2
         {
-            _teamCt = false;
+            _teamCt = false; // ==> we playing on T side
             _myTurn = true;
             Debug.Log("Second player is joined the room!");
         }
-        else // if only 1 player in room
+        else // if players in room == 1
         {
-            _teamCt = true;
+            _teamCt = true; // ==> we playing on CT side
             _myTurn = false;
         }
         canvasEndTurnButton.SetActive(_myTurn); // turning off button "End turn"
+        
         AddMoney(5);
 
         // taking 3 cards
         for (var i = 0; i < 3; i++)
             TakeCard();
 
-        // taking a bomb card to T hand 
+        // taking a bomb card to T hand
         if(!_teamCt)
             TakeCard(prefab_T_card_bomb);
     }
@@ -204,7 +207,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    // method onClick of button "End Turn"
+    // listener onClick of button "End Turn"
     public void OnClickEndButtonTurn()
     {
         _photonView.RPC("ChangeTurn", RpcTarget.All);
@@ -266,20 +269,24 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
     // create bomb on bombsite
-    // sending to each player
+    // #sending to each player
     [PunRPC]
     void CreateBomb()
     {
+        // create bomb on bombsite
         var bomb = Instantiate(prefabBomb);
         var posBomb = _bombSite;
         bomb.transform.position = new Vector3(posBomb.x, posBomb.y, -0.21f);
         bomb.transform.localScale = new Vector3(0.13f, 0.13f, 0.13f);
         
         _bombPlanted = true;
-        textBombRound = Instantiate(prefabTextBombRound, GameObject.Find("/Canvas").transform);
+        
+        // create UI text "Bomb %roundsToExplode%"
+        textBombRound = Instantiate(prefabTextBombRound, GameObject.Find("/Canvas").transform); 
     }
     
     // increase round counter
+    // #sending to each player
     [PunRPC]
     void IncreaseRound()
     {
@@ -289,13 +296,14 @@ public class GameManager : MonoBehaviourPunCallbacks
         CheckForBombExplode();
     }
 
+    // check if bomb has been exploded already
     private void CheckForBombExplode()
     {
         // if bomb is planted
         if (_bombPlanted)
         {
             _timeToExplode--;
-            textBombRound.GetComponent<Text>().text = "Bomb " + _timeToExplode;
+            textBombRound.GetComponent<Text>().text = "Bomb: " + _timeToExplode;
             
             // if it is time to explode the bomb
             if (_timeToExplode < 1)
@@ -348,7 +356,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Debug.LogFormat("Player {0} entered the room", newPlayer.NickName);
-
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
@@ -501,11 +508,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (toShow) // if we moved on bombsite now
         {
-            _plantBombButton = Instantiate(buttonBomb, canvasEndTurnButton.transform);
+            _plantBombButton = Instantiate(buttonBomb, canvasEndTurnButton.transform); // create a button "Plant Bomb"
             _plantBombButton.GetComponent<Button>().onClick.AddListener(PlantBomb);
         }
-        else if (_plantBombButton) // if we moved out from a bombsite &&
-                                   // button "Plant Bomb" exist
+        else if (_plantBombButton) // if we moved out from a bombsite && button "Plant Bomb" exist
         {
             Destroy(_plantBombButton.gameObject);
             _plantBombButton = null;

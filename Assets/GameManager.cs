@@ -14,11 +14,15 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefabBomb;
     public GameObject textMoney;
     public GameObject textRound;
+    
     public GameObject prefabTextBombRound;
     public GameObject textBombRound;
+    
+    public GameObject prefabTextDefuseRound;
+    public GameObject textDefuseRound;
 
     public GameObject gameOverMenu;
-    
+
     public GameObject[] T_prefabs_cards;
     public GameObject prefab_T_AK47;
     public GameObject prefab_T_AWP;
@@ -29,21 +33,22 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     private const int TimeForPlant = 1;
     private const int TimeForDefuse = 3;
-    
+    private const int TimeForExplode = 7;
+
     public GameObject prefab_T_card_bomb;
     private Vector3 _bombSite;
     private GameObject _plantBombButton;
     private GameObject _bomber;
     private bool _planting;
     private int _timeToPlant;
-    
+
     private bool _bombPlanted;
     private int _timeToExplode;
 
     private GameObject _toDefuseButton;
     private int _timeToDefuse;
     private bool _defusing;
-    
+
     public GameObject[] CT_prefabs_cards;
     public GameObject prefab_CT_M4A1S;
     public GameObject prefab_CT_AWP;
@@ -51,9 +56,9 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject prefab_CT_NOVA;
     public GameObject prefab_CT_MP5;
     public GameObject prefab_CT_NEGEV;
-    
+
     private GameObject _chosenObj;
-        
+
     public List<GameObject> cellsGameField;
     public List<GameObject> ourFigures;
 
@@ -63,13 +68,14 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool _myTurn;
     private int _money;
     private int _round;
-    
+
     private int _cardsOnHand;
     private List<GameObject> _handCards;
+
     private void Start()
     {
         InitVariables();
-        
+
         // setup our team
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) // if players in room == 2
         {
@@ -82,8 +88,9 @@ public class GameManager : MonoBehaviourPunCallbacks
             _teamCt = true; // ==> we playing on CT side
             _myTurn = false;
         }
+
         canvasEndTurnButton.SetActive(_myTurn); // turning off button "End turn"
-        
+
         AddMoney(5);
 
         // taking 3 cards
@@ -91,7 +98,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             TakeCard();
 
         // taking a bomb card to T hand
-        if(!_teamCt)
+        if (!_teamCt)
             TakeCard(prefab_T_card_bomb);
     }
 
@@ -102,16 +109,19 @@ public class GameManager : MonoBehaviourPunCallbacks
         _chosenObj = GameObject.Find("/ChoosenObj");
 
         _round = 1;
-        
-        T_prefabs_cards = new GameObject[] { prefab_T_AK47, prefab_T_AWP, prefab_T_GLOCK, prefab_T_SAWEDOFF, prefab_T_MAC10, prefab_T_NEGEV};
-        CT_prefabs_cards = new GameObject[] { prefab_CT_M4A1S, prefab_CT_AWP, prefab_CT_USPS, prefab_CT_NOVA, prefab_CT_MP5, prefab_CT_NEGEV};
+
+        T_prefabs_cards = new GameObject[]
+            { prefab_T_AK47, prefab_T_AWP, prefab_T_GLOCK, prefab_T_SAWEDOFF, prefab_T_MAC10, prefab_T_NEGEV };
+        CT_prefabs_cards = new GameObject[]
+            { prefab_CT_M4A1S, prefab_CT_AWP, prefab_CT_USPS, prefab_CT_NOVA, prefab_CT_MP5, prefab_CT_NEGEV };
 
         _bombSite = new Vector3(1.858f, 1.235f, -0.2f);
         _bomber = null;
         _planting = false;
-        _timeToPlant = TimeForPlant;
         _bombPlanted = false;
-        _timeToExplode = 5;
+        _timeToPlant = TimeForPlant;
+        _timeToDefuse = TimeForDefuse;
+        _timeToExplode = TimeForExplode;
     }
 
     public bool GetBombPlanted()
@@ -123,8 +133,11 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         _bombPlanted = bombPlanted;
     }
-    
-    public bool IsMyTurn(){ return _myTurn; }
+
+    public bool IsMyTurn()
+    {
+        return _myTurn;
+    }
 
     public int GetMoney()
     {
@@ -134,7 +147,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     public void AddMoney(int money)
     {
         _money += money;
-        textMoney.GetComponent<Text>().text = 
+        textMoney.GetComponent<Text>().text =
             _money + "$";
     }
 
@@ -156,7 +169,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         _cardsOnHand++;
         RedrawHand();
     }
-    
+
     // remove %toRemove% card from hand
     public void RemoveCardFromHand(GameObject toRemove)
     {
@@ -164,7 +177,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         _cardsOnHand--;
         RedrawHand();
     }
-    
+
     // redraw all card on hand:
     //  change positions of all card on hand
     private void RedrawHand()
@@ -178,46 +191,46 @@ public class GameManager : MonoBehaviourPunCallbacks
             case 2: // if we have 2 cards on hand
                 _handCards[0].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
                 _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
-                
+
                 _handCards[1].transform.position = new Vector3(2.324f, -3.35f, -3.7f);
                 _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, -5.3f);
                 break;
             case 3:
                 _handCards[0].transform.position = new Vector3(1.2f, -3.3f, -3.5f);
                 _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 9.77f);
-                
+
                 _handCards[1].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
                 _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-                
+
                 _handCards[2].transform.position = new Vector3(2.45f, -3.3f, -3.9f);
                 _handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, -9.4f);
                 break;
             case 4:
                 _handCards[0].transform.position = new Vector3(1f, -3.5f, -3.3f);
                 _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 16.5f);
-                
+
                 _handCards[1].transform.position = new Vector3(1.638f, -3.35f, -3.5f);
                 _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 5.3f);
-                
+
                 _handCards[2].transform.position = new Vector3(2.324f, -3.35f, -3.7f);
                 _handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, -5.3f);
-                
+
                 _handCards[3].transform.position = new Vector3(2.956f, -3.5f, -3.9f);
                 _handCards[3].transform.rotation = Quaternion.Euler(0f, 0f, -16.5f);
                 break;
             case 5:
                 _handCards[0].transform.position = new Vector3(0.65f, -3.5f, -3.3f);
                 _handCards[0].transform.rotation = Quaternion.Euler(0f, 0f, 18f);
-                
+
                 _handCards[1].transform.position = new Vector3(1.2f, -3.3f, -3.5f);
                 _handCards[1].transform.rotation = Quaternion.Euler(0f, 0f, 9.77f);
-                
+
                 _handCards[2].transform.position = new Vector3(1.9f, -3.2f, -3.7f);
                 _handCards[2].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-                
+
                 _handCards[3].transform.position = new Vector3(2.45f, -3.3f, -3.9f);
                 _handCards[3].transform.rotation = Quaternion.Euler(0f, 0f, -9.4f);
-                
+
                 _handCards[4].transform.position = new Vector3(3f, -3.5f, -4.1f);
                 _handCards[4].transform.rotation = Quaternion.Euler(0f, 0f, -23.68f);
                 break;
@@ -237,9 +250,9 @@ public class GameManager : MonoBehaviourPunCallbacks
         // if it's will be my turn now
         if (!_myTurn)
         {
-            AddMoney(2);                        // receive +2$
-            RestoreMovementPoints(2);           // set 1 MP to all our figures on board
-            TakeCard();                         // take 1 card on the hand
+            AddMoney(2); // receive +2$
+            RestoreMovementPoints(2); // set 1 MP to all our figures on board
+            TakeCard(); // take 1 card on the hand
         }
         else // if my turn is over
         {
@@ -247,6 +260,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 photonView.RPC("IncreaseRound", RpcTarget.All);
             }
+
             if (_planting)
             {
                 if (_timeToPlant < 1) // bomb planted now
@@ -264,7 +278,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 }
             }
         }
-        
+
         _myTurn = !_myTurn;
         canvasEndTurnButton.SetActive(_myTurn);
     }
@@ -274,13 +288,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("BOMB HAS BEEN PLANTED!");
         _planting = false;
-                    
-        var position = _bomber.transform.position;
-        GameObject cellBombSite = GetCellByVector2(position.x, position.y);
-        
-        var bomb = _bomber.GetComponent<TapCharacter>()._bomb;     // bomb on figure
-        _bomber.GetComponent<TapCharacter>().SetIsBomber(false);            // bomber is not more bomber
-        Destroy(bomb);                                                      // remove bomb from figure
+
+        var bomb = _bomber.GetComponent<TapCharacter>()._bomb; // bomb on figure
+        _bomber.GetComponent<TapCharacter>().SetIsBomber(false); // bomber is not more bomber
+        Destroy(bomb); // remove bomb from figure
 
         _photonView.RPC("CreateBomb", RpcTarget.All);
     }
@@ -295,13 +306,13 @@ public class GameManager : MonoBehaviourPunCallbacks
         var posBomb = _bombSite;
         bomb.transform.position = new Vector3(posBomb.x, posBomb.y, -0.21f);
         bomb.transform.localScale = new Vector3(0.13f, 0.13f, 0.13f);
-        
+
         _bombPlanted = true;
-        
+
         // create UI text "Bomb %roundsToExplode%"
-        textBombRound = Instantiate(prefabTextBombRound, GameObject.Find("/Canvas").transform); 
+        textBombRound = Instantiate(prefabTextBombRound, GameObject.Find("/Canvas").transform);
     }
-    
+
     // increase round counter
     // #sending to each player
     [PunRPC]
@@ -310,43 +321,83 @@ public class GameManager : MonoBehaviourPunCallbacks
         _round++;
         textRound.GetComponent<Text>().text = "Round: " + _round;
 
-        CheckForBombExplode();
+        if (_bombPlanted)
+        {
+            if (_defusing)
+            {
+                CheckForBombDefuse();
+            }
+
+            CheckForBombExplode();
+        }
     }
 
     // check if bomb has been exploded already
     private void CheckForBombExplode()
     {
-        // if bomb is planted
-        if (_bombPlanted)
+        _timeToExplode--;
+        textBombRound.GetComponent<Text>().text = "Bomb: " + _timeToExplode;
+
+        // if it is time to explode the bomb
+        if (_timeToExplode < 1)
         {
-            _timeToExplode--;
-            textBombRound.GetComponent<Text>().text = "Bomb: " + _timeToExplode;
-            
-            // if it is time to explode the bomb
-            if (_timeToExplode < 1)
+            ShowGameOver(false);
+        }
+    }
+
+    private void CheckForBombDefuse()
+    {
+        _timeToDefuse--;
+        
+        if(_teamCt)
+            textDefuseRound.GetComponent<Text>().text = "Defuse: " + _timeToDefuse;
+
+        // if bomb should be defused now
+        if (_timeToDefuse < 1)
+        {
+            ShowGameOver(true);
+        }
+    }
+
+    private void ShowGameOver(bool ctIsWinner)
+    {
+        // game over (bomb exploded) ---> show menu
+        GameObject menuGameOver = Instantiate(gameOverMenu);
+        menuGameOver.name = "CanvasMenu";
+
+        GameObject textWinnerObj = GameObject.Find("/CanvasMenu/TextWinner");
+        var textWinner = textWinnerObj.GetComponent<Text>();
+
+        // if we played on CT side
+        if (_teamCt)
+        {
+            if (ctIsWinner) // if CT won
             {
-                // game over (bomb exploded) ---> show menu
-                GameObject menuGameOver = Instantiate(gameOverMenu);
-                menuGameOver.name = "CanvasMenu";
-                
-                GameObject textWinnerObj = GameObject.Find("/CanvasMenu/TextWinner");
-                var textWinner = textWinnerObj.GetComponent<Text>();
+                textWinner.text = "Your win!";
+                textWinner.color = Color.green;
+            }
+            else // if T won
+            {
+                textWinner.text = "You lost!";
+                textWinner.color = Color.red;
+            }
             
-                // if we played on CT side
-                if (_teamCt)
-                {
-                    textWinner.text = "You lost!";
-                    textWinner.color = Color.red;
-                }
-                else
-                {
-                    textWinner.text = "Your win!";
-                    textWinner.color = Color.green;
-                }
+        }
+        else
+        {
+            if (!ctIsWinner) // if T won
+            {
+                textWinner.text = "Your win!";
+                textWinner.color = Color.green;
+            }
+            else // if CT won
+            {
+                textWinner.text = "You lost!";
+                textWinner.color = Color.red;
             }
         }
     }
-    
+
     // restore all movements points on all figures at start of round
     private void RestoreMovementPoints(int toSetMp)
     {
@@ -355,21 +406,27 @@ public class GameManager : MonoBehaviourPunCallbacks
             f.GetComponent<TapCharacter>().SetMovementPoints(toSetMp);
         }
     }
-    
-    public bool GetTeam() { return _teamCt; }
 
-    public void LeaveRoom() { PhotonNetwork.LeaveRoom(); }
+    public bool GetTeam()
+    {
+        return _teamCt;
+    }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
 
     public override void OnConnected() // when we connected to the room
     {
-        
     }
+
     public override void OnLeftRoom() // when we disconnect from the room
     {
         SceneManager.LoadScene(0);
     }
 
-    
+
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Debug.LogFormat("Player {0} entered the room", newPlayer.NickName);
@@ -389,12 +446,12 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         return cellsGameField;
     }
-    
+
     public void AddFigureToList(GameObject figure)
     {
         ourFigures.Add(figure);
     }
-    
+
     public void RemoveFigureFromList(GameObject figure)
     {
         ourFigures.Remove(figure);
@@ -414,6 +471,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             UpdateFogOfWar(position.x, position.y, f.GetComponent<TapCharacter>().radiusView);
         }
     }
+
     public void UpdateFogOfWar(float x, float y, float r)
     {
         /*
@@ -421,12 +479,12 @@ public class GameManager : MonoBehaviourPunCallbacks
          *      for each game cell we check distance from input 'x' and 'y' pos of figure
          *      with distance of view less or equals 'r'
          */
-        
+
         foreach (GameObject c in cellsGameField)
         {
             float xPos = c.GetComponent<GameField>().GetPosX();
             float yPos = c.GetComponent<GameField>().GetPosY();
-            
+
             if (Math.Abs(xPos - x) + Math.Abs(yPos - y) <= r) // main condition of figure's vision 
             {
                 c.GetComponent<GameField>().SetVisible(true);
@@ -461,9 +519,11 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void TakeCard()
     {
         // if we have chosen object now
-        if(_chosenObj.transform.childCount != 0){
+        if (_chosenObj.transform.childCount != 0)
+        {
             Transform children = _chosenObj.transform.GetChild(0);
-            if(children.GetComponent<TapCard>()){
+            if (children.GetComponent<TapCard>())
+            {
                 children.GetComponent<TapCard>().ClearChoosenCard();
             }
             return;
@@ -472,28 +532,31 @@ public class GameManager : MonoBehaviourPunCallbacks
         int cardsOnHand = GetCardsOnHand();
         bool teamCt = GetTeam();
         int cardID = UnityEngine.Random.Range(0, 6); // fix this to (0, 6)
-        
+
         GameObject cardToCreate = teamCt ? CT_prefabs_cards[cardID] : T_prefabs_cards[cardID];
-        
+
         // overflow of cards on the hand (=5 cards)
         if (cardsOnHand >= 5)
         {
             return;
         }
-        
+
         GameObject newCard = Instantiate(cardToCreate);
         AddCardOnHand(newCard);
     }
-    
+
     // give %cardToTake% card to hand
     private void TakeCard(GameObject cardToTake)
     {
         // if we have chosen object now
-        if(_chosenObj.transform.childCount != 0){
+        if (_chosenObj.transform.childCount != 0)
+        {
             Transform children = _chosenObj.transform.GetChild(0);
-            if(children.GetComponent<TapCard>()){
+            if (children.GetComponent<TapCard>())
+            {
                 children.GetComponent<TapCard>().ClearChoosenCard();
             }
+
             return;
         }
 
@@ -504,7 +567,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             return;
         }
-        
+
         GameObject newCard = Instantiate(cardToTake);
         AddCardOnHand(newCard);
     }
@@ -513,13 +576,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         _bomber = bomber;
     }
-    
+
     // @return Vector3 of bombsite
     public Vector3 GetBombSite()
     {
         return _bombSite;
     }
-    
+
     // switch visibility of "Plant Bomb" button
     public void ShowBombButton(bool toShow)
     {
@@ -556,10 +619,19 @@ public class GameManager : MonoBehaviourPunCallbacks
         Debug.Log("Planting!");
         ShowBombButton(false);
     }
+
+    // onClick of button "Defuse Bomb"
     private void DefuseBomb()
     {
-        _defusing = true;
+        _photonView.RPC("SetDefusingToAll", RpcTarget.All, true);
         Debug.Log("Defusing!");
         ShowDefuseButton(false);
+        textDefuseRound = Instantiate(prefabTextDefuseRound, GameObject.Find("/Canvas").transform);
+    }
+
+    [PunRPC]
+    private void SetDefusingToAll(bool defusing)
+    {
+        _defusing = defusing;
     }
 }

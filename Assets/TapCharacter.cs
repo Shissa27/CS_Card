@@ -71,7 +71,6 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         _greenClr = new Color(0f, 255f, 0f);
         radiusView *= 0.62f;
         _movementPoints = 0;
-        
 
         CheckSquareWithMp();
         CheckVisibility();
@@ -345,9 +344,15 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     [PunRPC]
     void SendDeleteObj()
     {
+        if (!_teamCt && _bomber)
+        {
+            _photonView.RPC("DropBomb", RpcTarget.All);
+        }
+        
         _gameManager.GetComponent<GameManager>().RemoveFigureFromList(gameObject);
-        List<GameObject> l1 = _gameManager.GetComponent<GameManager>().GetOurFigures();
-        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, 5f);
+        
+        var position = transform.position;
+        gameObject.transform.position = new Vector3(position.x, position.y, 5f);
         
         _photonView.RPC("RunRemoveVisibilityOfAllEnemies", RpcTarget.Others);
         
@@ -358,6 +363,23 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         PhotonNetwork.Destroy(gameObject);
     }
 
+    // Dropping the bomb on the game field
+    [PunRPC]
+    void DropBomb()
+    {
+        var droppedBomb = Instantiate(_gameManager.GetComponent<GameManager>().GetBombPrefab());
+        droppedBomb.transform.position = gameObject.transform.position;
+        droppedBomb.transform.rotation = Quaternion.Euler(0f, 0f, -45f);
+        droppedBomb.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        _gameManager.GetComponent<GameManager>().SetDroppedBomb(droppedBomb);
+        
+        if (!_teamCt)
+        {
+            _gameManager.GetComponent<GameManager>().SetIsBombDropped(true);
+            _gameManager.GetComponent<GameManager>().SetPosDroppedBomb(droppedBomb.transform.position);
+        }
+    }
+    
     // Giving bomb from card to figure
     private void TakeBomb(BombCard bombCard)
     {
@@ -458,6 +480,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 
                 SetMovementPoints(_movementPoints - 1);
                 CheckVisibility();
+                CheckPickUpBomb();
                 CheckForEnterBombsite();
             }
         }
@@ -495,6 +518,28 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 _gameManager.GetComponent<GameManager>().ShowDefuseButton(false);// disable button "Defuse Bomb"
             }
         }
+    }
+
+    private void CheckPickUpBomb()
+    {
+        if (_gameManager.GetComponent<GameManager>().GetIsBombDropped())
+        {
+            Vector3 posDroppedBomb = _gameManager.GetComponent<GameManager>().GetPosDroppedBomb();
+            if (Math.Abs(transform.position.x - posDroppedBomb.x) < 0.1f &&
+                Math.Abs(transform.position.y - posDroppedBomb.y) < 0.1f)
+            {
+                _bomber = true;
+                _gameManager.GetComponent<GameManager>().PickUpBomb(gameObject);
+                _gameManager.GetComponent<GameManager>().SetIsBombDropped(false);
+                _photonView.RPC("DestroyBombOnField", RpcTarget.All);
+            }
+        }
+    }
+
+    [PunRPC]
+    void DestroyBombOnField()
+    {
+        _gameManager.GetComponent<GameManager>().DestroyDroppedBomb();
     }
     
     private void OnEnable()

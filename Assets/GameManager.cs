@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject buttonBomb;
     public GameObject buttonDefuse;
     public GameObject prefabBomb;
+    public GameObject prefabBombOnFigure;
+    
     public GameObject textMoney;
     public GameObject textRound;
     
@@ -41,6 +43,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     private GameObject _bomber;
     private bool _planting;
     private int _timeToPlant;
+    
+    private GameObject _droppedBomb;
+    private bool _bombDropped;
+    private Vector3 _posDroppedBomb;
 
     private bool _bombPlanted;
     private int _timeToExplode;
@@ -76,18 +82,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         InitVariables();
 
-        // setup our team
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 2) // if players in room == 2
-        {
-            _teamCt = false; // ==> we playing on T side
-            _myTurn = true;
-            Debug.Log("Second player is joined the room!");
-        }
-        else // if players in room == 1
-        {
-            _teamCt = true; // ==> we playing on CT side
-            _myTurn = false;
-        }
+        SetUpTeam();
 
         canvasEndTurnButton.SetActive(_myTurn); // turning off button "End turn"
 
@@ -100,6 +95,22 @@ public class GameManager : MonoBehaviourPunCallbacks
         // taking a bomb card to T hand
         if (!_teamCt)
             TakeCard(prefab_T_card_bomb);
+    }
+
+    private void SetUpTeam()
+    {
+        // setup our team
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2) // if players in room == 2
+        {
+            _teamCt = false; // ==> we playing on T side
+            _myTurn = true;
+            Debug.Log("Second player is joined the room!");
+        }
+        else // if players in room == 1
+        {
+            _teamCt = true; // ==> we playing on CT side
+            _myTurn = false;
+        }
     }
 
     private void InitVariables()
@@ -313,6 +324,11 @@ public class GameManager : MonoBehaviourPunCallbacks
         textBombRound = Instantiate(prefabTextBombRound, GameObject.Find("/Canvas").transform);
     }
 
+    public GameObject GetBombPrefab()
+    {
+        return prefabBomb;
+    }
+    
     // increase round counter
     // #sending to each player
     [PunRPC]
@@ -345,6 +361,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
+    // check if bomb has been defused already
     private void CheckForBombDefuse()
     {
         _timeToDefuse--;
@@ -633,5 +650,45 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void SetDefusingToAll(bool defusing)
     {
         _defusing = defusing;
+    }
+
+    public void PickUpBomb(GameObject figureT)
+    {
+        Instantiate(prefabBombOnFigure, figureT.transform).name = "Bomb";
+    }
+
+    public void SetDroppedBomb(GameObject droppedBomb)
+    {
+        _droppedBomb = droppedBomb;
+    }
+
+    public GameObject GetDroppedBomb()
+    {
+        return _droppedBomb;
+    }
+
+    public void DestroyDroppedBomb()
+    {
+        Destroy(_droppedBomb);
+    }
+
+    public void SetIsBombDropped(bool dropped)
+    {
+        _bombDropped = dropped;
+    }
+
+    public bool GetIsBombDropped()
+    {
+        return _bombDropped;
+    }
+
+    public void SetPosDroppedBomb(Vector3 posDroppedBomb)
+    {
+        _posDroppedBomb = posDroppedBomb;
+    }
+
+    public Vector3 GetPosDroppedBomb()
+    {
+        return _posDroppedBomb;
     }
 }

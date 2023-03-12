@@ -261,9 +261,15 @@ public class GameManager : MonoBehaviourPunCallbacks
         // if it's will be my turn now
         if (!_myTurn)
         {
-            AddMoney(2); // receive +2$
-            RestoreMovementPoints(2); // set 1 MP to all our figures on board
-            TakeCard(); // take 1 card on the hand
+            /*
+             *  1) receive +2$
+             *  2) set 2 MP to all our figures on board
+             *  3) take 1 card on the hand
+             */
+            
+            AddMoney(2);
+            RestoreMovementPoints(2);
+            TakeCard();
         }
         else // if my turn is over
         {

@@ -488,6 +488,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         DeleteChoose();
     }
 
+    // check if we entered the bombsite on T side
     private void CheckForEnterBombsite()
     {
         if (_bomber) // if it figure has a bomb
@@ -520,6 +521,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         }
     }
 
+    // check if we pickup the bomb on T side
     private void CheckPickUpBomb()
     {
         if (_gameManager.GetComponent<GameManager>().GetIsBombDropped())

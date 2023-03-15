@@ -377,6 +377,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         {
             _gameManager.GetComponent<GameManager>().SetIsBombDropped(true);
             _gameManager.GetComponent<GameManager>().SetPosDroppedBomb(droppedBomb.transform.position);
+            _gameManager.GetComponent<GameManager>().ShowBombButton(false);// disable button "Plant Bomb"
+            _gameManager.GetComponent<GameManager>().ResetPlantingBomb();
         }
     }
     
@@ -532,7 +534,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             {
                 _bomber = true;
                 _gameManager.GetComponent<GameManager>().PickUpBomb(gameObject);
-                _gameManager.GetComponent<GameManager>().SetIsBombDropped(false);
+                _bomb = GameObject.Find("Bomb");
                 _photonView.RPC("DestroyBombOnField", RpcTarget.All);
             }
         }

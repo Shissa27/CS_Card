@@ -660,7 +660,10 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public void PickUpBomb(GameObject figureT)
     {
+        SetBomber(figureT);
+        ShowBombButton(false);
         Instantiate(prefabBombOnFigure, figureT.transform).name = "Bomb";
+        SetIsBombDropped(false);
     }
 
     public void SetDroppedBomb(GameObject droppedBomb)
@@ -696,5 +699,15 @@ public class GameManager : MonoBehaviourPunCallbacks
     public Vector3 GetPosDroppedBomb()
     {
         return _posDroppedBomb;
+    }
+
+    public void ResetPlantingBomb()
+    {
+        _bomber = null;
+        _planting = false;
+        _bombPlanted = false;
+        _timeToPlant = TimeForPlant;
+        _timeToDefuse = TimeForDefuse;
+        _timeToExplode = TimeForExplode;
     }
 }

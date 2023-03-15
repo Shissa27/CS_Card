@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,11 +32,21 @@ public class CreateGameField : MonoBehaviour
             for (float x = 0; x < 4f; x = x + 0.62f)
             {
                 GameObject newCell = Instantiate(cellPrefab, new Vector3(x, y, 0), Quaternion.identity);
+                bool ctTeam = gameManager.GetComponent<GameManager>().GetTeam();
                 newCell.transform.parent = _field.transform;
                 newCell.GetComponent<GameField>().SetPosX(x);
                 newCell.GetComponent<GameField>().SetPosY(y);
 
                 gameManager.GetComponent<GameManager>().AddCellToGameFieldArray(newCell);
+
+                if (ctTeam && Math.Abs(x - 0f) < 0.1f)
+                {
+                    gameManager.GetComponent<GameManager>().AddSpawnCell(newCell);
+                }
+                else if (!ctTeam && Math.Abs(x - 3.72f) < 0.1f)
+                {
+                    gameManager.GetComponent<GameManager>().AddSpawnCell(newCell);
+                }
             }
         }
 

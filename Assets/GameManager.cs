@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private GameObject _chosenObj;
 
     public List<GameObject> cellsGameField;
+    private List<GameObject> _cellsSpawn;
     public List<GameObject> ourFigures;
 
     public PhotonView _photonView;
@@ -74,6 +75,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool _myTurn;
     private int _money;
     private int _round;
+    private bool _gameIsOver;
 
     private int _cardsOnHand;
     private List<GameObject> _handCards;
@@ -117,6 +119,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         _photonView = GetComponent<PhotonView>();
         _handCards = new List<GameObject>();
+        _cellsSpawn = new List<GameObject>();
         _chosenObj = GameObject.Find("/ChoosenObj");
 
         _round = 1;
@@ -133,6 +136,11 @@ public class GameManager : MonoBehaviourPunCallbacks
         _timeToPlant = TimeForPlant;
         _timeToDefuse = TimeForDefuse;
         _timeToExplode = TimeForExplode;
+    }
+
+    public void AddSpawnCell(GameObject spawnCell)
+    {
+        _cellsSpawn.Add(spawnCell);
     }
 
     public bool GetBombPlanted()
@@ -349,7 +357,9 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 CheckForBombDefuse();
             }
-
+            if (_gameIsOver)
+                return;
+            
             CheckForBombExplode();
         }
     }
@@ -364,6 +374,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (_timeToExplode < 1)
         {
             ShowGameOver(false);
+            _gameIsOver = true;
         }
     }
 
@@ -379,6 +390,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (_timeToDefuse < 1)
         {
             ShowGameOver(true);
+            _gameIsOver = true;
         }
     }
 
@@ -709,5 +721,19 @@ public class GameManager : MonoBehaviourPunCallbacks
         _timeToPlant = TimeForPlant;
         _timeToDefuse = TimeForDefuse;
         _timeToExplode = TimeForExplode;
+    }
+
+    public bool IsSpawnCell(float x, float y)
+    {
+        foreach (var c in _cellsSpawn)
+        {
+            var pos = c.transform.position;
+            if (Math.Abs(x - pos.x) < 0.1f && Math.Abs(y - pos.y) < 0.1f)
+            {
+                return true;
+            } 
+        }
+
+        return false;
     }
 }

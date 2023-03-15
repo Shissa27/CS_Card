@@ -36,7 +36,8 @@ public class GameField : MonoBehaviour
         }
         // текущий выбранный объект - карта
         if(crnObj.name == "Card"){
-            if (crnObj.GetComponent<BombCard>())
+            
+            if (crnObj.GetComponent<BombCard>()) // if current card == "Bomb card"
             {
                 crnObj.GetComponent<TapCard>().ClearChoosenCard();
                 return;

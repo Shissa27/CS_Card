@@ -441,7 +441,8 @@ public class TapCharacter : MonoBehaviour, IPunObservable
             ClearChoosenCard();
             if (bombCard) // if we chose bomb card and clicked on figure
             {
-                if (!_teamCt) // if we playing on T side
+                var pos = transform.position;
+                if (!_teamCt && _gameManager.GetComponent<GameManager>().IsSpawnCell(pos.x, pos.y)) // if we playing on T side && this cell is spawn cell
                 {
                     TakeBomb(bombCard);
                     return;

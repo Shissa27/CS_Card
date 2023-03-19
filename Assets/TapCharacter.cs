@@ -265,7 +265,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 if (isPainted)
                     c.transform.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f); // paint cell in white
                 else
-                    c.transform.GetComponent<SpriteRenderer>().color = Color.cyan;                  // paint cell in cyan
+                    c.transform.GetComponent<SpriteRenderer>().color = Color.cyan;                        // paint cell in cyan
             }
         }
     }
@@ -311,9 +311,9 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     void RunRemoveVisibilityOfAllEnemies()
     {
         List<GameObject> l1 = _gameManager.GetComponent<GameManager>().GetOurFigures();
-        foreach (var figure in l1)
+        foreach (var f in l1)
         {
-            _photonView.RPC("GetGameObjectFigureByCoords", RpcTarget.Others ,figure.transform.position.x, figure.transform.position.y);
+            _photonView.RPC("SetVisibleEnemy", RpcTarget.Others, f.transform.position.x, f.transform.position.y);
         }
     }
 
@@ -354,7 +354,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         var position = transform.position;
         gameObject.transform.position = new Vector3(position.x, position.y, 5f);
         
-        _photonView.RPC("RunRemoveVisibilityOfAllEnemies", RpcTarget.Others);
+        //_photonView.RPC("RunRemoveVisibilityOfAllEnemies", RpcTarget.Others);
         
         _gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
         UpdateVisibleForAllFigures();

@@ -68,22 +68,41 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         MyLog("Joined the room!");
         PhotonNetwork.LoadLevel("Game");
     }
-
+    
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        while (content.childCount > 0) {
-            DestroyImmediate(content.GetChild(0).gameObject);
-        }
+        // while (content.childCount > 0) {
+        //     DestroyImmediate(content.GetChild(0).gameObject);
+        // }
+
+        bool toCreate = true;
         
         MyLog("ListUpdated!");
         foreach (var roomInfo in roomList)
         {
-            if(roomInfo.MaxPlayers == 0)
-                continue;
-            
-            ListItem item = Instantiate(roomPrefab, content);
-            if(item)
-                item.SetInfo(roomInfo);
+            for (int i = 0; i < content.childCount; i++)
+            {
+                var currentChild = content.GetChild(i).gameObject;
+                if (currentChild.GetComponent<ListItem>().GetTextName() == roomInfo.Name)
+                {
+                    toCreate = false;
+                    
+                    if (roomInfo.MaxPlayers == 0)
+                    {
+                        DestroyImmediate(currentChild);
+                        break;
+                    }
+                    
+                    currentChild.GetComponent<ListItem>().SetInfo(roomInfo);
+                }
+            }
+
+            if (toCreate && roomInfo.MaxPlayers != 0)
+            {
+                ListItem item = Instantiate(roomPrefab, content);
+                if (item)
+                    item.SetInfo(roomInfo);
+            }
         }
     }
 }

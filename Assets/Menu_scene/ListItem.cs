@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
@@ -19,5 +20,10 @@ public class ListItem : MonoBehaviour
     public void JoinRoom()
     {
         PhotonNetwork.JoinRoom(textName.text);
+    }
+
+    public string GetTextName()
+    {
+        return textName.text;
     }
 }

@@ -1,0 +1,1389 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PhotonTeamsManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PhotonTeamsManager
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager">
+  
+  
+  <h1 id="Photon_Pun_UtilityScripts_PhotonTeamsManager" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager" class="text-break">Class PhotonTeamsManager
+  </h1>
+  <div class="markdown level0 summary"><p>Implements teams in a room/game with help of player properties. Access them by Player.GetTeam extension.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">PhotonTeamsManager</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Pun.UtilityScripts.html">Photon.Pun.UtilityScripts</a></h6>
+  <h6><strong>Assembly</strong>: PhotonUnityNetworking.Utilities.dll</h6>
+  <h5 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisallowMultipleComponent]
+public class PhotonTeamsManager : MonoBehaviour, IMatchmakingCallbacks, IInRoomCallbacks</code></pre>
+  </div>
+  <h5 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Teams are defined by enum Team. Change this to get more / different teams.
+There are no rules when / if you can join a team. You could add this in JoinTeam or something.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TeamPlayerProp.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TeamPlayerProp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TeamPlayerProp" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TeamPlayerProp">TeamPlayerProp</h4>
+  <div class="markdown level1 summary"><p>Defines the player custom property name to use for team affinity of &quot;this&quot; player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TeamPlayerProp = &quot;_pt&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Instance.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L73">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Instance_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Instance*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Instance" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotonTeamsManager Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeamsManager.html">PhotonTeamsManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_GetAvailableTeams.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.GetAvailableTeams%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L302">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetAvailableTeams_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetAvailableTeams*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetAvailableTeams" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetAvailableTeams">GetAvailableTeams()</h4>
+  <div class="markdown level1 summary"><p>Gets all teams available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhotonTeam[] GetAvailableTeams()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a>[]</td>
+        <td><p>Returns all teams available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_Photon_Pun_UtilityScripts_PhotonTeam_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount(Photon.Pun.UtilityScripts.PhotonTeam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L446">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_Photon_Pun_UtilityScripts_PhotonTeam_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount(Photon.Pun.UtilityScripts.PhotonTeam)">GetTeamMembersCount(PhotonTeam)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of players in a team.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTeamMembersCount(PhotonTeam team)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a></td>
+        <td><span class="parametername">team</span></td>
+        <td><p>The team you want to know the size of</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of players joined to the team.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_System_Byte_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L416">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_System_Byte_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount(System.Byte)">GetTeamMembersCount(Byte)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of players in a team by team code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTeamMembersCount(byte code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>Unique code of the team</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of players joined to the team.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L431">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_GetTeamMembersCount_System_String_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.GetTeamMembersCount(System.String)">GetTeamMembersCount(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of players in a team by team name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTeamMembersCount(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Unique name of the team</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of players joined to the team.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamByCode_System_Byte_Photon_Pun_UtilityScripts_PhotonTeam__.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamByCode(System.Byte%2CPhoton.Pun.UtilityScripts.PhotonTeam%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L282">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamByCode_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamByCode*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamByCode_System_Byte_Photon_Pun_UtilityScripts_PhotonTeam__" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamByCode(System.Byte,Photon.Pun.UtilityScripts.PhotonTeam@)">TryGetTeamByCode(Byte, out PhotonTeam)</h4>
+  <div class="markdown level1 summary"><p>Find a PhotonTeam using a team code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTeamByCode(byte code, out PhotonTeam team)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The team code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a></td>
+        <td><span class="parametername">team</span></td>
+        <td><p>The team to be assigned if found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If successful or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamByName_System_String_Photon_Pun_UtilityScripts_PhotonTeam__.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamByName(System.String%2CPhoton.Pun.UtilityScripts.PhotonTeam%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L293">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamByName_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamByName*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamByName_System_String_Photon_Pun_UtilityScripts_PhotonTeam__" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamByName(System.String,Photon.Pun.UtilityScripts.PhotonTeam@)">TryGetTeamByName(String, out PhotonTeam)</h4>
+  <div class="markdown level1 summary"><p>Find a PhotonTeam using a team name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTeamByName(string teamName, out PhotonTeam team)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">teamName</span></td>
+        <td><p>The team name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a></td>
+        <td><span class="parametername">team</span></td>
+        <td><p>The team to be assigned if found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If successful or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMatesOfPlayer_Photon_Realtime_Player_Photon_Realtime_Player____.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMatesOfPlayer(Photon.Realtime.Player%2CPhoton.Realtime.Player%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L374">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMatesOfPlayer_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMatesOfPlayer*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMatesOfPlayer_Photon_Realtime_Player_Photon_Realtime_Player____" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMatesOfPlayer(Photon.Realtime.Player,Photon.Realtime.Player[]@)">TryGetTeamMatesOfPlayer(Player, out Player[])</h4>
+  <div class="markdown level1 summary"><p>Gets all team mates of a player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTeamMatesOfPlayer(Player player, out Player[] teamMates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player whose team mates will be searched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a>[]</td>
+        <td><span class="parametername">teamMates</span></td>
+        <td><p>The array of players to be filled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If successful or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_Photon_Pun_UtilityScripts_PhotonTeam_Photon_Realtime_Player____.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers(Photon.Pun.UtilityScripts.PhotonTeam%2CPhoton.Realtime.Player%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L358">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_Photon_Pun_UtilityScripts_PhotonTeam_Photon_Realtime_Player____" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers(Photon.Pun.UtilityScripts.PhotonTeam,Photon.Realtime.Player[]@)">TryGetTeamMembers(PhotonTeam, out Player[])</h4>
+  <div class="markdown level1 summary"><p>Gets all players joined to a team.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTeamMembers(PhotonTeam team, out Player[] members)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a></td>
+        <td><span class="parametername">team</span></td>
+        <td><p>The team which will be used to find players.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a>[]</td>
+        <td><span class="parametername">members</span></td>
+        <td><p>The array of players to be filled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If successful or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_System_Byte_Photon_Realtime_Player____.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers(System.Byte%2CPhoton.Realtime.Player%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L317">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_System_Byte_Photon_Realtime_Player____" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers(System.Byte,Photon.Realtime.Player[]@)">TryGetTeamMembers(Byte, out Player[])</h4>
+  <div class="markdown level1 summary"><p>Gets all players joined to a team using a team code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTeamMembers(byte code, out Player[] members)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the team.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a>[]</td>
+        <td><span class="parametername">members</span></td>
+        <td><p>The array of players to be filled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If successful or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_System_String_Photon_Realtime_Player____.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers(System.String%2CPhoton.Realtime.Player%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L341">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_TryGetTeamMembers_System_String_Photon_Realtime_Player____" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.TryGetTeamMembers(System.String,Photon.Realtime.Player[]@)">TryGetTeamMembers(String, out Player[])</h4>
+  <div class="markdown level1 summary"><p>Gets all players joined to a team using a team name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTeamMembers(string teamName, out Player[] members)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">teamName</span></td>
+        <td><p>The name of the team.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a>[]</td>
+        <td><span class="parametername">members</span></td>
+        <td><p>The array of players to be filled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If successful or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_PlayerJoinedTeam.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.PlayerJoinedTeam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_PlayerJoinedTeam" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.PlayerJoinedTeam">PlayerJoinedTeam</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action&lt;Player, PhotonTeam&gt; PlayerJoinedTeam</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Photon.Realtime.Player.html">Player</a>, <a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_PlayerLeftTeam.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.PlayerLeftTeam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L70">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_PlayerLeftTeam" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.PlayerLeftTeam">PlayerLeftTeam</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action&lt;Player, PhotonTeam&gt; PlayerLeftTeam</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Photon.Realtime.Player.html">Player</a>, <a class="xref" href="Photon.Pun.UtilityScripts.PhotonTeam.html">PhotonTeam</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IInRoomCallbacks%23OnMasterClientSwitched(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L484">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IInRoomCallbacks#OnMasterClientSwitched*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IInRoomCallbacks#OnMasterClientSwitched(Photon.Realtime.Player)">IInRoomCallbacks.OnMasterClientSwitched(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IInRoomCallbacks.OnMasterClientSwitched(Player newMasterClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newMasterClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IInRoomCallbacks%23OnPlayerEnteredRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L218">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IInRoomCallbacks#OnPlayerEnteredRoom*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IInRoomCallbacks#OnPlayerEnteredRoom(Photon.Realtime.Player)">IInRoomCallbacks.OnPlayerEnteredRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IInRoomCallbacks.OnPlayerEnteredRoom(Player newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IInRoomCallbacks%23OnPlayerLeftRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L203">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IInRoomCallbacks#OnPlayerLeftRoom*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IInRoomCallbacks#OnPlayerLeftRoom(Photon.Realtime.Player)">IInRoomCallbacks.OnPlayerLeftRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IInRoomCallbacks.OnPlayerLeftRoom(Player otherPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">otherPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnCreatedRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnCreatedRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L464">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnCreatedRoom_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnCreatedRoom*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnCreatedRoom" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnCreatedRoom">IMatchmakingCallbacks.OnCreatedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnCreatedRoom()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnCreateRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnCreateRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L468">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnCreateRoomFailed_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnCreateRoomFailed*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnCreateRoomFailed_System_Int16_System_String_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnCreateRoomFailed(System.Int16,System.String)">IMatchmakingCallbacks.OnCreateRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnCreateRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnFriendListUpdate(System.Collections.Generic.List%7BPhoton.Realtime.FriendInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L460">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnFriendListUpdate_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnFriendListUpdate*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnFriendListUpdate(System.Collections.Generic.List{Photon.Realtime.FriendInfo})">IMatchmakingCallbacks.OnFriendListUpdate(List&lt;FriendInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnFriendListUpdate(List&lt;FriendInfo&gt; friendList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.FriendInfo.html">FriendInfo</a>&gt;</td>
+        <td><span class="parametername">friendList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinedRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnJoinedRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L136">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinedRoom_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnJoinedRoom*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinedRoom" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnJoinedRoom">IMatchmakingCallbacks.OnJoinedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnJoinedRoom()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinRandomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnJoinRandomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L476">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinRandomFailed_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnJoinRandomFailed*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinRandomFailed_System_Int16_System_String_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnJoinRandomFailed(System.Int16,System.String)">IMatchmakingCallbacks.OnJoinRandomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnJoinRandomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnJoinRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L472">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinRoomFailed_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnJoinRoomFailed*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnJoinRoomFailed_System_Int16_System_String_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnJoinRoomFailed(System.Int16,System.String)">IMatchmakingCallbacks.OnJoinRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnJoinRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnLeftRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon%23Realtime%23IMatchmakingCallbacks%23OnLeftRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L141">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnLeftRoom_" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnLeftRoom*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PhotonTeamsManager_Photon_Realtime_IMatchmakingCallbacks_OnLeftRoom" data-uid="Photon.Pun.UtilityScripts.PhotonTeamsManager.Photon#Realtime#IMatchmakingCallbacks#OnLeftRoom">IMatchmakingCallbacks.OnLeftRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMatchmakingCallbacks.OnLeftRoom()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PhotonTeamsManager.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PhotonTeamsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/PhotonTeamsManager.cs/#L43" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

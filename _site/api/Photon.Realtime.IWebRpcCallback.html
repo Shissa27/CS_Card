@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IWebRpcCallback
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IWebRpcCallback
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Realtime.IWebRpcCallback">
+  
+  
+  <h1 id="Photon_Realtime_IWebRpcCallback" data-uid="Photon.Realtime.IWebRpcCallback" class="text-break">Interface IWebRpcCallback
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for &quot;WebRpc&quot; callbacks for the Realtime Api. Currently includes only responses for Web RPCs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Realtime.html">Photon.Realtime</a></h6>
+  <h6><strong>Assembly</strong>: PhotonRealtime.dll</h6>
+  <h5 id="Photon_Realtime_IWebRpcCallback_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IWebRpcCallback</code></pre>
+  </div>
+  <h5 id="Photon_Realtime_IWebRpcCallback_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Classes that implement this interface must be registered to get callbacks for various situations.</p>
+<p>To register for callbacks, call <a class="xref" href="Photon.Realtime.LoadBalancingClient.html#Photon_Realtime_LoadBalancingClient_AddCallbackTarget_System_Object_">AddCallbackTarget(Object)</a> and pass the class implementing this interface
+To stop getting callbacks, call <a class="xref" href="Photon.Realtime.LoadBalancingClient.html#Photon_Realtime_LoadBalancingClient_RemoveCallbackTarget_System_Object_">RemoveCallbackTarget(Object)</a> and pass the class implementing this interface</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IWebRpcCallback_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse_.md&amp;value=---%0Auid%3A%20Photon.Realtime.IWebRpcCallback.OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L4020">View Source</a>
+  </span>
+  <a id="Photon_Realtime_IWebRpcCallback_OnWebRpcResponse_" data-uid="Photon.Realtime.IWebRpcCallback.OnWebRpcResponse*"></a>
+  <h4 id="Photon_Realtime_IWebRpcCallback_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse_" data-uid="Photon.Realtime.IWebRpcCallback.OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)">OnWebRpcResponse(OperationResponse)</h4>
+  <div class="markdown level1 summary"><p>Called when the response to a WebRPC is available. See <a class="xref" href="Photon.Realtime.LoadBalancingClient.html#Photon_Realtime_LoadBalancingClient_OpWebRpc_System_String_System_Object_System_Boolean_">OpWebRpc(String, Object, Boolean)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnWebRpcResponse(OperationResponse response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ExitGames.Client.Photon.OperationResponse</span></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_IWebRpcCallback_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Important: The response.ReturnCode is 0 if Photon was able to reach your web-service.<br>
+The content of the response is what your web-service sent. You can create a WebRpcResponse from it.<br>
+Example: WebRpcResponse webResponse = new WebRpcResponse(operationResponse);<br></p>
+<p>Please note: Class OperationResponse is in a namespace which needs to be &quot;used&quot;:<br>
+using ExitGames.Client.Photon;  // includes OperationResponse (and other classes)</p>
+</div>
+  <h5 id="Photon_Realtime_IWebRpcCallback_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse__examples">Examples</h5>
+  <p>public void OnWebRpcResponse(OperationResponse response)
+{
+Debug.LogFormat(&quot;WebRPC operation response {0}&quot;, response.ToStringFull());
+switch (response.ReturnCode)
+{
+  case ErrorCode.Ok:
+      WebRpcResponse webRpcResponse = new WebRpcResponse(response);
+      Debug.LogFormat(&quot;Parsed WebRPC response {0}&quot;, response.ToStringFull());
+      if (string.IsNullOrEmpty(webRpcResponse.Name))
+      {
+          Debug.LogError(&quot;Unexpected: WebRPC response did not contain WebRPC method name&quot;);
+      }
+      if (webRpcResponse.ResultCode == 0) // success
+      {
+          switch (webRpcResponse.Name)
+          {
+              // todo: add your code here
+           case GetGameListWebRpcMethodName: // example
+              // ...
+              break;
+       }
+      }
+      else if (webRpcResponse.ResultCode == -1)
+      {
+          Debug.LogErrorFormat(&quot;Web server did not return ResultCode for WebRPC method=&amp;quot;{0}&amp;quot;, Message={1}&quot;, webRpcResponse.Name, webRpcResponse.Message);
+      }
+      else
+      {
+          Debug.LogErrorFormat(&quot;Web server returned ResultCode={0} for WebRPC method=&amp;quot;{1}&amp;quot;, Message={2}&quot;, webRpcResponse.ResultCode, webRpcResponse.Name, webRpcResponse.Message);
+      }
+      break;
+  case ErrorCode.ExternalHttpCallFailed: // web service unreachable
+      Debug.LogErrorFormat(&quot;WebRPC call failed as request could not be sent to the server. {0}&quot;, response.DebugMessage);
+      break;
+  case ErrorCode.HttpLimitReached: // too many WebRPCs in a short period of time
+                                   // the debug message should contain the limit exceeded
+     Debug.LogErrorFormat(&quot;WebRPCs rate limit exceeded: {0}&quot;, response.DebugMessage);
+      break;
+ case ErrorCode.InvalidOperation: // WebRPC not configured at all OR not configured properly OR trying to send on name server
+    if (PhotonNetwork.Server == ServerConnection.NameServer)
+   {
+       Debug.LogErrorFormat(&quot;WebRPC not supported on NameServer. {0}&quot;, response.DebugMessage);
+   }
+   else
+   {
+       Debug.LogErrorFormat(&quot;WebRPC not properly configured or not configured at all. {0}&quot;, response.DebugMessage);
+   }
+   break;
+default:
+   // other unknown error, unexpected
+   Debug.LogErrorFormat(&quot;Unexpected error, {0} {1}&quot;, response.ReturnCode, response.DebugMessage);
+   break;
+}
+}</p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IWebRpcCallback.md&amp;value=---%0Auid%3A%20Photon.Realtime.IWebRpcCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3950" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

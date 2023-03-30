@@ -1,0 +1,4242 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/UnityProjects/CS_Card",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CODE_OF_CONDUCT.md",
+      "output": {
+        ".html": {
+          "relative_path": "CODE_OF_CONDUCT.html",
+          "hash": "vCvrz12CkVQ5ByxKd+Q95IZKEhClELLo+gNOFaLp/qM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "fC5wPX0EjhbpFwQWKdw3AGHfMudbbnwTOnuD5gBbbfM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "64Vclcs/4eeN7d1863kQgxuS2nChhv4o+su8Vn1Tq7g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "vzGNx4c9UDDAE8WAwF4wYpwEWmDLJm4bwglo8eRMcNw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "+aRpSgqZzKx8avun7q585D4ZFBc/5cpOTf1QgcRVif8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.AuthenticationValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.AuthenticationValues.html",
+          "hash": "sP93xW/VIm9WKGNYyTK20RLYMefqqtqxeRyHT6PNzCA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChannelCreationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChannelCreationOptions.html",
+          "hash": "ILBsjP52AYDwHy5fFcKbMfyycEZ6giITMh4s4i1f/fU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChannelWellKnownProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChannelWellKnownProperties.html",
+          "hash": "YXvoDLZKyjJ6WncNx76Dq3LvW0zdHb1Htx6/tJAeI88="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatAppSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatAppSettings.html",
+          "hash": "/o0o7BboO9Cppe6twy2PrhaLBCN8kBHK9LZvaxut6M4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatChannel.html",
+          "hash": "JyxkrhXap4VpuVTFCbIx2vQX4DVRvcjL6u3olofrkM4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatClient.html",
+          "hash": "4aoa/6aRpcSYm838GBQFbMbA+1h256q76rM2a8XEBIk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatDisconnectCause.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatDisconnectCause.html",
+          "hash": "oqdnQipvIIc1H4xXCmfXOIv5SUCCFo4jp6Jcem6LuV8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatEventCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatEventCode.html",
+          "hash": "MtxuFQ9STvUtDf96Ow7eFDTnQZQFVjDBkeISjAe9qsY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatOperationCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatOperationCode.html",
+          "hash": "ixE39q53Pq86ChgjwUP+UIIpwbXdb07fUFdHiXxRXTk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatParameterCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatParameterCode.html",
+          "hash": "ceJa5y4yq5jV08MzEGxk5ZRsmwXg3/qF6HB6zqlvknk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatPeer.html",
+          "hash": "s6GNKllgYVobT3WVRBXhEc4O4QWhYMFWYEgODsqBPR4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatState.html",
+          "hash": "AEQ4oJFzSC0DEnkaGQiJSImn6ymaXOyt9Be7WlhSjPQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ChatUserStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ChatUserStatus.html",
+          "hash": "V+UO28QSriYgoaWn9RzcBXJJZ69NmhXNCVZjBCJl4ho="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.CustomAuthenticationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.CustomAuthenticationType.html",
+          "hash": "ay9vjiom5JocIBlrZrnJMeaj4q7eodn1xVHNyI8YOhI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.AppSettingsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.AppSettingsExtensions.html",
+          "hash": "JtQ4QBB5n8PxzVVaVN1knuuLEwcoCfdbTThrYbW4jQY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.ChannelSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.ChannelSelector.html",
+          "hash": "r8S3OFD/vb0I+A22MqaDFD90pYqsKxSEoEeg6xg7gz0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.ChatAppIdCheckerUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.ChatAppIdCheckerUI.html",
+          "hash": "+bYNWLskcR87CmQ43B/e+SQkib5p2QdwMuqEurEPfXs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.ChatGui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.ChatGui.html",
+          "hash": "jrCGWEwNPht1dUS9m1fG1ZX/4LmpIyyyXP8s3xZ+6tA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.FriendItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.FriendItem.html",
+          "hash": "Bnec8/P7EhiLwFJ2jZARXn6VVT5a8TfIk64iV0ymkac="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.IgnoreUiRaycastWhenInactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.IgnoreUiRaycastWhenInactive.html",
+          "hash": "nKwyYVAHLCU/Vgc78ZgWxPzfFReLU19c1sYgNCvqB3k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.NamePickGui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.NamePickGui.html",
+          "hash": "B67ARbEwxrdmnVlWUAsExfJ2zBRopXwo7u64F+lZrwk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.Demo.html",
+          "hash": "tcpqBKRmY2R7emO4eI5GOvTA/N3gUv4G6MkQvudz1UQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ErrorCode.html",
+          "hash": "wIWSUxHpf/zc9wxshnbTxw0SfxiXPizNvRVfD2yViQ0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.IChatClientListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.IChatClientListener.html",
+          "hash": "c5u1Yysk2Fm2NHxX3kdUJRSmi0Fc3SaLCzQ6KfTX6GI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.ParameterCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.ParameterCode.html",
+          "hash": "RIOle+py7f2Vb7beCCXzGO36d9arFE8TCNeZV4T2p/o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.UtilityScripts.EventSystemSpawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.UtilityScripts.EventSystemSpawner.html",
+          "hash": "T1ON9DbNHysuCHc8262zTCLnrZSD/8Yg1yekp2hkaIw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.UtilityScripts.OnStartDelete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.UtilityScripts.OnStartDelete.html",
+          "hash": "iA3XlYo4EUlG1mKoa5jQQm1jOoIke4jaN96Gwj96H4k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.UtilityScripts.TextButtonTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.UtilityScripts.TextButtonTransition.html",
+          "hash": "XiWM+s7OK7Je7PKBTy+L489yQn4FdGKEQRE3SRtSN8U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.UtilityScripts.TextToggleIsOnTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.UtilityScripts.TextToggleIsOnTransition.html",
+          "hash": "rxCEC8BhQ4O6Rf1VIGRVdMO/hzcFl3BKj0L/Qe07lBc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.UtilityScripts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.UtilityScripts.html",
+          "hash": "R0IO9DnYyIrueBtdNWGQNLIDUkOfHE0BpgN7gtDq72M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Chat.html",
+          "hash": "okTdi8JAFwYENQfw3gaNXm2P4V1+Wy16FTvT8uSGGwI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.ConnectMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.ConnectMethod.html",
+          "hash": "tXQuCI39LnE1d5U7U/HH+qgP6oWsKMG2yh8fQBNkM0A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.DefaultPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.DefaultPool.html",
+          "hash": "nm8v4atZNZJuGdfF+aDpaEqJ41LNzuC07SVO2bzUVPI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.Asteroid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.Asteroid.html",
+          "hash": "TUjqNM+vKAybSmSxhi99brkDlCWaWkwQ49msBwzeZo4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.AsteroidsGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.AsteroidsGame.html",
+          "hash": "sZO1Z5hz446Zpnbzv++krdVK+bdfQqkOLE9XF6jurVA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.AsteroidsGameManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.AsteroidsGameManager.html",
+          "hash": "5IzYpSaq6Rce94rfhyMqNxWXIzwoA5hwa0NrZLXQfdE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.Bullet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.Bullet.html",
+          "hash": "CuxjQsKyRCTwORuQyYFYvpdJpPVMyZy2i5lYmNnRVOs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.LobbyMainPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.LobbyMainPanel.html",
+          "hash": "2trznmBSkKNl5So7gFMZCkccLPCUBVJvHwF8D/sKONk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.LobbyTopPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.LobbyTopPanel.html",
+          "hash": "2mbbuVihZUL+WQ/MnBx9dABbxdAW8+2xj4NZGl2CgXw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.PlayerListEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.PlayerListEntry.html",
+          "hash": "oUx+z9nmneM73gkTOK/g07ayc4MNrNmUQ4tRn43XuiI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.PlayerOverviewPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.PlayerOverviewPanel.html",
+          "hash": "DPHEWI7nVVdgmgZujr+jI3RqaOB+1qFXNdVTSYSv6o0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.RoomListEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.RoomListEntry.html",
+          "hash": "PGZj9iqvBg/ZZLMFyDR7SXk6XezfjDDCexRWRXbei5A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.Spaceship.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.Spaceship.html",
+          "hash": "6Wq4WA72Wj2lztbidA5M+2AGheX6AroYM29sx/3Hhk8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Asteroids.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Asteroids.html",
+          "hash": "h46SMMLy03grGwOryLf9vGgRMEhq/DITOolytomlyYU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.AppVersionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.AppVersionProperty.html",
+          "hash": "iU60/ko4UMf28z9jCb5iV0UqiKGFGkx9/d8EAI37+hM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.AutoSyncSceneToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.AutoSyncSceneToggle.html",
+          "hash": "HYe2tFfYcNIpSR15R2bdjjsRMlcAYThfs1JR2YnR+eI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.BackgroundTimeOutField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.BackgroundTimeOutField.html",
+          "hash": "LzLm7htQMQCa1rM0wgc1IBIESuTMXwi1a31Mdj059rI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.BestRegionInPrefsProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.BestRegionInPrefsProperty.html",
+          "hash": "XGMSbE0LeKgNR8FIZd57cWgH1Hn6clse9ArXLSuKf0E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.BoolInputField.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.BoolInputField.OnSubmitEvent.html",
+          "hash": "aoh02Yal6Geb23EboSXtZpXPtY2CpkFW486beTI/5Lw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.BoolInputField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.BoolInputField.html",
+          "hash": "VlotFgHRx2qJSq1pLwS//1WEK7BFNLWpXxqgNkYhSwU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CloudRegionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CloudRegionProperty.html",
+          "hash": "aHhzw1MVuFNt8ciaWFigWoRVzzlPIh6/ouvWh55admc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CountOfPlayersInRoomProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CountOfPlayersInRoomProperty.html",
+          "hash": "C2mwYUbDXT+1eilWYrY7yRcKEA75fqovlw7yaQpkJNw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CountOfPlayersOnMasterProperty.html",
+          "hash": "aOlCNxhOwfk7LiK844h3RqKhh9Uzcr17n65wQ5eShOY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CountOfPlayersProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CountOfPlayersProperty.html",
+          "hash": "+5tVCfyhaUJAgSPy7z0neqkbiI57ZkznCuFirIBJdxg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CountOfRoomsProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CountOfRoomsProperty.html",
+          "hash": "9rScR1VK3+AB0radWILnkVnLUfJl/wOEOKJVVUcmhrA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CrcCheckToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CrcCheckToggle.html",
+          "hash": "B63bzWjNdaJUbX1Z5tT8q+Qd6SRMtlikXNIkJeukgT4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomAutoCleanupProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomAutoCleanupProperty.html",
+          "hash": "0pnn9dtQn+0RZ2mBthhgtLv/Hp3EzN5gm6ECsCUBIN0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomEmptyRoomTtlProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomEmptyRoomTtlProperty.html",
+          "hash": "+mWtalr1ERbQ+rc6/I6N1d/+1Rv2P83o+jzXcAPMMZk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomExpectedUsersProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomExpectedUsersProperty.html",
+          "hash": "OIFwEYRyfyXSpO2tnNaxsFx76gljKLZ1cjcHoGBuiP0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomIsOfflineProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomIsOfflineProperty.html",
+          "hash": "0CC2rwkIEoezsuHD2KgElvRdPyYk2dPcgTpe5kwGDOo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomIsOpenProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomIsOpenProperty.html",
+          "hash": "YTkhgdwhLjNetjWWRnaw+/90GYwUZLnyz9muq1SrWFI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomIsOpenToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomIsOpenToggle.html",
+          "hash": "TirvpBX3Lfy0HnFfLhK07+RdHUyIIFdGrmsemSOExLg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomIsVisibleProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomIsVisibleProperty.html",
+          "hash": "CcZFHIeLfX9qYy2yVa26V15Rk7vBpKnI/RO1Rp9m568="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomIsVisibleToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomIsVisibleToggle.html",
+          "hash": "3smS/IFctFe8kTjD2Je848EtJX4sMan7XHLyxNlyKHE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomMasterClientIdProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomMasterClientIdProperty.html",
+          "hash": "ksDxZiz5MZqxuZJen2zb/tuf/u6a10x4v3laqgUMJ6o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomMaxPlayersProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomMaxPlayersProperty.html",
+          "hash": "hYkI3jm/7oDgGnxVE+23aRzCTXHhSB4qUDQTBwsDKIQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomNameProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomNameProperty.html",
+          "hash": "mBHg7FNrCQozT3Ilu1+KWAtYhETrRiQFhL7yjA4MlCw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomPlayerCountProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomPlayerCountProperty.html",
+          "hash": "R1LqpekMC8FC2Sf/qyqv87NUI1FQUE6Qf1RkdOWPk+Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomPlayerTtlProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomPlayerTtlProperty.html",
+          "hash": "7+n8LOsF6hVg+1sXBdp0GMNuKDc0bu6BV2GBvfkfMjg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.CurrentRoomPropertiesListedInLobbyProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.CurrentRoomPropertiesListedInLobbyProperty.html",
+          "hash": "8dhoInnk27912WHjmNNKrl23BKXDFJwHL5KFY+/wk+U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.DocLinkButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.DocLinkButton.html",
+          "hash": "HAy0myI50Gc4Tkpk4uvJ6rbRKv3bC/zWu9253OA6q4A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.ConnectToRegionUIForm.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.ConnectToRegionUIForm.OnSubmitEvent.html",
+          "hash": "64Hkpkg4kcsb6O/wpiWoT1IZjAiF3IGh/5Qe0T6NCnc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.ConnectToRegionUIForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.ConnectToRegionUIForm.html",
+          "hash": "NKC6XKFWJ9G+QA+D4knRTCyUOY5R/OqLnEyrrfXnvDk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm.OnSubmitEvent.html",
+          "hash": "eiyZU5r5NMdwfFm+iKlkb0n0IHtMZ69q707ukm6O0b0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm.html",
+          "hash": "VGaF1jtx99AQ1L8+j9pwW8YuL6DyL2+q5CNrtTdAVcE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.LoadLevelUIForm.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.LoadLevelUIForm.OnSubmitEvent.html",
+          "hash": "iRnhOZwCqSnb8pBqEHa+1xQY83e2p1o/uwGTQJtVZjA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.LoadLevelUIForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.LoadLevelUIForm.html",
+          "hash": "xC22IdvksbtnpFbzHlgrUA1MaAp2n7Wg2KjKH7w6+8c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm.OnSubmitEvent.html",
+          "hash": "Vb+0reP8mcmt2AOxIjDwewoqlrhebOUsagi9aYHKIfI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm.html",
+          "hash": "Gofh0We4In0b+PqiXE4dMGOkI1PBGaseSup0TE6+eTA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm.OnSubmitEvent.html",
+          "hash": "jIBXhd5dUbdfCeTjuzWteI2JHzH5Py67dVDRmKgaE/I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm.html",
+          "hash": "2YdR87oN25X7zGaj8Ha5mmGE6zI5Q2FwOn9Us9Y8uQ0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.Forms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.Forms.html",
+          "hash": "PPwe/ykB0W1jKfmUHnZdmEbZcHvlQin6Tjdum7GHN9Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.FriendListCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.FriendListCell.html",
+          "hash": "xTwpbveRJETUChIAVg8hRMMwXPgxJko3lFoHUHmKCdk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.FriendListView.FriendDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.FriendListView.FriendDetail.html",
+          "hash": "UGKeDieZiGpHUR/Xu7eO3qfgurFyg1iSAWbkpOFjVWU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.FriendListView.OnJoinRoomEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.FriendListView.OnJoinRoomEvent.html",
+          "hash": "jBymv9ulJXuVZ0O01PE0HwxdeBmkW54KhDmT1KGCEhk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.FriendListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.FriendListView.html",
+          "hash": "yCrQUB7o2KGnCGwHgpofThk5X6r/7m+Crm+E6LhmCaI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.GameVersionField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.GameVersionField.html",
+          "hash": "UiTLK1TIVfOhw8dEU9auDfkcxNaOAPeFtvkVs/YzQc0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.GameVersionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.GameVersionProperty.html",
+          "hash": "aPYNiroYHTL1D4IgfV3EYHvm5L6DT8v3GeMuoDC1UIo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.InfosPanelPlaceholder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.InfosPanelPlaceholder.html",
+          "hash": "krevT0Fgm7WQTal8H3qXVv+sJ98venWaO0jP0ZU/0V4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.IntInputField.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.IntInputField.OnSubmitEvent.html",
+          "hash": "SkXwJLysBplhWaM7gVyj5bpXSRiFkJKtR2xPTaccGrY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.IntInputField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.IntInputField.html",
+          "hash": "Pn507IjoXcjaDwUqY+f6g3NVDtst/jxe44UaCA5fd9c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.IsConnectedAndReadyProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.IsConnectedAndReadyProperty.html",
+          "hash": "iLHVJjAuvq7XZT7AdX4HxpHfZbHFY71Y+BF6NjfxRLc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.IsConnectedProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.IsConnectedProperty.html",
+          "hash": "uvhW//oTsjvAFwc6O6p4XdMLHlLD+SWaaYvmft4wxtc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.LayoutElementMatchSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.LayoutElementMatchSize.html",
+          "hash": "dBheV4dg9BUBqEBCcjiiR5ppidUaahCNCmmbwv4+jS0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.NickNameField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.NickNameField.html",
+          "hash": "LflX/ihJdsynJbLbmGBA8eVNAoQd0vUJQZXQpap83Js="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.OfflineModeProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.OfflineModeProperty.html",
+          "hash": "fiypDyxLhGCkuBwhGmOu+b4Ggj8OJGMgIVP3SYtQCWo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.OnlineDocButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.OnlineDocButton.html",
+          "hash": "ZJpI59rC/ggI/rwCn34CpmfqK8rBpUKKVH83NgQNhl4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PingProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PingProperty.html",
+          "hash": "7jY2gMNwIATi9xw5biicrZ2M1RMqH9iYdj17MmndYH4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PlayerDetailsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PlayerDetailsController.html",
+          "hash": "Tj3FrdxIZ9ukyl4A82dEapyN1jc0U9smX2kRmS25atc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PlayerListCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PlayerListCell.html",
+          "hash": "zlffMhRTqSNl2L51dUO1slBnGfHZ3krjU4QJkYzylhc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PlayerListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PlayerListView.html",
+          "hash": "7R7FN2EU4pKAnDV5mE/JmtZUWGPdyvppQMx4eshJYWw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PropertyCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PropertyCell.html",
+          "hash": "nzL6wiReQ9JBCQPExaJw8OoSE7VNw7GqvBZGOa+jSmw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PropertyListenerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PropertyListenerBase.html",
+          "hash": "POffVW8EzfdAZQ3qi/aSqUYdsjbpvW4gbR8M1bCOsqc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PunCockpit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PunCockpit.html",
+          "hash": "KiwqzQSnMRNWEIczqQCl8SATb1Ny/I1Ep6FtrAMr9+o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.PunCockpitEmbed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.PunCockpitEmbed.html",
+          "hash": "mLdJgElDxJzvX5dIZYbF0ifdPLFHXj8fxbVU+9S5JNA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.RegionListCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.RegionListCell.html",
+          "hash": "dSZZbf3Sm5Pr/2U0r/ADF/FjPNPxP5/Hv9SPXbPLyS0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.RegionListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.RegionListView.html",
+          "hash": "4UTuCAGcasPU64qzP0y8aLs/WND5LAHhDHqyYesdIlI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.RoomListCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.RoomListCell.html",
+          "hash": "N6H7+kt5EeNkbTr0ZX/+BZmwMR/XEXijJw0i0vbuGhY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.RoomListView.OnJoinRoomEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.RoomListView.OnJoinRoomEvent.html",
+          "hash": "yvkgGDIAt/zvYtkNz+sYclvuKGUt7iaw/F7InQP/Gm4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.RoomListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.RoomListView.html",
+          "hash": "jBWSFuWzP1z3nHMtx8WI1B2xmRnwFTXUqpIfEU8lQeE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.ScoreHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.ScoreHelper.html",
+          "hash": "pMt+vEwl7b8dz3rQQ2e0Ywk2WEEeztLCGPZ7skjeKVg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.SendRateField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.SendRateField.html",
+          "hash": "LRM3kuQlkMcjr94WjKAEf/TpeRIbsD3tIn4Wgf6KFD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.SendRateOnSerializeField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.SendRateOnSerializeField.html",
+          "hash": "ySX0QcNp2dtogwg7uaIWGlUWERLqd7ktiOdrkJaoh3g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.ServerAddressProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.ServerAddressProperty.html",
+          "hash": "ijvZi2x3INHJkswQTXQHNd9NmBDH/Qg8dQzXD6dBDm8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.ServerProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.ServerProperty.html",
+          "hash": "3UL4TYMOtdp+X36dCwvFWKcJEEsDoRS/Bc2ym+4OqAM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.StringInputField.OnSubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.StringInputField.OnSubmitEvent.html",
+          "hash": "bS7pFLXN/tsNaTkXHvQgxHD60E9xYYjwU1jKDotvlss="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.StringInputField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.StringInputField.html",
+          "hash": "P24kLpbItldXwS/ejwKbUxXguw82m8IFaVLWF9+UAtc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.ToggleExpand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.ToggleExpand.html",
+          "hash": "jnTIcsGww1bta6vjya+/jv29/k30Fq98mFtGfgVN0nM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.UserIdField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.UserIdField.html",
+          "hash": "76kU7nAokHy1kg5m4TM1IghRtCVvCCmPeYa4Zcazo0o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Cockpit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Cockpit.html",
+          "hash": "r6YN/G+tie37YNCCj+uVGJlV8i6N+bAc9ea5iD4Ulw4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Hub.DemoHubManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Hub.DemoHubManager.html",
+          "hash": "IDzoMPUlhfC5jUTGzFYNCs756eXyjxXVK7DyLxsRAik="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Hub.PunStartup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Hub.PunStartup.html",
+          "hash": "oJTGstiXitDe8l1u9e/2UoZkuP9Bq3aSJHh9WEO/MCY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Hub.ToDemoHubButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Hub.ToDemoHubButton.html",
+          "hash": "wXPyo72HZXaQck0qn43cY+DWyfwMQR3gIMbB2BDktEA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Hub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Hub.html",
+          "hash": "6cMuS3KGC4W572MSJKdhmWAGs2qS79iT1VBf2KW9zq8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.Block.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.Block.html",
+          "hash": "spgGvPtU+rSHOpoRrSGyaV2m/RcrUXW44i4dzsgXsnA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.Cluster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.Cluster.html",
+          "hash": "/rwZ+n1vSl3ZY97aTrHoHXSv8nVdvBqy1YJnj3GhF1A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.ClusterSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.ClusterSize.html",
+          "hash": "go8cpZpVyLYjrYZu/0jKoCY4ytvZtMq4iJcbN+W7Pl4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.IngameControlPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.IngameControlPanel.html",
+          "hash": "SpvcvaAxjRMZqcSQrDaIsc8haask/ie5lsRvu4Jim8I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.ProceduralController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.ProceduralController.html",
+          "hash": "AjAgjTft0hcngf8Pg2vpRm6Jq7rE9KCSzZlO6oyTFmU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.WorldGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.WorldGenerator.html",
+          "hash": "LRCrURNeJtY4XiYGa5E+48K7n7y7/rXVaZ9jVTByrSA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.WorldSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.WorldSize.html",
+          "hash": "X/mm3+ZZqRdfA3cXJNKqtmGg9HTeMXI1ZTkAsPc1TY8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.WorldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.WorldType.html",
+          "hash": "eH7kXqu327h6JLKZjHLlCoR4dbtmq50DOgzyg7AJvj0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Procedural.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Procedural.html",
+          "hash": "j86uWF238e8NaI7kBdf//uHrEfY9b/+dtHNSQk1rIB8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.CameraWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.CameraWork.html",
+          "hash": "VGxKkB+enydTRiuXqtZ7zRF1axpMM7dsrHmttWNDpIE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.GameManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.GameManager.html",
+          "hash": "M0x2NM6QQuOihzbDZlSqgfE4MOqNWQEIStcYy+cGoMY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.Launcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.Launcher.html",
+          "hash": "IfuqelDLzrBEoruLL/xJNcNJPGBCLtmDxZuAJZUUkxg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.LoaderAnime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.LoaderAnime.html",
+          "hash": "fUbhcs7uGCuybOULdxa8x4oCTNmP9B12pBMYcIwPL88="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.PlayerAnimatorManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.PlayerAnimatorManager.html",
+          "hash": "foWwwQREpXGS7j2Tfv4KMCEjiaolWLgoo8XAkJeVXLI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.PlayerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.PlayerManager.html",
+          "hash": "FQ/12ZnZgJCW7Wobj3JtOwGEcexLz2Y+3ccVLA+cGnI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.PlayerNameInputField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.PlayerNameInputField.html",
+          "hash": "7MB78I8oemLrPFSzCe1eMgZwn8prsiZweEfC/K4C2wM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.PlayerUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.PlayerUI.html",
+          "hash": "wT7OgrTQoGgny8P808zOTjWEn97JRRBwHnLMg2ZAZhw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.PunBasics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.PunBasics.html",
+          "hash": "LpbZsgMOh9jMWQlVxbmNPM3+00f5DFZVx/6IM3OTc6U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Shared.DocLinks.DocTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Shared.DocLinks.DocTypes.html",
+          "hash": "+eHM2reGdjU6KwJi6aFwLnkbSxXeCDq2bjru4LMOhCs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Shared.DocLinks.Languages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Shared.DocLinks.Languages.html",
+          "hash": "eSK5sOwUtsUOLlSb6gbzDPhtTf7Xv+w6gpSkHnX+N2Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Shared.DocLinks.Products.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Shared.DocLinks.Products.html",
+          "hash": "xYofnkCWFM9ZyfnRwq24exBbYIO5MjW4XYq8hWO9/4U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Shared.DocLinks.Versions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Shared.DocLinks.Versions.html",
+          "hash": "MChJtlAQ0cjIXAOlHmK6t4+bOQWceWMkO8rmGt8qryA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Shared.DocLinks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Shared.DocLinks.html",
+          "hash": "mM1BXisy9m3vvsApUp1NeiK+0c7yCetckYy9UikePO4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.Shared.html",
+          "hash": "sZy5UAv8B/wb6mra23X5JuO6FQjk9gvphBrn381wF0M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.PlayerControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.PlayerControl.html",
+          "hash": "+rwFe+hxohprC461SSTy32jTAo8HpzdDOH8Bhd9dECk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.SlotLanes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.SlotLanes.html",
+          "hash": "AM87DgbWR6q8V/FfQ9XVY+StBTRmLwhP/XakVD7zUAk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.SlotRacerSplashScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.SlotRacerSplashScreen.html",
+          "hash": "HtBgurLh2EuzzLjU/k0G1oLrmg2bxOAua1QkiHvv6tA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.Bezier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.Bezier.html",
+          "hash": "gw3gDSj55YFZPiDG43AB0RJioAah+eMEvoWO2onqQqk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.BezierControlPointMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.BezierControlPointMode.html",
+          "hash": "SrSHFGQscqpT5qOYwhTKBSEFyJamu5e/flTAA09Jr4c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.BezierCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.BezierCurve.html",
+          "hash": "l0wBv/5h8X3ovkGQ7KQRUMZT07eYPqViiLlyQjYcuHo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.BezierCurveInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.BezierCurveInspector.html",
+          "hash": "7Nwt+/cfaKipQOEVKuJLWnjE0g+8+iSDxhzPwR9vLsE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.BezierSpline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.BezierSpline.html",
+          "hash": "KAChRn7W3FikPdWsyIWoHdZH7cL61b1XDewugGiL50M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.BezierSplineInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.BezierSplineInspector.html",
+          "hash": "Quj+b47wzg2vP7P8RTDouGVa+K/74UYIUlOcx5xxFwg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.Line.html",
+          "hash": "fkEUbDxzZKSbfH6M94std8wlPOkPtCGwZhXbBMMpmIg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.LineInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.LineInspector.html",
+          "hash": "BIF6reaOUoThngLD5Nz5se6aNaEadbnTp1Z9orMPtbA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.SplinePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.SplinePosition.html",
+          "hash": "3TPqoHmQ+EfiwUOk0H3LfURvPHgrTf8FIoLWnUusDCM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.SplineWalker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.SplineWalker.html",
+          "hash": "F55UlMLxYPXgtMstnIww7SmJMVt5FhRxRdNIzdFEHn0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.Utils.html",
+          "hash": "Y0lKRB7zFM2q3VwFbuZSdvbDNZtD6HAcV92x3uOaQD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.SlotRacer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.SlotRacer.html",
+          "hash": "E7FPNspNsDnzrbggEU6oA8MZ0nIvAf9KW8WFQZyIZi0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.WebRpcImplementationExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.WebRpcImplementationExample.html",
+          "hash": "NRpzPsrViL+ttVnl05ecak4WgQ+e3tf19wgPKC/bqfA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.Demo.html",
+          "hash": "0gZiTSeanVRkq0fNH8s93eee41h9iAxNLfCmdP+0yFg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IOnPhotonViewControllerChange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IOnPhotonViewControllerChange.html",
+          "hash": "BYMnauE1+6Q1OenAKAngJjfqKccE/7UXJdFiOniyqBY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IOnPhotonViewOwnerChange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IOnPhotonViewOwnerChange.html",
+          "hash": "RqlbiTuGoZ4nhfSRox5kR/hvHt3KahY+e1nADShJtDc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IOnPhotonViewPreNetDestroy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IOnPhotonViewPreNetDestroy.html",
+          "hash": "DyvVz8RbBOTpK8GSvU8S3fgGNEdVPplxY4ATS7MvRcA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IPhotonViewCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IPhotonViewCallback.html",
+          "hash": "80+zruxj6rT5g+UDSVNpiSeAdIQ8KZNP4fARPJ+kkx8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IPunInstantiateMagicCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IPunInstantiateMagicCallback.html",
+          "hash": "H7zNwKulOEhiV9s2fY2pYSJGY9ePDiJKrVwF6j/29vQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IPunObservable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IPunObservable.html",
+          "hash": "apDvn8qbSKP8yhO39TJItcrRvR6aMXRzfG2wG2W+pYM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IPunOwnershipCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IPunOwnershipCallbacks.html",
+          "hash": "BGZR3KaaiyI2HfCiHUq9ScvhUEEsCz4gVvz9LC7feuo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.IPunPrefabPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.IPunPrefabPool.html",
+          "hash": "iOswGMxNOUVanzfM8RDg62xkN3mcIWqyPa7/SoluKWc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.InstantiateParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.InstantiateParameters.html",
+          "hash": "aRertT48pDF/0XC5Z+C4QQ5cjo8r5v92/6AyZVZf4Ik="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.MonoBehaviourPun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.MonoBehaviourPun.html",
+          "hash": "eYRuFDSSkKHyXePwNKj3HL0FvzrTkAG2HIPykEnWEQg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.MonoBehaviourPunCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.MonoBehaviourPunCallbacks.html",
+          "hash": "pnIMNr7U8X+1M43RTiC/Hk788VaAVuOtPJKgGYem0Vc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.MonoBehaviourPunEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.MonoBehaviourPunEditor.html",
+          "hash": "KdYPu3mag4DuzdipQZh55UTB+rLlqfuCvhVSaY0rcA0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.NestedComponentUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.NestedComponentUtilities.html",
+          "hash": "tsdwXBnuy/klBMVT0ZedZvzLbhblL1JJo6QYyEu5jfQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.OwnershipOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.OwnershipOption.html",
+          "hash": "2+XJnoiaT18Br/DAwKpfjYqr87klyT9xGWp4rLPTFcs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonAnimatorView.ParameterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonAnimatorView.ParameterType.html",
+          "hash": "Ag2e06IpfqjX7rR+mrfXvW1SLvz1je2tGKMGgOEqbso="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonAnimatorView.SynchronizeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonAnimatorView.SynchronizeType.html",
+          "hash": "B3cgtzv3F3qCLTz+Ol9Re00QzMN0drwmbCvZ2BHi8j0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonAnimatorView.SynchronizedLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonAnimatorView.SynchronizedLayer.html",
+          "hash": "RU8ag10tmsmk6mxs/gMmsO7fmjjy1Egy1HHvXkLaPfU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonAnimatorView.SynchronizedParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonAnimatorView.SynchronizedParameter.html",
+          "hash": "JqAkDn4woYQ/Ij62Eq1jIDbXVf306ZhvP7oZr27g24I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonAnimatorView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonAnimatorView.html",
+          "hash": "nrZgmIOcZJI+UgGdbeGcp8GWb9OQBy8JlwcDsP4I1iM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonAnimatorViewEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonAnimatorViewEditor.html",
+          "hash": "9/w5OoBimbqCUL5toJPv4pcxhVbzVbgaQvG/AohzLmM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonEditor.html",
+          "hash": "3vj0gFa03uE+VnZSkSHlij6FFxZrPRgt7x7VaHYLvd0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonGUI.html",
+          "hash": "PBj6TPhuarVsSLt4C9+XyTFSAcPRfzlB6OAJIoHqOSA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonHandler.html",
+          "hash": "EfbEfOpSnVFQhpjq2NplubguRwARN4WTR0SH1DOkT80="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonMessageInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonMessageInfo.html",
+          "hash": "VvtwrlYkwmXGnmKG73IVNErNLPCqaIwNVWyw/yRaMgk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonNetwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonNetwork.html",
+          "hash": "UrzNrgJthNBPPQKCC91Dl05YHXNlnqf3VRlKXdDc2AI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonRigidbody2DView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonRigidbody2DView.html",
+          "hash": "5jPa3+MTCATrGlbud1bZKx/dQ71g230WWfbkRvjox5I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonRigidbody2DViewEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonRigidbody2DViewEditor.html",
+          "hash": "YMQdgnC9GoLj0RQ8Jh2EeWTQzCBYJCB3JE7ghE6GgSs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonRigidbodyView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonRigidbodyView.html",
+          "hash": "1taHv4hJqcLVnBul6xkmb9v9KS9Yr7d6YLAAc/a5t8o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonRigidbodyViewEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonRigidbodyViewEditor.html",
+          "hash": "B4BMEwhqJhcTpZkkwVe2TqNW4jFt7oaoQ1S7/3QQLEI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonStream.html",
+          "hash": "9sAS0qeB4jzPSGv6TOJjHbHYXRuqqBD8NH4g/iWawlc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonStreamQueue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonStreamQueue.html",
+          "hash": "1ZFHx/HGF/AElxzbrntHBUp4Q5kCCb2XA+dN/Xr+jwg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformView.html",
+          "hash": "JBByQqVDl41Set9yQ2RiFKp+4F4IAxPKs+fwNKrHuno="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewClassic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewClassic.html",
+          "hash": "bpLB2PDgvlML1g0GBHwwpvwK7hnOvfJcF0WhLqR1xyE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewClassicEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewClassicEditor.html",
+          "hash": "H35sdvZM1wqZaHhRjYKrSWnES9wSkSSSUvG4oFvWiYE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewEditor.html",
+          "hash": "v7a2SzUbzU/GbAUGuRZVUIheVbE7l/KvkhJ1SCxP5lM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewPositionControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewPositionControl.html",
+          "hash": "W4PPe4tHJiUMhCHf6VhIWdWwynvhlWQ2CDyW5hdYJU4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewPositionModel.ExtrapolateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewPositionModel.ExtrapolateOptions.html",
+          "hash": "wmbDMGRvBvlmYCnSkTmVPuNBNXx56M0dmHp8B5DeNdI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewPositionModel.InterpolateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewPositionModel.InterpolateOptions.html",
+          "hash": "ZBXxoyvB9HhHkiWNfkZkyPK5rGyaEFxGD7BcfEqSrAU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewPositionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewPositionModel.html",
+          "hash": "rmIAss7SDiumm2EQgyX0r0VZef97UlEGYbFP+MlGk7I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewRotationControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewRotationControl.html",
+          "hash": "nNRDQiCARIF1p3j/NOV2Upueq/+G8Qg8Ee7sH7HQSHw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewRotationModel.InterpolateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewRotationModel.InterpolateOptions.html",
+          "hash": "encq68FUAsKCtTA7nKUavDTwl1SR+6ROVxDF/0T18LE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewRotationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewRotationModel.html",
+          "hash": "QO3+cY1fCPxhJ8kvSJ6l7mUOeGyXY4fdgiZQkwk8QFQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewScaleControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewScaleControl.html",
+          "hash": "qPfaLrUwPiq2VdTNWm6esaskD/LSctvNLHscESCH5Jc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewScaleModel.InterpolateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewScaleModel.InterpolateOptions.html",
+          "hash": "aEYORTkgqQtlsiZEDHDnGCvMPnNQFAdqqx+2d9+KDYs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonTransformViewScaleModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonTransformViewScaleModel.html",
+          "hash": "UZbXeIXfA0PlR7eNYfK9Kaoi2nnETSwKSVnmbD4EBnk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonView.ObservableSearch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonView.ObservableSearch.html",
+          "hash": "W+iGgCX+eQhHJibDo3ZTjh73bJDrIaJ9TbOWrvn60x0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonView.html",
+          "hash": "I7M7fTQ/8VCxpkENlcrT9k3dnBX3LTJLfmzk0j+YWoY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PhotonViewHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PhotonViewHandler.html",
+          "hash": "TKfOUlt9L3MCKBQyl0FsFOvDYvZSbLXMWrd/w+zbY+4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PunExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PunExtensions.html",
+          "hash": "IVIaSy+G7PUFrSYe0iXsAq3DWJQs4gqyK2TbMtaQjeQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PunLogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PunLogLevel.html",
+          "hash": "i4hm7c+pTZiJtK2xRWxuDB7KyG35ujbHVHil/OvxVWM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PunRPC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PunRPC.html",
+          "hash": "Bw/ak3/KUUOEavlMoGGW19xGlq5KJQ3FuuXW42PUQD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PunSceneSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PunSceneSettings.html",
+          "hash": "gJMnENrpyXTaR32VClbd656MU9DIHOBD/xrJRvV0fZA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PunSceneViews.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PunSceneViews.html",
+          "hash": "/4pn+HbmrBxBBaZGG8jDYd7dSChhy7Y2iYQ52sTxdN0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.PunWizardText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.PunWizardText.html",
+          "hash": "9YsUjV+/5fpNZlHkt4EZFQGH7OxBdITPccz0WWE2QJs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.RpcTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.RpcTarget.html",
+          "hash": "xPH2uhbO809EL/WaKJywY4n1YSKQuh1UsHYZxMX/v6w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.SceneManagerHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.SceneManagerHelper.html",
+          "hash": "/dz9i4pi1AqIVGUqyvA8id5ppZY9lHnTY/e6DomG7II="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.SceneSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.SceneSetting.html",
+          "hash": "6KaTG+xeVam6YIQHa49rSO2cA1zfzWeECWEvP8iudac="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.ServerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.ServerSettings.html",
+          "hash": "ybmtoCTH6qkKmyO1OeiUtEQohay5sTpmOh1WqvePO3M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.ServerSettingsInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.ServerSettingsInspector.html",
+          "hash": "LmpXoalfRrtvcQaF0zIWJMMdb/XNbAk4WzRF2OBKOb4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.ButtonInsideScrollList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.ButtonInsideScrollList.html",
+          "hash": "tsgl5N3svugl7MFNScr0Po5YHeXIOsrBQAl47udzPbs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.ByteComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.ByteComparer.html",
+          "hash": "4NisWNItqVwYXiQotwc+lsMSBtq1aexVuNXPEz9GsZE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CellTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CellTree.html",
+          "hash": "EYL7TOaPoW8+5Lt4IOKF13fjdzA5H+JI4YmJhYLnXpM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CellTreeNode.ENodeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CellTreeNode.ENodeType.html",
+          "hash": "ufevkHR53/IwoE6DpiZdDH4dAx7XahpvSFBqVbIpHlM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CellTreeNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CellTreeNode.html",
+          "hash": "SvQ2T12k8TpN3uTE9wHdUHo0+IjaxNbUeNyTCKtFv40="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.ConnectAndJoinRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.ConnectAndJoinRandom.html",
+          "hash": "89cMQFDUP5qWdTIM4yAj7KAcxfg9iArS3i80CD4IKPo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CountdownTimer.CountdownTimerHasExpired.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CountdownTimer.CountdownTimerHasExpired.html",
+          "hash": "GuMOJQfrFPQy1HLqx6k4VYhW4ZbjGgGp03eUJLVa7x4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CountdownTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CountdownTimer.html",
+          "hash": "lsxOGiO4PphzTamiZXexIdwhORC9vd8GMtNQtFbiF7c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CullArea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CullArea.html",
+          "hash": "S78gLUJxdzN4QUZIpatDF5avgA+UbvwYTRFizTZ7HSs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CullAreaEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CullAreaEditor.html",
+          "hash": "roG/b1cCBv6xMMLmrYeBJe5j3PT7Ig4njGHA1w8HpBk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.CullingHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.CullingHandler.html",
+          "hash": "PIpOUYsuFVuMWM8JvBI0/j+W9f0NdDzAkJJUwDpDE3w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.EventSystemSpawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.EventSystemSpawner.html",
+          "hash": "TEzTyptsvhYBINfajdlMXfxqPhZ3CdQHQkYtXkEOtzU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.GraphicToggleIsOnTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.GraphicToggleIsOnTransition.html",
+          "hash": "f6Xey5LUatFALT6AZuJOrjZn2VeHVWd6hL3dRaebq2g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.IPunTurnManagerCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.IPunTurnManagerCallbacks.html",
+          "hash": "M68NgeOcKTLjJpKRvRjV+K9Y1UA2u3mdSouClHdFduA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.MoveByKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.MoveByKeys.html",
+          "hash": "D5+SEbivk3Y2fARs8+AFuKD9c8K1e9PqkwxRpR6E6C4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnClickDestroy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnClickDestroy.html",
+          "hash": "e6OBTDjP3gZI5nLGWwiiYmQopOxDV0a11NGb8hm2Z1k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnClickInstantiate.InstantiateOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnClickInstantiate.InstantiateOption.html",
+          "hash": "9dF/tzNRTuh/k8Mmr60pUUAiV/hCRWY/uSOSD5cj22Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnClickInstantiate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnClickInstantiate.html",
+          "hash": "vexcTeET2zoR8s091jRKu7f4+Ty5Iznt6FfUJmHjEmA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnClickRpc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnClickRpc.html",
+          "hash": "EnK+h9Pr5OBZ4NNWLdmnJa4ydK3RMh8Eetmp0+BcjiU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnEscapeQuit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnEscapeQuit.html",
+          "hash": "wUfvDcBKjtnglyBPuPD4Ix44xCHlO4EWwKuZDrZSar0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnJoinedInstantiate.SpawnSequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnJoinedInstantiate.SpawnSequence.html",
+          "hash": "bOAVbIkJyhE1G61wGRn9oz/ECpT4cj18X4CKFwGzBGs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnJoinedInstantiate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnJoinedInstantiate.html",
+          "hash": "LXCgD7wlMzSLzaWSn48EEbub2LRBdFKG0QIAkKjnn7g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnPointerOverTooltip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnPointerOverTooltip.html",
+          "hash": "nOJ1s587YcLju+qlDm8eKwMJcdjL7SLp5fnlU9Rhh0s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.OnStartDelete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.OnStartDelete.html",
+          "hash": "t7qKtmOdTuEKQV9pbYPUH1Ajh6POhjLIonKYnbhy3CQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PhotonLagSimulationGui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PhotonLagSimulationGui.html",
+          "hash": "fQ8LQDhiaEvahqSrANQq9FK7srmdIVTuTvf4Bd163lQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PhotonStatsGui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PhotonStatsGui.html",
+          "hash": "uNjWa6rWnDV1SoW5XtW76+yFw3m++CP+NIqKHbuLvvU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PhotonTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PhotonTeam.html",
+          "hash": "8Oy2BYCp3EN4+FVOhf5tLwXIfBLNI3DwgzNfDMdFqEs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PhotonTeamExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PhotonTeamExtensions.html",
+          "hash": "IjyvkvO03SZWpiRwtu58IwYLJ4QBu7XJs7ehFCq0Fmg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PhotonTeamsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PhotonTeamsManager.html",
+          "hash": "jCNtXgtv3tXuPYMswWpVx8o2/zshSAm0ljdzTqzcJ9E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PhotonTeamsManagerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PhotonTeamsManagerEditor.html",
+          "hash": "MBZOLYHgjAuj5/z8lKIBni0LhmWjVMVr31wYVuJTsKs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PlayerNumbering.PlayerNumberingChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PlayerNumbering.PlayerNumberingChanged.html",
+          "hash": "l0oOhLcebpk9X0SfTDAqW7WtHaty3OpLMCBIxMkJm3I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PlayerNumbering.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PlayerNumbering.html",
+          "hash": "Yy6tJmWH6ufkqxzP71IeughgYSEcjqPMESwgxbB8hEE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PlayerNumberingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PlayerNumberingExtensions.html",
+          "hash": "YdpGXSVgnaZOmxCrUJ1m+KaE6NI4ykQpWAAwl1M/lVg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PlayerNumberingInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PlayerNumberingInspector.html",
+          "hash": "ppyIPuAzDPBTKj7GinW2723h17OBkHVtBuLcygUN5Dk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PointedAtGameObjectInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PointedAtGameObjectInfo.html",
+          "hash": "+1H/tFDQrpAHjcBoA6zIfLlmXOdjzafQmojZ3haKi9s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PunPlayerScores.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PunPlayerScores.html",
+          "hash": "ub3UIoQ/lRokIhL8WIfvCviX0KOkhw15JiafGFRSHSI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PunTeams.Team.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PunTeams.Team.html",
+          "hash": "9KJu8DrfIvuqMv9sCGl+pyeaogMNNUnVdqfQqQhnWh0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PunTeams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PunTeams.html",
+          "hash": "qedfRrZsHC0Wz07dm0Z4Br3Og9VedmZt8mJjRKkfPlo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PunTeamsInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PunTeamsInspector.html",
+          "hash": "df2XGKoSpMl/qXyMHPw03bx3Yp3ljdKgFMLNLj9X8B8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.PunTurnManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.PunTurnManager.html",
+          "hash": "jV037T17+sPv4BZ9liamkivF9uEXxf9HHUZHMiEEJDs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.ScoreExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.ScoreExtensions.html",
+          "hash": "Gw3tnrHH62Tb7ZEJ0dtxSqG4NgSRfufG0hPzNQx/rdA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.SmoothSyncMovement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.SmoothSyncMovement.html",
+          "hash": "BubSSp0qjLBA2sMC8JffQQn61y0648b9slTlzoIMlOU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.StatesGui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.StatesGui.html",
+          "hash": "doRIi3OYJ2bGxqGaNiE5/xppnAPAaVTY03Hofso1qjw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TabViewManager.Tab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TabViewManager.Tab.html",
+          "hash": "FrxhiF5Wuh3FjFxKgFlJv+xL5mSvGGqMoH7StyJ3RB0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TabViewManager.TabChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TabViewManager.TabChangeEvent.html",
+          "hash": "9KuNFYjva08gOIS1+ayP6utUw4DITXnW3pMsZ3JoP6c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TabViewManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TabViewManager.html",
+          "hash": "huL2JaeAoR4EKVcL9O+dSvgdLR+QOWGrtE6/gy8YIRI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TeamExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TeamExtensions.html",
+          "hash": "qxR91XxjGDN1oARS1UjnGPUBbDK/yUqBmiDVYK45MXM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TextButtonTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TextButtonTransition.html",
+          "hash": "zOlrcTHBA+eve/DBR3q79Y3RPyhaSgBrsAC/fJNuXKE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TextToggleIsOnTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TextToggleIsOnTransition.html",
+          "hash": "jLMKEOxBaKSinfmIuSNc2J/2OS3zj/TLDen6jz+s6SA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.TurnExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.TurnExtensions.html",
+          "hash": "p/xKuVvz0sP3sk4SDQQ9Ia4YOEZ9o0AC7lizZIeUtbg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.UtilityScripts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.UtilityScripts.html",
+          "hash": "x2mFWNGz+CQLMyeTOcHLTP3KENWA5x2390BML0sNlDE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.ViewSynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.ViewSynchronization.html",
+          "hash": "MyLnbLTGJB5Bn5b50kJ6cWZ0gB1jVvZ+A78/opfO3Bw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Pun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Pun.html",
+          "hash": "en9iznYDeEEi6i17DLvZoUaEYp4VjlNC4458ZLGEwxo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ActorProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ActorProperties.html",
+          "hash": "O5go1L49P5VAMGgRsuCLhnxdvP86sz/EOB74CFI610A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.AppSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.AppSettings.html",
+          "hash": "Ri/bS1hmwuTF7LyNSynhQX4boIOK0Su/9JiTDxspcuw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.AuthModeOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.AuthModeOption.html",
+          "hash": "ICvcWzCRDM3vw0CmBRaX098ZRhIbi44BYvMg+UnyaTk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.AuthenticationValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.AuthenticationValues.html",
+          "hash": "01byYMrfO4hzVpiCVc+oChGOaHfmzgYrBP5g3Qjitpc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ClientAppType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ClientAppType.html",
+          "hash": "So3MesI0yT6MkYrePtiHPX8vV4zuFjYPp+6oPiPolHA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ClientState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ClientState.html",
+          "hash": "quJEVUMQQaBzkdN0LtfiCynySTq4rr7IyH+qc6eSCNA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ConnectionCallbacksContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ConnectionCallbacksContainer.html",
+          "hash": "OYj3ajdTrk1vtRiaeVb8AZ7EWu16YV8FJG6GIF5PkR8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ConnectionHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ConnectionHandler.html",
+          "hash": "CgzeZWWmVQvrrabftBYWvlWeyj2nS7Am1WyqmiiXBYM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.CustomAuthenticationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.CustomAuthenticationType.html",
+          "hash": "l7LxEGdi9cpWz3ZyncM51gLJaTrirge4r5Qf8bKOa4I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.Demo.ConnectAndJoinRandomLb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.Demo.ConnectAndJoinRandomLb.html",
+          "hash": "sfVTMqBONM0TdiWaVS8Q0lJSOlRfCgTMW2v62h+Xt94="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.Demo.html",
+          "hash": "8lvbBhNVoy4pn8+9YhWwIyVH43oWauJRhJbtD+sXxfk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.DisconnectCause.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.DisconnectCause.html",
+          "hash": "DbRnpsVVt4pa66JBvKlK7+e+rSK9FTNg0i6O9oS/TO0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.EncryptionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.EncryptionMode.html",
+          "hash": "hPxDX9NWdhsY8ReZx9LaFTzrvQzdOfRHzK1q6JXLimk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.EnterRoomParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.EnterRoomParams.html",
+          "hash": "/6aWXjjLlhf1dee8OgJHJ97PuUVYdumIky0mKTt3E4M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ErrorCode.html",
+          "hash": "GXqEINjeLwfXeDSVSDUq16s9yBa9V7PXEXZ9U/xL5Uc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ErrorInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ErrorInfo.html",
+          "hash": "wyUCvt+l7jPx/KPIe64UZm9Xo8kQn/Pxn3P50UsxFYU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.EventCaching.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.EventCaching.html",
+          "hash": "hxjlLsyTSgpW8YOOJWA65zeHlTxN/jazkg0lRfwN+HA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.EventCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.EventCode.html",
+          "hash": "V6/wsMdxLP5T49pY2mPvZihZDpF1hh0JMWl1MlpJkaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.Extensions.html",
+          "hash": "KAB8Pyy3lSOonI3h4aJ1iJyiujjuTcmfLjxumzuwuVc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.FindFriendsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.FindFriendsOptions.html",
+          "hash": "wZ/d3R4Z/GziRlqmV2wXHEerSI/CI2VICShA9orRtzk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.FriendInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.FriendInfo.html",
+          "hash": "6ujwI7QDz5M4j4HYoqkBD+XFANbEvTqGPzityjE390g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.GamePropertyKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.GamePropertyKey.html",
+          "hash": "HjWYOO0Dpcdm7D/WYuZutIYbuv4nOzh01qRCxeG1b14="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.IConnectionCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.IConnectionCallbacks.html",
+          "hash": "OkAc7vKihTxUp6rGOMc4jS6eVXsxPQfyX3KMY9fmQCI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.IErrorInfoCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.IErrorInfoCallback.html",
+          "hash": "7QFJJk9+XbhNwVDTJsCTS7P614OhDzZUJeLL+zOaSwI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.IInRoomCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.IInRoomCallbacks.html",
+          "hash": "jFma1HvwztAUDpU11sVCiUyfIxL29hrIa35VPwP/WT4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ILobbyCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ILobbyCallbacks.html",
+          "hash": "M6Q9LhIzq+cf+wJuzeFRUvwwVPRr3aBMfMWVZNQIYBA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.IMatchmakingCallbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.IMatchmakingCallbacks.html",
+          "hash": "9xIZCcT1ZCla7LspETYBGM8dFiT+xvHXq5OaT/7PCQs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.IOnEventCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.IOnEventCallback.html",
+          "hash": "AsE3Q7AdnENzIoY2IN6olNsB5Oeb6RjcvC5T8nhOcX8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.IWebRpcCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.IWebRpcCallback.html",
+          "hash": "OH7AEUk/HmNorBjlKJHWZE55c60zwS2YxEufhN0jca0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.JoinMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.JoinMode.html",
+          "hash": "VGNIvLdxA3cPs7KmUyQkIfv0CHlhRXIzx2sZ+Ymdri4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.LoadBalancingClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.LoadBalancingClient.html",
+          "hash": "bbBU4ZRGz17GI3v0/uXgoZloqFxERdlg/gKmoy8xpm4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.LoadBalancingPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.LoadBalancingPeer.html",
+          "hash": "+w1JHaijGaruEzolgBvWQEg7fv91At8DOKxut8DunrQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.LobbyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.LobbyType.html",
+          "hash": "SzUe9g744cAMhGPKwmiQv2HSyAMvcZFZz2OZf/QcEiM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.MatchMakingCallbacksContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.MatchMakingCallbacksContainer.html",
+          "hash": "/pZKfxcc+G7VQe7Bl+t9pn8i6Fj/7I7l4xqmHFVXxGY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.MatchmakingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.MatchmakingMode.html",
+          "hash": "q0890mydPl9ERh9JuFtZolNIM5x3pv8j8KztQI6cxWc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.OpJoinRandomRoomParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.OpJoinRandomRoomParams.html",
+          "hash": "45Wd6PeU2KXfIo/O2KsYFVnVgosY/yyRWm+CfYcuPjQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.OperationCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.OperationCode.html",
+          "hash": "BJvAScWkVcXitaZW9UgUliOkXdNW40igqU6KwsjEdD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ParameterCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ParameterCode.html",
+          "hash": "//oLcXmuyrmaAt1Aj/HIhmzPEjVj1HuUg0Ory8GK6OQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.PhotonAppSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.PhotonAppSettings.html",
+          "hash": "rU9nDEA2bA338REshD2B6TaXpSD5mM/L+KClnLc8jls="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.PhotonPing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.PhotonPing.html",
+          "hash": "jrClYoToXhF6Om5QtiSPP5axcv02+SlbxNlepf/xoMU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.PhotonPortDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.PhotonPortDefinition.html",
+          "hash": "j3apy6PxpXBk9qKwj9hyOAuM6NRecPaAWITy95RRMro="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.PingMono.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.PingMono.html",
+          "hash": "R1FeYTcCAoRVGyKXHjegAnxzFJgvZiccz95i9llO6Eg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.Player.html",
+          "hash": "4aE2uxrx2LxsjdtyokB2g0fyJUtmAjTsRTN4AANzQd4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.PropertyTypeFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.PropertyTypeFlag.html",
+          "hash": "BxE9REfhX5BqhDhxeo2zWENXqsefmBqkcNe+Miv0gc0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.RaiseEventOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.RaiseEventOptions.html",
+          "hash": "7R5epiG+ldjjEYT1vqmhXdLdejogsAiY2vBiXoBLy/w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ReceiverGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ReceiverGroup.html",
+          "hash": "yGF26vBjwh8DU9Oba8bMGUdln7wzFolvwUz2wPQtTSs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.Region.html",
+          "hash": "thw+gqhna/SB5hH9V2YJkKpH/yR9Hfm7pDKusU/bK/M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.RegionHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.RegionHandler.html",
+          "hash": "YyA6O0pKNkJghDNlMRL2zelX+6mWgFKyi1HVEYnXyh0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.RegionPinger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.RegionPinger.html",
+          "hash": "9IV4eQBUb5YDD9Dq4jQJkLyqvZ1SJdXA+MHmO4FIa1Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.Room.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.Room.html",
+          "hash": "V/7AJMCjEieshsvhVYj1imCg83/AxSgbOfQ461FlKRU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.RoomInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.RoomInfo.html",
+          "hash": "4m2tkcZtUjED9s2WjAFs4pBbHiqP/HICSzNBFljAddY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.RoomOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.RoomOptions.html",
+          "hash": "w4nTaN9wx2MxLZOm2CaXpHH2BGOdcIVqBxXV7fvuqf8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.ServerConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.ServerConnection.html",
+          "hash": "CRRGWNYJNh1iOTPgls9zkWftJZHEQUzkWtO1IgIfhNQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.SupportLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.SupportLogger.html",
+          "hash": "6ILjk0SD+TZMSx0y6Ci0u3Vzq6l0N/AXLN3egzLNG4A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.TypedLobby.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.TypedLobby.html",
+          "hash": "2IFyDes9txd0ZO5NxjHc1y6zXmLIaPxf5UnevpqaiIY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.TypedLobbyInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.TypedLobbyInfo.html",
+          "hash": "Xy8gmdd5NwWq0IUzZj+H3pJ4/rigi3IF7/D76geygEk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.WebFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.WebFlags.html",
+          "hash": "zeIbx93ZTtBo3LGNRXcWXdPICzjBB9qyZrzkc9U+UIs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.WebRpcResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.WebRpcResponse.html",
+          "hash": "iTVhXQXr1mYBcQ+oVP/+iWbnHpQU4Hd6vJq2punFko8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Photon.Realtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Photon.Realtime.html",
+          "hash": "V/oKoitYJx+739YG1/N0DRX10a7deB9zlqGQ7ESsX28="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Simplex.Noise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Simplex.Noise.html",
+          "hash": "gk9iNtr+WrTF6kH3IIwoUf10N8PLpzPA7Z/CkrlxuO8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Simplex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Simplex.html",
+          "hash": "MokYqFxymN6MQRfr5ozj34nG52UYSUTw9SF3sKmKBZE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnityStandardAssets.Characters.ThirdPerson.PunDemos.ThirdPersonCharacter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityStandardAssets.Characters.ThirdPerson.PunDemos.ThirdPersonCharacter.html",
+          "hash": "VEMx4HAYWXCMXwGB8n8o6iUsBUjouOdKtDeIqWYHvPA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnityStandardAssets.Characters.ThirdPerson.PunDemos.ThirdPersonUserControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityStandardAssets.Characters.ThirdPerson.PunDemos.ThirdPersonUserControl.html",
+          "hash": "r8+x76neZLA6MiYjKNpep1BFpkcOsJ9PgCR8ezLL3Ys="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnityStandardAssets.Characters.ThirdPerson.PunDemos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityStandardAssets.Characters.ThirdPerson.PunDemos.html",
+          "hash": "JGjiyf58gUIbScYiCV82hYUxbS0yEVZrhQR+fpcWD9E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "a4LI62iBUwfjszC6oMqCNP4T6P5181jaCQwYWacFWCQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 5
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 341,
+          "skipped_file_count": 341
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

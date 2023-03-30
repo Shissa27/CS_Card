@@ -1,0 +1,930 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RoomInfo
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RoomInfo
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Realtime.RoomInfo">
+  
+  
+  <h1 id="Photon_Realtime_RoomInfo" data-uid="Photon.Realtime.RoomInfo" class="text-break">Class RoomInfo
+  </h1>
+  <div class="markdown level0 summary"><p>A simplified room with just the info required to list and join, used for the room listing in the lobby.
+The properties are not settable (IsOpen, MaxPlayers, etc).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RoomInfo</span></div>
+      <div class="level2"><a class="xref" href="Photon.Realtime.Room.html">Room</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Realtime.html">Photon.Realtime</a></h6>
+  <h6><strong>Assembly</strong>: PhotonRealtime.dll</h6>
+  <h5 id="Photon_Realtime_RoomInfo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RoomInfo</code></pre>
+  </div>
+  <h5 id="Photon_Realtime_RoomInfo_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class resembles info about available rooms, as sent by the Master server&apos;s lobby.
+Consider all values as readonly. None are synced (only updated by events by server).</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo__ctor_System_String_System_Collections_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.%23ctor(System.String%2CSystem.Collections.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L157">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo__ctor_" data-uid="Photon.Realtime.RoomInfo.#ctor*"></a>
+  <h4 id="Photon_Realtime_RoomInfo__ctor_System_String_System_Collections_Hashtable_" data-uid="Photon.Realtime.RoomInfo.#ctor(System.String,System.Collections.Hashtable)">RoomInfo(String, Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Constructs a RoomInfo to be used in room listings in lobby.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RoomInfo(string roomName, Hashtable roomProperties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">roomName</span></td>
+        <td><p>Name of the room and unique ID at the same time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td><span class="parametername">roomProperties</span></td>
+        <td><p>Properties for this room.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_autoCleanUp.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.autoCleanUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L63">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_autoCleanUp" data-uid="Photon.Realtime.RoomInfo.autoCleanUp">autoCleanUp</h4>
+  <div class="markdown level1 summary"><p>Backing field for property. False unless the GameProperty is set to true (else it&apos;s not sent).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool autoCleanUp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_emptyRoomTtl.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.emptyRoomTtl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_emptyRoomTtl" data-uid="Photon.Realtime.RoomInfo.emptyRoomTtl">emptyRoomTtl</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int emptyRoomTtl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_expectedUsers.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.expectedUsers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_expectedUsers" data-uid="Photon.Realtime.RoomInfo.expectedUsers">expectedUsers</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[] expectedUsers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_isOpen.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.isOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_isOpen" data-uid="Photon.Realtime.RoomInfo.isOpen">isOpen</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isOpen</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_isVisible.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.isVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_isVisible" data-uid="Photon.Realtime.RoomInfo.isVisible">isVisible</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isVisible</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_masterClientId.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.masterClientId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_masterClientId" data-uid="Photon.Realtime.RoomInfo.masterClientId">masterClientId</h4>
+  <div class="markdown level1 summary"><p>Backing field for master client id (actorNumber). defined by server in room props and ev leave.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int masterClientId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_maxPlayers.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.maxPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L45">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_maxPlayers" data-uid="Photon.Realtime.RoomInfo.maxPlayers">maxPlayers</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte maxPlayers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_name.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_name" data-uid="Photon.Realtime.RoomInfo.name">name</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string name</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_playerTtl.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.playerTtl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L51">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_playerTtl" data-uid="Photon.Realtime.RoomInfo.playerTtl">playerTtl</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int playerTtl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_propertiesListedInLobby.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.propertiesListedInLobby%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L72">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_propertiesListedInLobby" data-uid="Photon.Realtime.RoomInfo.propertiesListedInLobby">propertiesListedInLobby</h4>
+  <div class="markdown level1 summary"><p>Backing field for property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string[] propertiesListedInLobby</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_RemovedFromList.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.RemovedFromList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_RoomInfo_RemovedFromList" data-uid="Photon.Realtime.RoomInfo.RemovedFromList">RemovedFromList</h4>
+  <div class="markdown level1 summary"><p>Used in lobby, to mark rooms that are no longer listed (for being full, closed or hidden).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemovedFromList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_CustomProperties.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.CustomProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L77">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_CustomProperties_" data-uid="Photon.Realtime.RoomInfo.CustomProperties*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_CustomProperties" data-uid="Photon.Realtime.RoomInfo.CustomProperties">CustomProperties</h4>
+  <div class="markdown level1 summary"><p>Read-only &quot;cache&quot; of custom properties of a room. Set via Room.SetCustomProperties (not available for RoomInfo class!).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hashtable CustomProperties { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_RoomInfo_CustomProperties_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All keys are string-typed and the values depend on the game/application.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_IsOpen.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.IsOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L127">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_IsOpen_" data-uid="Photon.Realtime.RoomInfo.IsOpen*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_IsOpen" data-uid="Photon.Realtime.RoomInfo.IsOpen">IsOpen</h4>
+  <div class="markdown level1 summary"><p>Defines if the room can be joined.
+This does not affect listing in a lobby but joining the room will fail if not open.
+If not open, the room is excluded from random matchmaking.
+Due to racing conditions, found matches might become closed even while you join them.
+Simply re-connect to master and find another.
+Use property &quot;IsVisible&quot; to not list the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_RoomInfo_IsOpen_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>As part of RoomInfo this can&apos;t be set.
+As part of a Room (which the player joined), the setter will update the server and all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_IsVisible.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L144">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_IsVisible_" data-uid="Photon.Realtime.RoomInfo.IsVisible*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_IsVisible" data-uid="Photon.Realtime.RoomInfo.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Defines if the room is listed in its lobby.
+Rooms can be created invisible, or changed to invisible.
+To change if a room can be joined, use property: open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_RoomInfo_IsVisible_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>As part of RoomInfo this can&apos;t be set.
+As part of a Room (which the player joined), the setter will update the server and all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_MaxPlayers.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.MaxPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L107">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_MaxPlayers_" data-uid="Photon.Realtime.RoomInfo.MaxPlayers*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_MaxPlayers" data-uid="Photon.Realtime.RoomInfo.MaxPlayers">MaxPlayers</h4>
+  <div class="markdown level1 summary"><p>The limit of players for this room. This property is shown in lobby, too.
+If the room is full (players count == maxplayers), joining this room will fail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte MaxPlayers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_RoomInfo_MaxPlayers_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>As part of RoomInfo this can&apos;t be set.
+As part of a Room (which the player joined), the setter will update the server and all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_Name.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L86">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_Name_" data-uid="Photon.Realtime.RoomInfo.Name*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_Name" data-uid="Photon.Realtime.RoomInfo.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of a room. Unique identifier for a room/match (per AppId + game-Version).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_PlayerCount.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.PlayerCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L97">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_PlayerCount_" data-uid="Photon.Realtime.RoomInfo.PlayerCount*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_PlayerCount" data-uid="Photon.Realtime.RoomInfo.PlayerCount">PlayerCount</h4>
+  <div class="markdown level1 summary"><p>Count of players currently in room. This property is overwritten by the Room class (used when you&apos;re in a Room).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlayerCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L167">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_Equals_" data-uid="Photon.Realtime.RoomInfo.Equals*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_Equals_System_Object_" data-uid="Photon.Realtime.RoomInfo.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Makes RoomInfo comparable (by name).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_GetHashCode.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L177">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_GetHashCode_" data-uid="Photon.Realtime.RoomInfo.GetHashCode*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_GetHashCode" data-uid="Photon.Realtime.RoomInfo.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Accompanies Equals, using the name&apos;s HashCode as return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_InternalCacheProperties_System_Collections_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.InternalCacheProperties(System.Collections.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L199">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_InternalCacheProperties_" data-uid="Photon.Realtime.RoomInfo.InternalCacheProperties*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_InternalCacheProperties_System_Collections_Hashtable_" data-uid="Photon.Realtime.RoomInfo.InternalCacheProperties(System.Collections.Hashtable)">InternalCacheProperties(Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Copies &quot;well known&quot; properties to fields (IsVisible, etc) and caches the custom properties (string-keys only) in a local hashtable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InternalCacheProperties(Hashtable propertiesToCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td><span class="parametername">propertiesToCache</span></td>
+        <td><p>New or updated properties to store in this RoomInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_ToString.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L185">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_ToString_" data-uid="Photon.Realtime.RoomInfo.ToString*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_ToString" data-uid="Photon.Realtime.RoomInfo.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns most interesting room values as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Summary of this RoomInfo instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo_ToStringFull.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo.ToStringFull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L192">View Source</a>
+  </span>
+  <a id="Photon_Realtime_RoomInfo_ToStringFull_" data-uid="Photon.Realtime.RoomInfo.ToStringFull*"></a>
+  <h4 id="Photon_Realtime_RoomInfo_ToStringFull" data-uid="Photon.Realtime.RoomInfo.ToStringFull">ToStringFull()</h4>
+  <div class="markdown level1 summary"><p>Returns most interesting room values as string, including custom properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToStringFull()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Summary of this RoomInfo instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Photon.Pun.UtilityScripts.TurnExtensions.html#Photon_Pun_UtilityScripts_TurnExtensions_GetTurn_Photon_Realtime_RoomInfo_">TurnExtensions.GetTurn(RoomInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Pun.UtilityScripts.TurnExtensions.html#Photon_Pun_UtilityScripts_TurnExtensions_GetTurnStart_Photon_Realtime_RoomInfo_">TurnExtensions.GetTurnStart(RoomInfo)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_RoomInfo.md&amp;value=---%0Auid%3A%20Photon.Realtime.RoomInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/RoomInfo.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,929 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SupportLogger
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SupportLogger
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Realtime.SupportLogger">
+  
+  
+  <h1 id="Photon_Realtime_SupportLogger" data-uid="Photon.Realtime.SupportLogger" class="text-break">Class SupportLogger
+  </h1>
+  <div class="markdown level0 summary"><p>Helper class to debug log basic information about Photon client and vital traffic statistics.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SupportLogger</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Realtime.html">Photon.Realtime</a></h6>
+  <h6><strong>Assembly</strong>: PhotonRealtime.dll</h6>
+  <h5 id="Photon_Realtime_SupportLogger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SupportLogger : IConnectionCallbacks, IInRoomCallbacks, IMatchmakingCallbacks, ILobbyCallbacks</code></pre>
+  </div>
+  <h5 id="Photon_Realtime_SupportLogger_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Set SupportLogger.Client for this to work.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_LogTrafficStats.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.LogTrafficStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Photon_Realtime_SupportLogger_LogTrafficStats" data-uid="Photon.Realtime.SupportLogger.LogTrafficStats">LogTrafficStats</h4>
+  <div class="markdown level1 summary"><p>Toggle to enable or disable traffic statistics logging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LogTrafficStats</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_Client.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L74">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_Client_" data-uid="Photon.Realtime.SupportLogger.Client*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_Client" data-uid="Photon.Realtime.SupportLogger.Client">Client</h4>
+  <div class="markdown level1 summary"><p>Photon client to log information and statistics from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoadBalancingClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.LoadBalancingClient.html">LoadBalancingClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_LogStats.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.LogStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L204">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_LogStats_" data-uid="Photon.Realtime.SupportLogger.LogStats*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_LogStats" data-uid="Photon.Realtime.SupportLogger.LogStats">LogStats()</h4>
+  <div class="markdown level1 summary"><p>Debug logs vital traffic statistics about the attached Photon Client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogStats()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnConnected.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L283">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnConnected_" data-uid="Photon.Realtime.SupportLogger.OnConnected*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnConnected" data-uid="Photon.Realtime.SupportLogger.OnConnected">OnConnected()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnected()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnConnectedToMaster.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnConnectedToMaster%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L300">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnConnectedToMaster_" data-uid="Photon.Realtime.SupportLogger.OnConnectedToMaster*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnConnectedToMaster" data-uid="Photon.Realtime.SupportLogger.OnConnectedToMaster">OnConnectedToMaster()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnectedToMaster()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnCreatedRoom.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnCreatedRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L340">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnCreatedRoom_" data-uid="Photon.Realtime.SupportLogger.OnCreatedRoom*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnCreatedRoom" data-uid="Photon.Realtime.SupportLogger.OnCreatedRoom">OnCreatedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreatedRoom()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnCreateRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnCreateRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L320">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnCreateRoomFailed_" data-uid="Photon.Realtime.SupportLogger.OnCreateRoomFailed*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnCreateRoomFailed_System_Int16_System_String_" data-uid="Photon.Realtime.SupportLogger.OnCreateRoomFailed(System.Int16,System.String)">OnCreateRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreateRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnCustomAuthenticationFailed_System_String_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnCustomAuthenticationFailed(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L400">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnCustomAuthenticationFailed_" data-uid="Photon.Realtime.SupportLogger.OnCustomAuthenticationFailed*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnCustomAuthenticationFailed_System_String_" data-uid="Photon.Realtime.SupportLogger.OnCustomAuthenticationFailed(System.String)">OnCustomAuthenticationFailed(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCustomAuthenticationFailed(string debugMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">debugMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L395">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnCustomAuthenticationResponse_" data-uid="Photon.Realtime.SupportLogger.OnCustomAuthenticationResponse*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Photon.Realtime.SupportLogger.OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary{System.String,System.Object})">OnCustomAuthenticationResponse(Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCustomAuthenticationResponse(Dictionary&lt;string, object&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnDisconnected_Photon_Realtime_DisconnectCause_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnDisconnected(Photon.Realtime.DisconnectCause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L350">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnDisconnected_" data-uid="Photon.Realtime.SupportLogger.OnDisconnected*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnDisconnected_Photon_Realtime_DisconnectCause_" data-uid="Photon.Realtime.SupportLogger.OnDisconnected(Photon.Realtime.DisconnectCause)">OnDisconnected(DisconnectCause)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisconnected(DisconnectCause cause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.DisconnectCause.html">DisconnectCause</a></td>
+        <td><span class="parametername">cause</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnErrorInfo_Photon_Realtime_ErrorInfo_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnErrorInfo(Photon.Realtime.ErrorInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L429">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnErrorInfo_" data-uid="Photon.Realtime.SupportLogger.OnErrorInfo*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnErrorInfo_Photon_Realtime_ErrorInfo_" data-uid="Photon.Realtime.SupportLogger.OnErrorInfo(Photon.Realtime.ErrorInfo)">OnErrorInfo(ErrorInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnErrorInfo(ErrorInfo errorInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.ErrorInfo.html">ErrorInfo</a></td>
+        <td><span class="parametername">errorInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnFriendListUpdate(System.Collections.Generic.List%7BPhoton.Realtime.FriendInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L305">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnFriendListUpdate_" data-uid="Photon.Realtime.SupportLogger.OnFriendListUpdate*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__" data-uid="Photon.Realtime.SupportLogger.OnFriendListUpdate(System.Collections.Generic.List{Photon.Realtime.FriendInfo})">OnFriendListUpdate(List&lt;FriendInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFriendListUpdate(List&lt;FriendInfo&gt; friendList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.FriendInfo.html">FriendInfo</a>&gt;</td>
+        <td><span class="parametername">friendList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnJoinedLobby.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnJoinedLobby%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L310">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnJoinedLobby_" data-uid="Photon.Realtime.SupportLogger.OnJoinedLobby*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnJoinedLobby" data-uid="Photon.Realtime.SupportLogger.OnJoinedLobby">OnJoinedLobby()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinedLobby()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnJoinedRoom.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnJoinedRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L325">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnJoinedRoom_" data-uid="Photon.Realtime.SupportLogger.OnJoinedRoom*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnJoinedRoom" data-uid="Photon.Realtime.SupportLogger.OnJoinedRoom">OnJoinedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinedRoom()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnJoinRandomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnJoinRandomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L335">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnJoinRandomFailed_" data-uid="Photon.Realtime.SupportLogger.OnJoinRandomFailed*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnJoinRandomFailed_System_Int16_System_String_" data-uid="Photon.Realtime.SupportLogger.OnJoinRandomFailed(System.Int16,System.String)">OnJoinRandomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinRandomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnJoinRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnJoinRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L330">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnJoinRoomFailed_" data-uid="Photon.Realtime.SupportLogger.OnJoinRoomFailed*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnJoinRoomFailed_System_Int16_System_String_" data-uid="Photon.Realtime.SupportLogger.OnJoinRoomFailed(System.Int16,System.String)">OnJoinRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnLeftLobby.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnLeftLobby%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L315">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnLeftLobby_" data-uid="Photon.Realtime.SupportLogger.OnLeftLobby*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnLeftLobby" data-uid="Photon.Realtime.SupportLogger.OnLeftLobby">OnLeftLobby()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLeftLobby()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnLeftRoom.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnLeftRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L345">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnLeftRoom_" data-uid="Photon.Realtime.SupportLogger.OnLeftRoom*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnLeftRoom" data-uid="Photon.Realtime.SupportLogger.OnLeftRoom">OnLeftRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLeftRoom()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnLobbyStatisticsUpdate_System_Collections_Generic_List_Photon_Realtime_TypedLobbyInfo__.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnLobbyStatisticsUpdate(System.Collections.Generic.List%7BPhoton.Realtime.TypedLobbyInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L405">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnLobbyStatisticsUpdate_" data-uid="Photon.Realtime.SupportLogger.OnLobbyStatisticsUpdate*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnLobbyStatisticsUpdate_System_Collections_Generic_List_Photon_Realtime_TypedLobbyInfo__" data-uid="Photon.Realtime.SupportLogger.OnLobbyStatisticsUpdate(System.Collections.Generic.List{Photon.Realtime.TypedLobbyInfo})">OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt; lobbyStatistics)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.TypedLobbyInfo.html">TypedLobbyInfo</a>&gt;</td>
+        <td><span class="parametername">lobbyStatistics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnMasterClientSwitched_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnMasterClientSwitched(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L390">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnMasterClientSwitched_" data-uid="Photon.Realtime.SupportLogger.OnMasterClientSwitched*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnMasterClientSwitched_Photon_Realtime_Player_" data-uid="Photon.Realtime.SupportLogger.OnMasterClientSwitched(Photon.Realtime.Player)">OnMasterClientSwitched(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMasterClientSwitched(Player newMasterClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newMasterClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnPlayerEnteredRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnPlayerEnteredRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L370">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnPlayerEnteredRoom_" data-uid="Photon.Realtime.SupportLogger.OnPlayerEnteredRoom*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnPlayerEnteredRoom_Photon_Realtime_Player_" data-uid="Photon.Realtime.SupportLogger.OnPlayerEnteredRoom(Photon.Realtime.Player)">OnPlayerEnteredRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerEnteredRoom(Player newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnPlayerLeftRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnPlayerLeftRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L375">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnPlayerLeftRoom_" data-uid="Photon.Realtime.SupportLogger.OnPlayerLeftRoom*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnPlayerLeftRoom_Photon_Realtime_Player_" data-uid="Photon.Realtime.SupportLogger.OnPlayerLeftRoom(Photon.Realtime.Player)">OnPlayerLeftRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerLeftRoom(Player otherPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">otherPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnPlayerPropertiesUpdate_Photon_Realtime_Player_System_Collections_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnPlayerPropertiesUpdate(Photon.Realtime.Player%2CSystem.Collections.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L385">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnPlayerPropertiesUpdate_" data-uid="Photon.Realtime.SupportLogger.OnPlayerPropertiesUpdate*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnPlayerPropertiesUpdate_Photon_Realtime_Player_System_Collections_Hashtable_" data-uid="Photon.Realtime.SupportLogger.OnPlayerPropertiesUpdate(Photon.Realtime.Player,System.Collections.Hashtable)">OnPlayerPropertiesUpdate(Player, Hashtable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">targetPlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td><span class="parametername">changedProps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnRegionListReceived_Photon_Realtime_RegionHandler_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnRegionListReceived(Photon.Realtime.RegionHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L360">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnRegionListReceived_" data-uid="Photon.Realtime.SupportLogger.OnRegionListReceived*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnRegionListReceived_Photon_Realtime_RegionHandler_" data-uid="Photon.Realtime.SupportLogger.OnRegionListReceived(Photon.Realtime.RegionHandler)">OnRegionListReceived(RegionHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRegionListReceived(RegionHandler regionHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.RegionHandler.html">RegionHandler</a></td>
+        <td><span class="parametername">regionHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo__.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnRoomListUpdate(System.Collections.Generic.List%7BPhoton.Realtime.RoomInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L365">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnRoomListUpdate_" data-uid="Photon.Realtime.SupportLogger.OnRoomListUpdate*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo__" data-uid="Photon.Realtime.SupportLogger.OnRoomListUpdate(System.Collections.Generic.List{Photon.Realtime.RoomInfo})">OnRoomListUpdate(List&lt;RoomInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRoomListUpdate(List&lt;RoomInfo&gt; roomList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.RoomInfo.html">RoomInfo</a>&gt;</td>
+        <td><span class="parametername">roomList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_OnRoomPropertiesUpdate_System_Collections_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.OnRoomPropertiesUpdate(System.Collections.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L380">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_OnRoomPropertiesUpdate_" data-uid="Photon.Realtime.SupportLogger.OnRoomPropertiesUpdate*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_OnRoomPropertiesUpdate_System_Collections_Hashtable_" data-uid="Photon.Realtime.SupportLogger.OnRoomPropertiesUpdate(System.Collections.Hashtable)">OnRoomPropertiesUpdate(Hashtable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td><span class="parametername">propertiesThatChanged</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_StartLogStats.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.StartLogStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L129">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_StartLogStats_" data-uid="Photon.Realtime.SupportLogger.StartLogStats*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_StartLogStats" data-uid="Photon.Realtime.SupportLogger.StartLogStats">StartLogStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLogStats()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger_StopLogStats.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger.StopLogStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L138">View Source</a>
+  </span>
+  <a id="Photon_Realtime_SupportLogger_StopLogStats_" data-uid="Photon.Realtime.SupportLogger.StopLogStats*"></a>
+  <h4 id="Photon_Realtime_SupportLogger_StopLogStats" data-uid="Photon.Realtime.SupportLogger.StopLogStats">StopLogStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopLogStats()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_SupportLogger.md&amp;value=---%0Auid%3A%20Photon.Realtime.SupportLogger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/SupportLogger.cs/#L52" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

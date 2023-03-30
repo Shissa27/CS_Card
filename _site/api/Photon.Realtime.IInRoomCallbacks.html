@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IInRoomCallbacks
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IInRoomCallbacks
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Realtime.IInRoomCallbacks">
+  
+  
+  <h1 id="Photon_Realtime_IInRoomCallbacks" data-uid="Photon.Realtime.IInRoomCallbacks" class="text-break">Interface IInRoomCallbacks
+  </h1>
+  <div class="markdown level0 summary"><p>Collection of &quot;in room&quot; callbacks for the Realtime Api to cover: Players entering or leaving, property updates and Master Client switching.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Realtime.html">Photon.Realtime</a></h6>
+  <h6><strong>Assembly</strong>: PhotonRealtime.dll</h6>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInRoomCallbacks</code></pre>
+  </div>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Classes that implement this interface must be registered to get callbacks for various situations.</p>
+<p>To register for callbacks, call <a class="xref" href="Photon.Realtime.LoadBalancingClient.html#Photon_Realtime_LoadBalancingClient_AddCallbackTarget_System_Object_">AddCallbackTarget(Object)</a> and pass the class implementing this interface
+To stop getting callbacks, call <a class="xref" href="Photon.Realtime.LoadBalancingClient.html#Photon_Realtime_LoadBalancingClient_RemoveCallbackTarget_System_Object_">RemoveCallbackTarget(Object)</a> and pass the class implementing this interface</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Realtime.IInRoomCallbacks.OnMasterClientSwitched(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3909">View Source</a>
+  </span>
+  <a id="Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_" data-uid="Photon.Realtime.IInRoomCallbacks.OnMasterClientSwitched*"></a>
+  <h4 id="Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_" data-uid="Photon.Realtime.IInRoomCallbacks.OnMasterClientSwitched(Photon.Realtime.Player)">OnMasterClientSwitched(Player)</h4>
+  <div class="markdown level1 summary"><p>Called after switching to a new MasterClient when the current one leaves.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnMasterClientSwitched(Player newMasterClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newMasterClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_OnMasterClientSwitched_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is not called when this client enters a room.
+The former MasterClient is still in the player list when this method get called.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Realtime.IInRoomCallbacks.OnPlayerEnteredRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3864">View Source</a>
+  </span>
+  <a id="Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_" data-uid="Photon.Realtime.IInRoomCallbacks.OnPlayerEnteredRoom*"></a>
+  <h4 id="Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_" data-uid="Photon.Realtime.IInRoomCallbacks.OnPlayerEnteredRoom(Photon.Realtime.Player)">OnPlayerEnteredRoom(Player)</h4>
+  <div class="markdown level1 summary"><p>Called when a remote player entered the room. This Player is already added to the playerlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerEnteredRoom(Player newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If your game starts with a certain number of players, this callback can be useful to check the
+Room.playerCount and find out if you can start.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Realtime.IInRoomCallbacks.OnPlayerLeftRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3879">View Source</a>
+  </span>
+  <a id="Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_" data-uid="Photon.Realtime.IInRoomCallbacks.OnPlayerLeftRoom*"></a>
+  <h4 id="Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_" data-uid="Photon.Realtime.IInRoomCallbacks.OnPlayerLeftRoom(Photon.Realtime.Player)">OnPlayerLeftRoom(Player)</h4>
+  <div class="markdown level1 summary"><p>Called when a remote player left the room or became inactive. Check otherPlayer.IsInactive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerLeftRoom(Player otherPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">otherPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If another player leaves the room or if the server detects a lost connection, this callback will
+be used to notify your game logic.</p>
+<p>Depending on the room&apos;s setup, players may become inactive, which means they may return and retake
+their spot in the room. In such cases, the Player stays in the Room.Players dictionary.</p>
+<p>If the player is not just inactive, it gets removed from the Room.Players dictionary, before
+the callback is called.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IInRoomCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_System_Collections_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Realtime.IInRoomCallbacks.OnPlayerPropertiesUpdate(Photon.Realtime.Player%2CSystem.Collections.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3900">View Source</a>
+  </span>
+  <a id="Photon_Realtime_IInRoomCallbacks_OnPlayerPropertiesUpdate_" data-uid="Photon.Realtime.IInRoomCallbacks.OnPlayerPropertiesUpdate*"></a>
+  <h4 id="Photon_Realtime_IInRoomCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_System_Collections_Hashtable_" data-uid="Photon.Realtime.IInRoomCallbacks.OnPlayerPropertiesUpdate(Photon.Realtime.Player,System.Collections.Hashtable)">OnPlayerPropertiesUpdate(Player, Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Called when custom player-properties are changed. Player and the changed properties are passed as object[].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">targetPlayer</span></td>
+        <td><p>Contains Player that changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td><span class="parametername">changedProps</span></td>
+        <td><p>Contains the properties that changed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_System_Collections_Hashtable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Changing properties must be done by Player.SetCustomProperties, which causes this callback locally, too.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IInRoomCallbacks_OnRoomPropertiesUpdate_System_Collections_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Realtime.IInRoomCallbacks.OnRoomPropertiesUpdate(System.Collections.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3890">View Source</a>
+  </span>
+  <a id="Photon_Realtime_IInRoomCallbacks_OnRoomPropertiesUpdate_" data-uid="Photon.Realtime.IInRoomCallbacks.OnRoomPropertiesUpdate*"></a>
+  <h4 id="Photon_Realtime_IInRoomCallbacks_OnRoomPropertiesUpdate_System_Collections_Hashtable_" data-uid="Photon.Realtime.IInRoomCallbacks.OnRoomPropertiesUpdate(System.Collections.Hashtable)">OnRoomPropertiesUpdate(Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Called when a room&apos;s custom properties changed. The propertiesThatChanged contains all that was set via Room.SetCustomProperties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td><span class="parametername">propertiesThatChanged</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Realtime_IInRoomCallbacks_OnRoomPropertiesUpdate_System_Collections_Hashtable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Since v1.25 this method has one parameter: Hashtable propertiesThatChanged.<br>
+Changing properties must be done by Room.SetCustomProperties, which causes this callback locally, too.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_IInRoomCallbacks.md&amp;value=---%0Auid%3A%20Photon.Realtime.IInRoomCallbacks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L3855" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

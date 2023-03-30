@@ -1,0 +1,2264 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PhotonView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PhotonView
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Pun.PhotonView">
+  
+  
+  <h1 id="Photon_Pun_PhotonView" data-uid="Photon.Pun.PhotonView" class="text-break">Class PhotonView
+  </h1>
+  <div class="markdown level0 summary"><p>A PhotonView identifies an object across the network (viewID) and configures how the controlling client updates remote instances.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">PhotonView</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Pun.html">Photon.Pun</a></h6>
+  <h6><strong>Assembly</strong>: PhotonUnityNetworking.dll</h6>
+  <h5 id="Photon_Pun_PhotonView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Photon Networking/Photon View&quot;)]
+public class PhotonView : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Group.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Group%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_Group" data-uid="Photon.Pun.PhotonView.Group">Group</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;group&quot;)]
+public byte Group</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_InstantiationId.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.InstantiationId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L325">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_InstantiationId" data-uid="Photon.Pun.PhotonView.InstantiationId">InstantiationId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;instantiationId&quot;)]
+public int InstantiationId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_isRuntimeInstantiated.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.isRuntimeInstantiated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L329">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_isRuntimeInstantiated" data-uid="Photon.Pun.PhotonView.isRuntimeInstantiated">isRuntimeInstantiated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+public bool isRuntimeInstantiated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_lastOnSerializeDataReceived.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.lastOnSerializeDataReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L120">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_lastOnSerializeDataReceived" data-uid="Photon.Pun.PhotonView.lastOnSerializeDataReceived">lastOnSerializeDataReceived</h4>
+  <div class="markdown level1 summary"><p>For internal use only, don&apos;t use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object[] lastOnSerializeDataReceived</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_lastOnSerializeDataSent.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.lastOnSerializeDataSent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L114">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_lastOnSerializeDataSent" data-uid="Photon.Pun.PhotonView.lastOnSerializeDataSent">lastOnSerializeDataSent</h4>
+  <div class="markdown level1 summary"><p>For internal use only, don&apos;t use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;object&gt; lastOnSerializeDataSent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_mixedModeIsReliable.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.mixedModeIsReliable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L125">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_mixedModeIsReliable" data-uid="Photon.Pun.PhotonView.mixedModeIsReliable">mixedModeIsReliable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mixedModeIsReliable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_observableSearch.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.observableSearch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L140">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_observableSearch" data-uid="Photon.Pun.PhotonView.observableSearch">observableSearch</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhotonView.ObservableSearch observableSearch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonView.ObservableSearch.html">PhotonView.ObservableSearch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_ObservedComponents.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.ObservedComponents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L142">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_ObservedComponents" data-uid="Photon.Pun.PhotonView.ObservedComponents">ObservedComponents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Component&gt; ObservedComponents</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">UnityEngine.Component</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_OwnershipTransfer.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.OwnershipTransfer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L134">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_OwnershipTransfer" data-uid="Photon.Pun.PhotonView.OwnershipTransfer">OwnershipTransfer</h4>
+  <div class="markdown level1 summary"><p>Defines if ownership of this PhotonView is fixed, can be requested or simply taken.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;ownershipTransfer&quot;)]
+public OwnershipOption OwnershipTransfer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.OwnershipOption.html">OwnershipOption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_OwnershipTransfer_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that you can&apos;t edit this value at runtime.
+The options are described in enum OwnershipOption.
+The current owner has to implement IPunCallbacks.OnOwnershipRequest to react to the ownership request.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_prefixField.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.prefixField%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L96">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_prefixField" data-uid="Photon.Pun.PhotonView.prefixField">prefixField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;prefixBackup&quot;)]
+public int prefixField</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_removedFromLocalViewList.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.removedFromLocalViewList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L332">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_removedFromLocalViewList" data-uid="Photon.Pun.PhotonView.removedFromLocalViewList">removedFromLocalViewList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool removedFromLocalViewList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_sceneViewId.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.sceneViewId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L277">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_sceneViewId" data-uid="Photon.Pun.PhotonView.sceneViewId">sceneViewId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[FormerlySerializedAs(&quot;viewIdField&quot;)]
+[HideInInspector]
+public int sceneViewId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Synchronization.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Synchronization%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L123">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_Synchronization" data-uid="Photon.Pun.PhotonView.Synchronization">Synchronization</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;synchronization&quot;)]
+public ViewSynchronization Synchronization</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.ViewSynchronization.html">ViewSynchronization</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_syncValues.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.syncValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L115">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_PhotonView_syncValues" data-uid="Photon.Pun.PhotonView.syncValues">syncValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;object&gt; syncValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_AmController.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.AmController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L181">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_AmController_" data-uid="Photon.Pun.PhotonView.AmController*"></a>
+  <h4 id="Photon_Pun_PhotonView_AmController" data-uid="Photon.Pun.PhotonView.AmController">AmController</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AmController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_AmOwner.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.AmOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L190">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_AmOwner_" data-uid="Photon.Pun.PhotonView.AmOwner*"></a>
+  <h4 id="Photon_Pun_PhotonView_AmOwner" data-uid="Photon.Pun.PhotonView.AmOwner">AmOwner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AmOwner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Controller.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Controller%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L186">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Controller_" data-uid="Photon.Pun.PhotonView.Controller*"></a>
+  <h4 id="Photon_Pun_PhotonView_Controller" data-uid="Photon.Pun.PhotonView.Controller">Controller</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player Controller { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_ControllerActorNr.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.ControllerActorNr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L242">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_ControllerActorNr_" data-uid="Photon.Pun.PhotonView.ControllerActorNr*"></a>
+  <h4 id="Photon_Pun_PhotonView_ControllerActorNr" data-uid="Photon.Pun.PhotonView.ControllerActorNr">ControllerActorNr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ControllerActorNr { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_CreatorActorNr.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.CreatorActorNr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L188">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_CreatorActorNr_" data-uid="Photon.Pun.PhotonView.CreatorActorNr*"></a>
+  <h4 id="Photon_Pun_PhotonView_CreatorActorNr" data-uid="Photon.Pun.PhotonView.CreatorActorNr">CreatorActorNr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CreatorActorNr { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_InstantiationData.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.InstantiationData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L103">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_InstantiationData_" data-uid="Photon.Pun.PhotonView.InstantiationData*"></a>
+  <h4 id="Photon_Pun_PhotonView_InstantiationData" data-uid="Photon.Pun.PhotonView.InstantiationData">InstantiationData</h4>
+  <div class="markdown level1 summary"><p>This is the InstantiationData that was passed when calling PhotonNetwork.Instantiate* (if that was used to spawn this prefab)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[] InstantiationData { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_IsMine.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.IsMine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L180">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_IsMine_" data-uid="Photon.Pun.PhotonView.IsMine*"></a>
+  <h4 id="Photon_Pun_PhotonView_IsMine" data-uid="Photon.Pun.PhotonView.IsMine">IsMine</h4>
+  <div class="markdown level1 summary"><p>True if the PhotonView is &quot;mine&quot; and can be controlled by this client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_IsMine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>PUN has an ownership concept that defines who can control and destroy each PhotonView.
+True in case the controller matches the local Player.
+True if this is a scene photonview (null owner and ownerId == 0) on the Master client.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_IsOwnerActive.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.IsOwnerActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L167">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_IsOwnerActive_" data-uid="Photon.Pun.PhotonView.IsOwnerActive*"></a>
+  <h4 id="Photon_Pun_PhotonView_IsOwnerActive" data-uid="Photon.Pun.PhotonView.IsOwnerActive">IsOwnerActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOwnerActive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_IsRoomView.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.IsRoomView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L162">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_IsRoomView_" data-uid="Photon.Pun.PhotonView.IsRoomView*"></a>
+  <h4 id="Photon_Pun_PhotonView_IsRoomView" data-uid="Photon.Pun.PhotonView.IsRoomView">IsRoomView</h4>
+  <div class="markdown level1 summary"><p>True if the PhotonView was loaded with the scene (game object) or instantiated with InstantiateRoomObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRoomView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_IsRoomView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Room objects are not owned by a particular player but belong to the scene. Thus they don&apos;t get destroyed when their
+creator leaves the game and the current Master Client can control them (whoever that is).
+The ownerId is 0 (player IDs are 1 and up).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_IsSceneView.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.IsSceneView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L150">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_IsSceneView_" data-uid="Photon.Pun.PhotonView.IsSceneView*"></a>
+  <h4 id="Photon_Pun_PhotonView_IsSceneView" data-uid="Photon.Pun.PhotonView.IsSceneView">IsSceneView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Renamed. Use IsRoomView instead&quot;)]
+public bool IsSceneView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Owner.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L203">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Owner_" data-uid="Photon.Pun.PhotonView.Owner*"></a>
+  <h4 id="Photon_Pun_PhotonView_Owner" data-uid="Photon.Pun.PhotonView.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>The owner of a PhotonView is the creator of an object by default Ownership can be transferred and the owner may not be in the room anymore. Objects in the scene don&apos;t have an owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player Owner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_Owner_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The owner/controller of a PhotonView is also the client which sends position updates of the GameObject.</p>
+<p>Ownership can be transferred to another player with PhotonView.TransferOwnership or any player can request
+ownership by calling the PhotonView&apos;s RequestOwnership method.
+The current owner has to implement IPunCallbacks.OnOwnershipRequest to react to the ownership request.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_OwnerActorNr.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.OwnerActorNr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L210">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_OwnerActorNr_" data-uid="Photon.Pun.PhotonView.OwnerActorNr*"></a>
+  <h4 id="Photon_Pun_PhotonView_OwnerActorNr" data-uid="Photon.Pun.PhotonView.OwnerActorNr">OwnerActorNr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OwnerActorNr { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Prefix.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Prefix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L80">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Prefix_" data-uid="Photon.Pun.PhotonView.Prefix*"></a>
+  <h4 id="Photon_Pun_PhotonView_Prefix" data-uid="Photon.Pun.PhotonView.Prefix">Prefix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Prefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_ViewID.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.ViewID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L288">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_ViewID_" data-uid="Photon.Pun.PhotonView.ViewID*"></a>
+  <h4 id="Photon_Pun_PhotonView_ViewID" data-uid="Photon.Pun.PhotonView.ViewID">ViewID</h4>
+  <div class="markdown level1 summary"><p>The ID of the PhotonView. Identifies it in a networked game (per room).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ViewID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_ViewID_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See: [Network Instantiation](@ref instantiateManual)</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_AddCallback__1_Photon_Pun_IPhotonViewCallback_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.AddCallback%60%601(Photon.Pun.IPhotonViewCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L747">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_AddCallback_" data-uid="Photon.Pun.PhotonView.AddCallback*"></a>
+  <h4 id="Photon_Pun_PhotonView_AddCallback__1_Photon_Pun_IPhotonViewCallback_" data-uid="Photon.Pun.PhotonView.AddCallback``1(Photon.Pun.IPhotonViewCallback)">AddCallback&lt;T&gt;(IPhotonViewCallback)</h4>
+  <div class="markdown level1 summary"><p>Add object to this PhotonView&apos;s callback.
+T is the IOnPhotonViewCallback derived interface you want added to its associated callback list.
+Supplying IOnPhotonViewCallback (the interface base class) as T will add ALL implemented IOnPhotonViewCallback Interfaces found on the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCallback&lt;T&gt;(IPhotonViewCallback obj)
+
+    where T : class, IPhotonViewCallback</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.IPhotonViewCallback.html">IPhotonViewCallback</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_AddCallbackTarget_Photon_Pun_IPhotonViewCallback_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.AddCallbackTarget(Photon.Pun.IPhotonViewCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L728">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_AddCallbackTarget_" data-uid="Photon.Pun.PhotonView.AddCallbackTarget*"></a>
+  <h4 id="Photon_Pun_PhotonView_AddCallbackTarget_Photon_Pun_IPhotonViewCallback_" data-uid="Photon.Pun.PhotonView.AddCallbackTarget(Photon.Pun.IPhotonViewCallback)">AddCallbackTarget(IPhotonViewCallback)</h4>
+  <div class="markdown level1 summary"><p>Add object to all applicable callback interfaces. Object must implement at least one IOnPhotonViewCallback derived interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCallbackTarget(IPhotonViewCallback obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.IPhotonViewCallback.html">IPhotonViewCallback</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>An object that implements OnPhotonView callback interface(s).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Awake.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L336">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Awake_" data-uid="Photon.Pun.PhotonView.Awake*"></a>
+  <h4 id="Photon_Pun_PhotonView_Awake" data-uid="Photon.Pun.PhotonView.Awake">Awake()</h4>
+  <div class="markdown level1 summary"><p>Will FindObservables() and assign the sceneViewId, if that is != 0. This initializes the PhotonView if loaded with the scene. Called once by Unity, when this instance is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Awake()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_DeserializeComponent_UnityEngine_Component_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.DeserializeComponent(UnityEngine.Component%2CPhoton.Pun.PhotonStream%2CPhoton.Pun.PhotonMessageInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L539">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_DeserializeComponent_" data-uid="Photon.Pun.PhotonView.DeserializeComponent*"></a>
+  <h4 id="Photon_Pun_PhotonView_DeserializeComponent_UnityEngine_Component_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_" data-uid="Photon.Pun.PhotonView.DeserializeComponent(UnityEngine.Component,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)">DeserializeComponent(Component, PhotonStream, PhotonMessageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DeserializeComponent(Component component, PhotonStream stream, PhotonMessageInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Component</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonStream.html">PhotonStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonMessageInfo.html">PhotonMessageInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_DeserializeView_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.DeserializeView(Photon.Pun.PhotonStream%2CPhoton.Pun.PhotonMessageInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L526">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_DeserializeView_" data-uid="Photon.Pun.PhotonView.DeserializeView*"></a>
+  <h4 id="Photon_Pun_PhotonView_DeserializeView_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_" data-uid="Photon.Pun.PhotonView.DeserializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)">DeserializeView(PhotonStream, PhotonMessageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeserializeView(PhotonStream stream, PhotonMessageInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonStream.html">PhotonStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonMessageInfo.html">PhotonMessageInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Find_System_Int32_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Find(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L695">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Find_" data-uid="Photon.Pun.PhotonView.Find*"></a>
+  <h4 id="Photon_Pun_PhotonView_Find_System_Int32_" data-uid="Photon.Pun.PhotonView.Find(System.Int32)">Find(Int32)</h4>
+  <div class="markdown level1 summary"><p>Finds the PhotonView Component with a viewID in the scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotonView Find(int viewID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">viewID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonView.html">PhotonView</a></td>
+        <td><p>The PhotonView with ViewID. Returns null if none found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_FindObservables_System_Boolean_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.FindObservables(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L493">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_FindObservables_" data-uid="Photon.Pun.PhotonView.FindObservables*"></a>
+  <h4 id="Photon_Pun_PhotonView_FindObservables_System_Boolean_" data-uid="Photon.Pun.PhotonView.FindObservables(System.Boolean)">FindObservables(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Will find IPunObservable components on this GameObject and nested children and add them to the ObservedComponents list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindObservables(bool force = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>If true, FindObservables will work as if observableSearch is AutoFindActive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_FindObservables_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is called via PhotonView.Awake(), which in turn is called immediately by the engine&apos;s AddComponent method.</p>
+<p>Changing the ObservedComponents of a PhotonView at runtime can be problematic, if other clients are not also
+updating their list.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Get_UnityEngine_Component_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Get(UnityEngine.Component)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L680">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Get_" data-uid="Photon.Pun.PhotonView.Get*"></a>
+  <h4 id="Photon_Pun_PhotonView_Get_UnityEngine_Component_" data-uid="Photon.Pun.PhotonView.Get(UnityEngine.Component)">Get(Component)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotonView Get(Component component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Component</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonView.html">PhotonView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_Get_UnityEngine_GameObject_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.Get(UnityEngine.GameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L685">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_Get_" data-uid="Photon.Pun.PhotonView.Get*"></a>
+  <h4 id="Photon_Pun_PhotonView_Get_UnityEngine_GameObject_" data-uid="Photon.Pun.PhotonView.Get(UnityEngine.GameObject)">Get(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotonView Get(GameObject gameObj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">gameObj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonView.html">PhotonView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_OnDestroy.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.OnDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L398">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_OnDestroy_" data-uid="Photon.Pun.PhotonView.OnDestroy*"></a>
+  <h4 id="Photon_Pun_PhotonView_OnDestroy" data-uid="Photon.Pun.PhotonView.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnDestroy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_OnPreNetDestroy_Photon_Pun_PhotonView_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.OnPreNetDestroy(Photon.Pun.PhotonView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L387">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_OnPreNetDestroy_" data-uid="Photon.Pun.PhotonView.OnPreNetDestroy*"></a>
+  <h4 id="Photon_Pun_PhotonView_OnPreNetDestroy_Photon_Pun_PhotonView_" data-uid="Photon.Pun.PhotonView.OnPreNetDestroy(Photon.Pun.PhotonView)">OnPreNetDestroy(PhotonView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPreNetDestroy(PhotonView rootView)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonView.html">PhotonView</a></td>
+        <td><span class="parametername">rootView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RefreshRpcMonoBehaviourCache.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RefreshRpcMonoBehaviourCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L576">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RefreshRpcMonoBehaviourCache_" data-uid="Photon.Pun.PhotonView.RefreshRpcMonoBehaviourCache*"></a>
+  <h4 id="Photon_Pun_PhotonView_RefreshRpcMonoBehaviourCache" data-uid="Photon.Pun.PhotonView.RefreshRpcMonoBehaviourCache">RefreshRpcMonoBehaviourCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshRpcMonoBehaviourCache()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RemoveCallback__1_Photon_Pun_IPhotonViewCallback_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RemoveCallback%60%601(Photon.Pun.IPhotonViewCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L757">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RemoveCallback_" data-uid="Photon.Pun.PhotonView.RemoveCallback*"></a>
+  <h4 id="Photon_Pun_PhotonView_RemoveCallback__1_Photon_Pun_IPhotonViewCallback_" data-uid="Photon.Pun.PhotonView.RemoveCallback``1(Photon.Pun.IPhotonViewCallback)">RemoveCallback&lt;T&gt;(IPhotonViewCallback)</h4>
+  <div class="markdown level1 summary"><p>Remove object from this PhotonView&apos;s callback list for T.
+T is the IOnPhotonViewCallback derived interface you want removed from its associated callback list.
+Supplying IOnPhotonViewCallback (the interface base class) as T will remove ALL implemented IOnPhotonViewCallback Interfaces found on the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCallback&lt;T&gt;(IPhotonViewCallback obj)
+
+    where T : class, IPhotonViewCallback</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.IPhotonViewCallback.html">IPhotonViewCallback</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RemoveCallbackTarget_Photon_Pun_IPhotonViewCallback_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RemoveCallbackTarget(Photon.Pun.IPhotonViewCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L737">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RemoveCallbackTarget_" data-uid="Photon.Pun.PhotonView.RemoveCallbackTarget*"></a>
+  <h4 id="Photon_Pun_PhotonView_RemoveCallbackTarget_Photon_Pun_IPhotonViewCallback_" data-uid="Photon.Pun.PhotonView.RemoveCallbackTarget(Photon.Pun.IPhotonViewCallback)">RemoveCallbackTarget(IPhotonViewCallback)</h4>
+  <div class="markdown level1 summary"><p>Remove object from all applicable callback interfaces. Object must implement at least one IOnPhotonViewCallback derived interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCallbackTarget(IPhotonViewCallback obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.IPhotonViewCallback.html">IPhotonViewCallback</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>An object that implements OnPhotonView callback interface(s).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RequestOwnership.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RequestOwnership%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L421">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RequestOwnership_" data-uid="Photon.Pun.PhotonView.RequestOwnership*"></a>
+  <h4 id="Photon_Pun_PhotonView_RequestOwnership" data-uid="Photon.Pun.PhotonView.RequestOwnership">RequestOwnership()</h4>
+  <div class="markdown level1 summary"><p>Depending on the PhotonView&apos;s OwnershipTransfer setting, any client can request to become owner of the PhotonView.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestOwnership()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_PhotonView_RequestOwnership_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Requesting ownership can give you control over a PhotonView, if the OwnershipTransfer setting allows that.
+The current owner might have to implement IPunCallbacks.OnOwnershipRequest to react to the ownership request.</p>
+<p>The owner/controller of a PhotonView is also the client which sends position updates of the GameObject.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RPC_System_String_Photon_Pun_RpcTarget_System_Object___.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RPC(System.String%2CPhoton.Pun.RpcTarget%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L602">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RPC_" data-uid="Photon.Pun.PhotonView.RPC*"></a>
+  <h4 id="Photon_Pun_PhotonView_RPC_System_String_Photon_Pun_RpcTarget_System_Object___" data-uid="Photon.Pun.PhotonView.RPC(System.String,Photon.Pun.RpcTarget,System.Object[])">RPC(String, RpcTarget, Object[])</h4>
+  <div class="markdown level1 summary"><p>Call a RPC method of this GameObject on remote clients of this room (or on all, including this client).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RPC(string methodName, RpcTarget target, params object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>The name of a fitting method that was has the RPC attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.RpcTarget.html">RpcTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The group of targets and the way the RPC gets sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters that the RPC method has (must fit this call!).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_RPC_System_String_Photon_Pun_RpcTarget_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>[Remote Procedure Calls](@ref rpcManual) are an essential tool in making multiplayer games with PUN.
+It enables you to make every client in a room call a specific method.</p>
+<p>RPC calls can target &quot;All&quot; or the &quot;Others&quot;.
+Usually, the target &quot;All&quot; gets executed locally immediately after sending the RPC.
+The &quot;*ViaServer&quot; options send the RPC to the server and execute it on this client when it&apos;s sent back.
+Of course, calls are affected by this client&apos;s lag and that of remote clients.</p>
+<p>Each call automatically is routed to the same PhotonView (and GameObject) that was used on the
+originating client.</p>
+<p>See: [Remote Procedure Calls](@ref rpcManual).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RPC_System_String_Photon_Realtime_Player_System_Object___.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RPC(System.String%2CPhoton.Realtime.Player%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L651">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RPC_" data-uid="Photon.Pun.PhotonView.RPC*"></a>
+  <h4 id="Photon_Pun_PhotonView_RPC_System_String_Photon_Realtime_Player_System_Object___" data-uid="Photon.Pun.PhotonView.RPC(System.String,Photon.Realtime.Player,System.Object[])">RPC(String, Player, Object[])</h4>
+  <div class="markdown level1 summary"><p>Call a RPC method of this GameObject on remote clients of this room (or on all, including this client).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RPC(string methodName, Player targetPlayer, params object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>The name of a fitting method that was has the RPC attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">targetPlayer</span></td>
+        <td><p>The group of targets and the way the RPC gets sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters that the RPC method has (must fit this call!).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_RPC_System_String_Photon_Realtime_Player_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>[Remote Procedure Calls](@ref rpcManual) are an essential tool in making multiplayer games with PUN.
+It enables you to make every client in a room call a specific method.</p>
+<p>This method allows you to make an RPC calls on a specific player&apos;s client.
+Of course, calls are affected by this client&apos;s lag and that of remote clients.</p>
+<p>Each call automatically is routed to the same PhotonView (and GameObject) that was used on the
+originating client.</p>
+<p>See: [Remote Procedure Calls](@ref rpcManual).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RpcSecure_System_String_Photon_Pun_RpcTarget_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RpcSecure(System.String%2CPhoton.Pun.RpcTarget%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L628">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RpcSecure_" data-uid="Photon.Pun.PhotonView.RpcSecure*"></a>
+  <h4 id="Photon_Pun_PhotonView_RpcSecure_System_String_Photon_Pun_RpcTarget_System_Boolean_System_Object___" data-uid="Photon.Pun.PhotonView.RpcSecure(System.String,Photon.Pun.RpcTarget,System.Boolean,System.Object[])">RpcSecure(String, RpcTarget, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Call a RPC method of this GameObject on remote clients of this room (or on all, including this client).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RpcSecure(string methodName, RpcTarget target, bool encrypt, params object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>The name of a fitting method that was has the RPC attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.RpcTarget.html">RpcTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The group of targets and the way the RPC gets sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters that the RPC method has (must fit this call!).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_RpcSecure_System_String_Photon_Pun_RpcTarget_System_Boolean_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>[Remote Procedure Calls](@ref rpcManual) are an essential tool in making multiplayer games with PUN.
+It enables you to make every client in a room call a specific method.</p>
+<p>RPC calls can target &quot;All&quot; or the &quot;Others&quot;.
+Usually, the target &quot;All&quot; gets executed locally immediately after sending the RPC.
+The &quot;*ViaServer&quot; options send the RPC to the server and execute it on this client when it&apos;s sent back.
+Of course, calls are affected by this client&apos;s lag and that of remote clients.</p>
+<p>Each call automatically is routed to the same PhotonView (and GameObject) that was used on the
+originating client.</p>
+<p>See: [Remote Procedure Calls](@ref rpcManual).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_RpcSecure_System_String_Photon_Realtime_Player_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.RpcSecure(System.String%2CPhoton.Realtime.Player%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L675">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_RpcSecure_" data-uid="Photon.Pun.PhotonView.RpcSecure*"></a>
+  <h4 id="Photon_Pun_PhotonView_RpcSecure_System_String_Photon_Realtime_Player_System_Boolean_System_Object___" data-uid="Photon.Pun.PhotonView.RpcSecure(System.String,Photon.Realtime.Player,System.Boolean,System.Object[])">RpcSecure(String, Player, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Call a RPC method of this GameObject on remote clients of this room (or on all, including this client).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RpcSecure(string methodName, Player targetPlayer, bool encrypt, params object[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>The name of a fitting method that was has the RPC attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">targetPlayer</span></td>
+        <td><p>The group of targets and the way the RPC gets sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters that the RPC method has (must fit this call!).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_RpcSecure_System_String_Photon_Realtime_Player_System_Boolean_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>[Remote Procedure Calls](@ref rpcManual) are an essential tool in making multiplayer games with PUN.
+It enables you to make every client in a room call a specific method.</p>
+<p>This method allows you to make an RPC calls on a specific player&apos;s client.
+Of course, calls are affected by this client&apos;s lag and that of remote clients.</p>
+<p>Each call automatically is routed to the same PhotonView (and GameObject) that was used on the
+originating client.</p>
+<p>See: [Remote Procedure Calls](@ref rpcManual).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_SerializeComponent_UnityEngine_Component_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.SerializeComponent(UnityEngine.Component%2CPhoton.Pun.PhotonStream%2CPhoton.Pun.PhotonMessageInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L552">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_SerializeComponent_" data-uid="Photon.Pun.PhotonView.SerializeComponent*"></a>
+  <h4 id="Photon_Pun_PhotonView_SerializeComponent_UnityEngine_Component_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_" data-uid="Photon.Pun.PhotonView.SerializeComponent(UnityEngine.Component,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)">SerializeComponent(Component, PhotonStream, PhotonMessageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SerializeComponent(Component component, PhotonStream stream, PhotonMessageInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Component</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonStream.html">PhotonStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonMessageInfo.html">PhotonMessageInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_SerializeView_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.SerializeView(Photon.Pun.PhotonStream%2CPhoton.Pun.PhotonMessageInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L513">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_SerializeView_" data-uid="Photon.Pun.PhotonView.SerializeView*"></a>
+  <h4 id="Photon_Pun_PhotonView_SerializeView_Photon_Pun_PhotonStream_Photon_Pun_PhotonMessageInfo_" data-uid="Photon.Pun.PhotonView.SerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)">SerializeView(PhotonStream, PhotonMessageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SerializeView(PhotonStream stream, PhotonMessageInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonStream.html">PhotonStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonMessageInfo.html">PhotonMessageInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_ToString.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L821">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_ToString_" data-uid="Photon.Pun.PhotonView.ToString*"></a>
+  <h4 id="Photon_Pun_PhotonView_ToString" data-uid="Photon.Pun.PhotonView.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_TransferOwnership_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.TransferOwnership(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L443">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_TransferOwnership_" data-uid="Photon.Pun.PhotonView.TransferOwnership*"></a>
+  <h4 id="Photon_Pun_PhotonView_TransferOwnership_Photon_Realtime_Player_" data-uid="Photon.Pun.PhotonView.TransferOwnership(Photon.Realtime.Player)">TransferOwnership(Player)</h4>
+  <div class="markdown level1 summary"><p>Transfers the ownership of this PhotonView (and GameObject) to another player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransferOwnership(Player newOwner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newOwner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_TransferOwnership_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The owner/controller of a PhotonView is also the client which sends position updates of the GameObject.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView_TransferOwnership_System_Int32_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView.TransferOwnership(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L463">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonView_TransferOwnership_" data-uid="Photon.Pun.PhotonView.TransferOwnership*"></a>
+  <h4 id="Photon_Pun_PhotonView_TransferOwnership_System_Int32_" data-uid="Photon.Pun.PhotonView.TransferOwnership(System.Int32)">TransferOwnership(Int32)</h4>
+  <div class="markdown level1 summary"><p>Transfers the ownership of this PhotonView (and GameObject) to another player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransferOwnership(int newOwnerId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newOwnerId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_PhotonView_TransferOwnership_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The owner/controller of a PhotonView is also the client which sends position updates of the GameObject.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonView.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

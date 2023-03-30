@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PhotonStreamQueue
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PhotonStreamQueue
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Pun.PhotonStreamQueue">
+  
+  
+  <h1 id="Photon_Pun_PhotonStreamQueue" data-uid="Photon.Pun.PhotonStreamQueue" class="text-break">Class PhotonStreamQueue
+  </h1>
+  <div class="markdown level0 summary"><p>The PhotonStreamQueue helps you poll object states at higher frequencies than what
+PhotonNetwork.SendRate dictates and then sends all those states at once when
+Serialize() is called.
+On the receiving end you can call Deserialize() and then the stream will roll out
+the received object states in the same order and timeStep they were recorded in.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PhotonStreamQueue</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Pun.html">Photon.Pun</a></h6>
+  <h6><strong>Assembly</strong>: PhotonUnityNetworking.dll</h6>
+  <h5 id="Photon_Pun_PhotonStreamQueue_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PhotonStreamQueue</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L42">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue__ctor_" data-uid="Photon.Pun.PhotonStreamQueue.#ctor*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue__ctor_System_Int32_" data-uid="Photon.Pun.PhotonStreamQueue.#ctor(System.Int32)">PhotonStreamQueue(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Photon.Pun.PhotonStreamQueue.html">PhotonStreamQueue</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhotonStreamQueue(int sampleRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sampleRate</span></td>
+        <td><p>How many times per second should the object states be sampled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue_Deserialize_Photon_Pun_PhotonStream_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.Deserialize(Photon.Pun.PhotonStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L173">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue_Deserialize_" data-uid="Photon.Pun.PhotonStreamQueue.Deserialize*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue_Deserialize_Photon_Pun_PhotonStream_" data-uid="Photon.Pun.PhotonStreamQueue.Deserialize(Photon.Pun.PhotonStream)">Deserialize(PhotonStream)</h4>
+  <div class="markdown level1 summary"><p>Deserializes the specified stream. Call this in your OnPhotonSerializeView method to receive the whole recorded stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deserialize(PhotonStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonStream.html">PhotonStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The PhotonStream you receive as a parameter in OnPhotonSerializeView</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue_HasQueuedObjects.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.HasQueuedObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L118">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue_HasQueuedObjects_" data-uid="Photon.Pun.PhotonStreamQueue.HasQueuedObjects*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue_HasQueuedObjects" data-uid="Photon.Pun.PhotonStreamQueue.HasQueuedObjects">HasQueuedObjects()</h4>
+  <div class="markdown level1 summary"><p>Determines whether the queue has stored any objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasQueuedObjects()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue_ReceiveNext.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.ReceiveNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L127">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue_ReceiveNext_" data-uid="Photon.Pun.PhotonStreamQueue.ReceiveNext*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue_ReceiveNext" data-uid="Photon.Pun.PhotonStreamQueue.ReceiveNext">ReceiveNext()</h4>
+  <div class="markdown level1 summary"><p>Receives the next object from the queue. This works just like PhotonStream.ReceiveNext</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ReceiveNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue_Reset.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L83">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue_Reset_" data-uid="Photon.Pun.PhotonStreamQueue.Reset*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue_Reset" data-uid="Photon.Pun.PhotonStreamQueue.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p>Resets the PhotonStreamQueue. You need to do this whenever the amount of objects you are observing changes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue_SendNext_System_Object_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.SendNext(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L98">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue_SendNext_" data-uid="Photon.Pun.PhotonStreamQueue.SendNext*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue_SendNext_System_Object_" data-uid="Photon.Pun.PhotonStreamQueue.SendNext(System.Object)">SendNext(Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the next object to the queue. This works just like PhotonStream.SendNext</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendNext(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object you want to add to the queue</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue_Serialize_Photon_Pun_PhotonStream_.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue.Serialize(Photon.Pun.PhotonStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L146">View Source</a>
+  </span>
+  <a id="Photon_Pun_PhotonStreamQueue_Serialize_" data-uid="Photon.Pun.PhotonStreamQueue.Serialize*"></a>
+  <h4 id="Photon_Pun_PhotonStreamQueue_Serialize_Photon_Pun_PhotonStream_" data-uid="Photon.Pun.PhotonStreamQueue.Serialize(Photon.Pun.PhotonStream)">Serialize(PhotonStream)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified stream. Call this in your OnPhotonSerializeView method to send the whole recorded stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Serialize(PhotonStream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.PhotonStream.html">PhotonStream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The PhotonStream you receive as a parameter in OnPhotonSerializeView</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_PhotonStreamQueue.md&amp;value=---%0Auid%3A%20Photon.Pun.PhotonStreamQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PhotonStreamQueue.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

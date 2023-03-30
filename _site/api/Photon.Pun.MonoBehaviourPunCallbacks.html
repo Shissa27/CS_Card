@@ -1,0 +1,1347 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MonoBehaviourPunCallbacks
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MonoBehaviourPunCallbacks
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Pun.MonoBehaviourPunCallbacks">
+  
+  
+  <h1 id="Photon_Pun_MonoBehaviourPunCallbacks" data-uid="Photon.Pun.MonoBehaviourPunCallbacks" class="text-break">Class MonoBehaviourPunCallbacks
+  </h1>
+  <div class="markdown level0 summary"><p>This class provides a .photonView and all callbacks/events that PUN can call. Override the events/methods you want to use.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="Photon.Pun.MonoBehaviourPun.html">MonoBehaviourPun</a></div>
+    <div class="level6"><span class="xref">MonoBehaviourPunCallbacks</span></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Asteroids.AsteroidsGameManager.html">AsteroidsGameManager</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Asteroids.LobbyMainPanel.html">LobbyMainPanel</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Asteroids.PlayerOverviewPanel.html">PlayerOverviewPanel</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Cockpit.FriendListView.html">FriendListView</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Cockpit.PlayerDetailsController.html">PlayerDetailsController</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Cockpit.PlayerListView.html">PlayerListView</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Cockpit.PunCockpit.html">PunCockpit</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Cockpit.PunCockpitEmbed.html">PunCockpitEmbed</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Cockpit.RoomListView.html">RoomListView</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Procedural.Cluster.html">Cluster</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.Procedural.IngameControlPanel.html">IngameControlPanel</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.PunBasics.GameManager.html">GameManager</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.PunBasics.Launcher.html">Launcher</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.Demo.PunBasics.PlayerManager.html">PlayerManager</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.UtilityScripts.ConnectAndJoinRandom.html">ConnectAndJoinRandom</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.UtilityScripts.CountdownTimer.html">CountdownTimer</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.UtilityScripts.PlayerNumbering.html">PlayerNumbering</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.UtilityScripts.PunTeams.html">PunTeams</a></div>
+      <div class="level7"><a class="xref" href="Photon.Pun.UtilityScripts.PunTurnManager.html">PunTurnManager</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IWebRpcCallback.html">IWebRpcCallback</a></div>
+    <div><a class="xref" href="Photon.Realtime.IErrorInfoCallback.html">IErrorInfoCallback</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPun.html#Photon_Pun_MonoBehaviourPun_photonView">MonoBehaviourPun.photonView</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Pun.html">Photon.Pun</a></h6>
+  <h6><strong>Assembly</strong>: PhotonUnityNetworking.dll</h6>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MonoBehaviourPunCallbacks : MonoBehaviourPun, IConnectionCallbacks, IMatchmakingCallbacks, IInRoomCallbacks, ILobbyCallbacks, IWebRpcCallback, IErrorInfoCallback</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>By extending this class, you can implement individual methods as override.</p>
+<p>Do not add <strong>new</strong> <pre><code>MonoBehaviour.OnEnable</code></pre> or <pre><code>MonoBehaviour.OnDisable</code></pre>
+Instead, you should override those and call <pre><code>base.OnEnable</code></pre> and <pre><code>base.OnDisable</code></pre>.</p>
+<p>Visual Studio and MonoDevelop should provide the list of methods when you begin typing &quot;override&quot;.
+<strong>Your implementation does not have to call &quot;base.method()&quot;.</strong></p>
+<p>This class implements all callback interfaces and extends <a class="xref" href="Photon.Pun.MonoBehaviourPun.html">MonoBehaviourPun</a>.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnConnected.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L133">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnConnected_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnConnected*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnConnected" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnConnected">OnConnected()</h4>
+  <div class="markdown level1 summary"><p>Called to signal that the raw connection got established but before the client can call operation on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConnected()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnConnected_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>After the (low level transport) connection is established, the client will automatically send
+the Authentication operation, which needs to get a response before the client can call other operations.</p>
+<p>Your logic should wait for either: OnRegionListReceived or OnConnectedToMaster.</p>
+<p>This callback is useful to detect if the server can be reached at all (technically).
+Most often, it&apos;s enough to implement OnDisconnected().</p>
+<p>This is not called for transitions from the masterserver to game servers.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnConnectedToMaster.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnConnectedToMaster%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L316">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnConnectedToMaster_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnConnectedToMaster*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnConnectedToMaster" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnConnectedToMaster">OnConnectedToMaster()</h4>
+  <div class="markdown level1 summary"><p>Called when the client is connected to the Master Server and ready for matchmaking and other tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnConnectedToMaster()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnConnectedToMaster_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list of available rooms won&apos;t become available unless you join a lobby via LoadBalancingClient.OpJoinLobby.
+You can join rooms and create them even without being in a lobby. The default lobby is used in that case.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnCreatedRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnCreatedRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L197">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnCreatedRoom_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCreatedRoom*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCreatedRoom" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCreatedRoom">OnCreatedRoom()</h4>
+  <div class="markdown level1 summary"><p>Called when this client created a room and entered it. OnJoinedRoom() will be called as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCreatedRoom()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCreatedRoom_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This callback is only called on the client which created a room (see OpCreateRoom).</p>
+<p>As any client might close (or drop connection) anytime, there is a chance that the
+creator of a room does not execute OnCreatedRoom.</p>
+<p>If you need specific room properties or a &quot;start signal&quot;, implement OnMasterClientSwitched()
+and make each new MasterClient check the room&apos;s state.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnCreateRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnCreateRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L169">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnCreateRoomFailed_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCreateRoomFailed*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCreateRoomFailed_System_Int16_System_String_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCreateRoomFailed(System.Int16,System.String)">OnCreateRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"><p>Called when the server couldn&apos;t create a room (OpCreateRoom failed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCreateRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td><p>Operation ReturnCode from the server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Debug message for the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCreateRoomFailed_System_Int16_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The most common cause to fail creating a room, is when a title relies on fixed room-names and the room already exists.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnCustomAuthenticationFailed(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L388">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCustomAuthenticationFailed*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_System_String_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCustomAuthenticationFailed(System.String)">OnCustomAuthenticationFailed(String)</h4>
+  <div class="markdown level1 summary"><p>Called when the custom authentication failed. Followed by disconnect!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCustomAuthenticationFailed(string debugMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">debugMessage</span></td>
+        <td><p>Contains a debug message why authentication failed. This has to be fixed during development.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Custom Authentication can fail due to user-input, bad tokens/secrets.
+If authentication is successful, this method is not called. Implement OnJoinedLobby() or OnConnectedToMaster() (as usual).</p>
+<p>During development of a game, it might also fail due to wrong configuration on the server side.
+In those cases, logging the debugMessage is very important.</p>
+<p>Unless you setup a custom authentication service for your app (in the <a href="https://dashboard.photonengine.com">Dashboard</a>),
+this won&apos;t be called!</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L370">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCustomAuthenticationResponse*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary{System.String,System.Object})">OnCustomAuthenticationResponse(Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Called when your Custom Authentication service responds with additional data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCustomAuthenticationResponse(Dictionary&lt;string, object&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Custom Authentication services can include some custom data in their response.
+When present, that data is made available in this callback as Dictionary.
+While the keys of your data have to be strings, the values can be either string or a number (in Json).
+You need to make extra sure, that the value type is the one you expect. Numbers become (currently) int64.</p>
+<p>Example: void OnCustomAuthenticationResponse(Dictionary&lt;string, object&gt; data) { ... }</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnDisable.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnDisable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L114">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnDisable_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnDisable*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnDisable" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDisable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnDisconnected_Photon_Realtime_DisconnectCause_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnDisconnected(Photon.Realtime.DisconnectCause)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L229">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnDisconnected_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnDisconnected*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnDisconnected_Photon_Realtime_DisconnectCause_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnDisconnected(Photon.Realtime.DisconnectCause)">OnDisconnected(DisconnectCause)</h4>
+  <div class="markdown level1 summary"><p>Called after disconnecting from the Photon server. It could be a failure or intentional</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDisconnected(DisconnectCause cause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.DisconnectCause.html">DisconnectCause</a></td>
+        <td><span class="parametername">cause</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnDisconnected_Photon_Realtime_DisconnectCause__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The reason for this disconnect is provided as DisconnectCause.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnEnable.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnEnable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L109">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnEnable_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnEnable*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnEnable" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEnable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnErrorInfo_Photon_Realtime_ErrorInfo_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnErrorInfo(Photon.Realtime.ErrorInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L418">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnErrorInfo_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnErrorInfo*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnErrorInfo_Photon_Realtime_ErrorInfo_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnErrorInfo(Photon.Realtime.ErrorInfo)">OnErrorInfo(ErrorInfo)</h4>
+  <div class="markdown level1 summary"><p>Called when the client receives an event from the server indicating that an error happened there.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnErrorInfo(ErrorInfo errorInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.ErrorInfo.html">ErrorInfo</a></td>
+        <td><span class="parametername">errorInfo</span></td>
+        <td><p>object containing information about the error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnErrorInfo_Photon_Realtime_ErrorInfo__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In most cases this could be either:</p>
+<ol>
+<li>an error from webhooks plugin (if HasErrorInfo is enabled), read more here:
+<a href="https://doc.photonengine.com/en-us/realtime/current/gameplay/web-extensions/webhooks#options">https://doc.photonengine.com/en-us/realtime/current/gameplay/web-extensions/webhooks#options</a></li>
+<li>an error sent from a custom server plugin via PluginHost.BroadcastErrorInfoEvent, see example here:
+<a href="https://doc.photonengine.com/en-us/server/current/plugins/manual#handling_http_response">https://doc.photonengine.com/en-us/server/current/plugins/manual#handling_http_response</a></li>
+<li>an error sent from the server, for example, when the limit of cached events has been exceeded in the room
+(all clients will be disconnected and the room will be closed in this case)
+read more here: <a href="https://doc.photonengine.com/en-us/realtime/current/gameplay/cached-events#special_considerations">https://doc.photonengine.com/en-us/realtime/current/gameplay/cached-events#special_considerations</a></li>
+</ol>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnFriendListUpdate(System.Collections.Generic.List%7BPhoton.Realtime.FriendInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L354">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnFriendListUpdate_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnFriendListUpdate*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnFriendListUpdate(System.Collections.Generic.List{Photon.Realtime.FriendInfo})">OnFriendListUpdate(List&lt;FriendInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Called when the server sent the response to a FindFriends request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFriendListUpdate(List&lt;FriendInfo&gt; friendList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.FriendInfo.html">FriendInfo</a>&gt;</td>
+        <td><span class="parametername">friendList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>After calling OpFindFriends, the Master Server will cache the friend list and send updates to the friend
+list. The friends includes the name, userId, online state and the room (if any) for each requested user/friend.</p>
+<p>Use the friendList to update your UI and store it, if the UI should highlight changes.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedLobby.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedLobby%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L208">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedLobby_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedLobby*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedLobby" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedLobby">OnJoinedLobby()</h4>
+  <div class="markdown level1 summary"><p>Called on entering a lobby on the Master Server. The actual room-list updates will call OnRoomListUpdate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnJoinedLobby()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedLobby_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>While in the lobby, the roomlist is automatically updated in fixed intervals (which you can&apos;t modify in the public cloud).
+The room list gets available via OnRoomListUpdate.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L263">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedRoom_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedRoom*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedRoom" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinedRoom">OnJoinedRoom()</h4>
+  <div class="markdown level1 summary"><p>Called when the LoadBalancingClient entered a room, no matter if this client created it or simply joined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnJoinedRoom()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedRoom_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this is called, you can access the existing players in Room.Players, their custom properties and Room.CustomProperties.</p>
+<p>In this callback, you could create player objects. For example in Unity, instantiate a prefab for the player.</p>
+<p>If you want a match to be started &quot;actively&quot;, enable the user to signal &quot;ready&quot; (using OpRaiseEvent or a Custom Property).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRandomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRandomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L305">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRandomFailed_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRandomFailed*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRandomFailed_System_Int16_System_String_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRandomFailed(System.Int16,System.String)">OnJoinRandomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"><p>Called when a previous OpJoinRandom call failed on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnJoinRandomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td><p>Operation ReturnCode from the server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Debug message for the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRandomFailed_System_Int16_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The most common causes are that a room is full or does not exist (due to someone else being faster or closing the room).</p>
+<p>When using multiple lobbies (via OpJoinLobby or a TypedLobby parameter), another lobby might have more/fitting rooms.<br></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRoomFailed_System_Int16_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRoomFailed(System.Int16%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L181">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRoomFailed_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRoomFailed*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRoomFailed_System_Int16_System_String_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnJoinRoomFailed(System.Int16,System.String)">OnJoinRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"><p>Called when a previous OpJoinRoom call failed on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnJoinRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td><p>Operation ReturnCode from the server.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Debug message for the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRoomFailed_System_Int16_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The most common causes are that a room is full or does not exist (due to someone else being faster or closing the room).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnLeftLobby.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnLeftLobby%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L219">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnLeftLobby_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnLeftLobby*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnLeftLobby" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnLeftLobby">OnLeftLobby()</h4>
+  <div class="markdown level1 summary"><p>Called after leaving a lobby.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnLeftLobby()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnLeftLobby_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When you leave a lobby, [OpCreateRoom](@ref OpCreateRoom) and [OpJoinRandomRoom](@ref OpJoinRandomRoom)
+automatically refer to the default lobby.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnLeftRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnLeftRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L146">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnLeftRoom_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnLeftRoom*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnLeftRoom" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnLeftRoom">OnLeftRoom()</h4>
+  <div class="markdown level1 summary"><p>Called when the local user/client left a room, so the game&apos;s logic can clean up it&apos;s internal state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnLeftRoom()</code></pre>
+  </div>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnLeftRoom_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When leaving a room, the LoadBalancingClient will disconnect the Game Server and connect to the Master Server.
+This wraps up multiple internal actions.</p>
+<p>Wait for the callback OnConnectedToMaster, before you use lobbies and join or create rooms.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnLobbyStatisticsUpdate_System_Collections_Generic_List_Photon_Realtime_TypedLobbyInfo__.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnLobbyStatisticsUpdate(System.Collections.Generic.List%7BPhoton.Realtime.TypedLobbyInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L400">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnLobbyStatisticsUpdate_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnLobbyStatisticsUpdate*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnLobbyStatisticsUpdate_System_Collections_Generic_List_Photon_Realtime_TypedLobbyInfo__" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnLobbyStatisticsUpdate(System.Collections.Generic.List{Photon.Realtime.TypedLobbyInfo})">OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt; lobbyStatistics)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.TypedLobbyInfo.html">TypedLobbyInfo</a>&gt;</td>
+        <td><span class="parametername">lobbyStatistics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnMasterClientSwitched(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L157">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnMasterClientSwitched_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnMasterClientSwitched*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnMasterClientSwitched(Photon.Realtime.Player)">OnMasterClientSwitched(Player)</h4>
+  <div class="markdown level1 summary"><p>Called after switching to a new MasterClient when the current one leaves.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMasterClientSwitched(Player newMasterClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newMasterClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnMasterClientSwitched_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is not called when this client enters a room.
+The former MasterClient is still in the player list when this method get called.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerEnteredRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L274">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerEnteredRoom*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerEnteredRoom(Photon.Realtime.Player)">OnPlayerEnteredRoom(Player)</h4>
+  <div class="markdown level1 summary"><p>Called when a remote player entered the room. This Player is already added to the playerlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPlayerEnteredRoom(Player newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If your game starts with a certain number of players, this callback can be useful to check the
+Room.playerCount and find out if you can start.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerLeftRoom(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L291">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerLeftRoom_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerLeftRoom*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerLeftRoom(Photon.Realtime.Player)">OnPlayerLeftRoom(Player)</h4>
+  <div class="markdown level1 summary"><p>Called when a remote player left the room or became inactive. Check otherPlayer.IsInactive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPlayerLeftRoom(Player otherPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">otherPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If another player leaves the room or if the server detects a lost connection, this callback will
+be used to notify your game logic.</p>
+<p>Depending on the room&apos;s setup, players may become inactive, which means they may return and retake
+their spot in the room. In such cases, the Player stays in the Room.Players dictionary.</p>
+<p>If the player is not just inactive, it gets removed from the Room.Players dictionary, before
+the callback is called.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_ExitGames_Client_Photon_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerPropertiesUpdate(Photon.Realtime.Player%2CExitGames.Client.Photon.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L341">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerPropertiesUpdate*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_ExitGames_Client_Photon_Hashtable_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)">OnPlayerPropertiesUpdate(Player, Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Called when custom player-properties are changed. Player and the changed properties are passed as object[].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">targetPlayer</span></td>
+        <td><p>Contains Player that changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExitGames.Client.Photon.Hashtable</span></td>
+        <td><span class="parametername">changedProps</span></td>
+        <td><p>Contains the properties that changed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_ExitGames_Client_Photon_Hashtable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Changing properties must be done by Player.SetCustomProperties, which causes this callback locally, too.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnRegionListReceived_Photon_Realtime_RegionHandler_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnRegionListReceived(Photon.Realtime.RegionHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L238">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnRegionListReceived_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnRegionListReceived*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnRegionListReceived_Photon_Realtime_RegionHandler_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnRegionListReceived(Photon.Realtime.RegionHandler)">OnRegionListReceived(RegionHandler)</h4>
+  <div class="markdown level1 summary"><p>Called when the Name Server provided a list of regions for your title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRegionListReceived(RegionHandler regionHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.RegionHandler.html">RegionHandler</a></td>
+        <td><span class="parametername">regionHandler</span></td>
+        <td><p>The currently used RegionHandler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnRegionListReceived_Photon_Realtime_RegionHandler__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Check the RegionHandler class description, to make use of the provided values.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo__.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnRoomListUpdate(System.Collections.Generic.List%7BPhoton.Realtime.RoomInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L249">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnRoomListUpdate_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnRoomListUpdate*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo__" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnRoomListUpdate(System.Collections.Generic.List{Photon.Realtime.RoomInfo})">OnRoomListUpdate(List&lt;RoomInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Called for any update of the room-listing while in a lobby (InLobby) on the Master Server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRoomListUpdate(List&lt;RoomInfo&gt; roomList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.RoomInfo.html">RoomInfo</a>&gt;</td>
+        <td><span class="parametername">roomList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each item is a RoomInfo which might include custom properties (provided you defined those as lobby-listed when creating a room).
+Not all types of lobbies provide a listing of rooms to the client. Some are silent and specialized for server-side matchmaking.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L328">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnRoomPropertiesUpdate*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)">OnRoomPropertiesUpdate(Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Called when a room&apos;s custom properties changed. The propertiesThatChanged contains all that was set via Room.SetCustomProperties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ExitGames.Client.Photon.Hashtable</span></td>
+        <td><span class="parametername">propertiesThatChanged</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Photon_Pun_MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Since v1.25 this method has one parameter: Hashtable propertiesThatChanged.<br>
+Changing properties must be done by Room.SetCustomProperties, which causes this callback locally, too.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse_.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks.OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L394">View Source</a>
+  </span>
+  <a id="Photon_Pun_MonoBehaviourPunCallbacks_OnWebRpcResponse_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnWebRpcResponse*"></a>
+  <h4 id="Photon_Pun_MonoBehaviourPunCallbacks_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse_" data-uid="Photon.Pun.MonoBehaviourPunCallbacks.OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)">OnWebRpcResponse(OperationResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnWebRpcResponse(OperationResponse response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ExitGames.Client.Photon.OperationResponse</span></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IWebRpcCallback.html">IWebRpcCallback</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IErrorInfoCallback.html">IErrorInfoCallback</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_MonoBehaviourPunCallbacks.md&amp;value=---%0Auid%3A%20Photon.Pun.MonoBehaviourPunCallbacks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Code/PunClasses.cs/#L107" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FriendListView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FriendListView
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Pun.Demo.Cockpit.FriendListView">
+  
+  
+  <h1 id="Photon_Pun_Demo_Cockpit_FriendListView" data-uid="Photon.Pun.Demo.Cockpit.FriendListView" class="text-break">Class FriendListView
+  </h1>
+  <div class="markdown level0 summary"><p>Friend list UI view.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="Photon.Pun.MonoBehaviourPun.html">MonoBehaviourPun</a></div>
+    <div class="level6"><a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html">MonoBehaviourPunCallbacks</a></div>
+    <div class="level7"><span class="xref">FriendListView</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IWebRpcCallback.html">IWebRpcCallback</a></div>
+    <div><a class="xref" href="Photon.Realtime.IErrorInfoCallback.html">IErrorInfoCallback</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnDisable">MonoBehaviourPunCallbacks.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnConnected">MonoBehaviourPunCallbacks.OnConnected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnLeftRoom">MonoBehaviourPunCallbacks.OnLeftRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_">MonoBehaviourPunCallbacks.OnMasterClientSwitched(Player)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCreateRoomFailed_System_Int16_System_String_">MonoBehaviourPunCallbacks.OnCreateRoomFailed(Int16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRoomFailed_System_Int16_System_String_">MonoBehaviourPunCallbacks.OnJoinRoomFailed(Int16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCreatedRoom">MonoBehaviourPunCallbacks.OnCreatedRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedLobby">MonoBehaviourPunCallbacks.OnJoinedLobby()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnLeftLobby">MonoBehaviourPunCallbacks.OnLeftLobby()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnDisconnected_Photon_Realtime_DisconnectCause_">MonoBehaviourPunCallbacks.OnDisconnected(DisconnectCause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnRegionListReceived_Photon_Realtime_RegionHandler_">MonoBehaviourPunCallbacks.OnRegionListReceived(RegionHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo__">MonoBehaviourPunCallbacks.OnRoomListUpdate(List&lt;RoomInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedRoom">MonoBehaviourPunCallbacks.OnJoinedRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_">MonoBehaviourPunCallbacks.OnPlayerEnteredRoom(Player)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_">MonoBehaviourPunCallbacks.OnPlayerLeftRoom(Player)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRandomFailed_System_Int16_System_String_">MonoBehaviourPunCallbacks.OnJoinRandomFailed(Int16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnConnectedToMaster">MonoBehaviourPunCallbacks.OnConnectedToMaster()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable_">MonoBehaviourPunCallbacks.OnRoomPropertiesUpdate(Hashtable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_ExitGames_Client_Photon_Hashtable_">MonoBehaviourPunCallbacks.OnPlayerPropertiesUpdate(Player, Hashtable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__">MonoBehaviourPunCallbacks.OnCustomAuthenticationResponse(Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_System_String_">MonoBehaviourPunCallbacks.OnCustomAuthenticationFailed(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse_">MonoBehaviourPunCallbacks.OnWebRpcResponse(OperationResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnLobbyStatisticsUpdate_System_Collections_Generic_List_Photon_Realtime_TypedLobbyInfo__">MonoBehaviourPunCallbacks.OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnErrorInfo_Photon_Realtime_ErrorInfo_">MonoBehaviourPunCallbacks.OnErrorInfo(ErrorInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPun.html#Photon_Pun_MonoBehaviourPun_photonView">MonoBehaviourPun.photonView</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Pun.Demo.Cockpit.html">Photon.Pun.Demo.Cockpit</a></h6>
+  <h6><strong>Assembly</strong>: PhotonUnityNetworking.Demos.dll</h6>
+  <h5 id="Photon_Pun_Demo_Cockpit_FriendListView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FriendListView : MonoBehaviourPunCallbacks, IConnectionCallbacks, IMatchmakingCallbacks, IInRoomCallbacks, ILobbyCallbacks, IWebRpcCallback, IErrorInfoCallback</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_CellPrototype.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.CellPrototype%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L44">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_CellPrototype" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.CellPrototype">CellPrototype</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FriendListCell CellPrototype</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.Demo.Cockpit.FriendListCell.html">FriendListCell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_ContentFeedback.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.ContentFeedback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L46">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_ContentFeedback" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.ContentFeedback">ContentFeedback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text ContentFeedback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_OnJoinRoom.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.OnJoinRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L53">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_OnJoinRoom" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnJoinRoom">OnJoinRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FriendListView.OnJoinRoomEvent OnJoinRoom</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.Demo.Cockpit.FriendListView.OnJoinRoomEvent.html">FriendListView.OnJoinRoomEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_UpdateStatusText.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.UpdateStatusText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_UpdateStatusText" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.UpdateStatusText">UpdateStatusText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text UpdateStatusText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_FindFriends.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.FindFriends%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L98">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_FindFriends_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.FindFriends*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_FindFriends" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.FindFriends">FindFriends()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindFriends()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_JoinFriendRoom_System_String_.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.JoinFriendRoom(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L133">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_JoinFriendRoom_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.JoinFriendRoom*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_JoinFriendRoom_System_String_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.JoinFriendRoom(System.String)">JoinFriendRoom(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JoinFriendRoom(string RoomName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">RoomName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_OnEnable.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.OnEnable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L66">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_OnEnable_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnEnable*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_OnEnable" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnEnable">MonoBehaviourPunCallbacks.OnEnable()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.OnFriendListUpdate(System.Collections.Generic.List%7BPhoton.Realtime.FriendInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L106">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_OnFriendListUpdate_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnFriendListUpdate*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnFriendListUpdate(System.Collections.Generic.List{Photon.Realtime.FriendInfo})">OnFriendListUpdate(List&lt;FriendInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFriendListUpdate(List&lt;FriendInfo&gt; friendList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.FriendInfo.html">FriendInfo</a>&gt;</td>
+        <td><span class="parametername">friendList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__">MonoBehaviourPunCallbacks.OnFriendListUpdate(List&lt;FriendInfo&gt;)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_OnRoomListUpdateCallBack_System_Collections_Generic_List_Photon_Realtime_RoomInfo__.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.OnRoomListUpdateCallBack(System.Collections.Generic.List%7BPhoton.Realtime.RoomInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L128">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_OnRoomListUpdateCallBack_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnRoomListUpdateCallBack*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_OnRoomListUpdateCallBack_System_Collections_Generic_List_Photon_Realtime_RoomInfo__" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.OnRoomListUpdateCallBack(System.Collections.Generic.List{Photon.Realtime.RoomInfo})">OnRoomListUpdateCallBack(List&lt;RoomInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRoomListUpdateCallBack(List&lt;RoomInfo&gt; roomList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Photon.Realtime.RoomInfo.html">RoomInfo</a>&gt;</td>
+        <td><span class="parametername">roomList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_ResetList.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.ResetList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L149">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_ResetList_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.ResetList*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_ResetList" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.ResetList">ResetList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView_SetFriendDetails_Photon_Pun_Demo_Cockpit_FriendListView_FriendDetail___.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView.SetFriendDetails(Photon.Pun.Demo.Cockpit.FriendListView.FriendDetail%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L75">View Source</a>
+  </span>
+  <a id="Photon_Pun_Demo_Cockpit_FriendListView_SetFriendDetails_" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.SetFriendDetails*"></a>
+  <h4 id="Photon_Pun_Demo_Cockpit_FriendListView_SetFriendDetails_Photon_Pun_Demo_Cockpit_FriendListView_FriendDetail___" data-uid="Photon.Pun.Demo.Cockpit.FriendListView.SetFriendDetails(Photon.Pun.Demo.Cockpit.FriendListView.FriendDetail[])">SetFriendDetails(FriendListView.FriendDetail[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFriendDetails(FriendListView.FriendDetail[] friendList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.Demo.Cockpit.FriendListView.FriendDetail.html">FriendListView.FriendDetail</a>[]</td>
+        <td><span class="parametername">friendList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IWebRpcCallback.html">IWebRpcCallback</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IErrorInfoCallback.html">IErrorInfoCallback</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_Demo_Cockpit_FriendListView.md&amp;value=---%0Auid%3A%20Photon.Pun.Demo.Cockpit.FriendListView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum DisconnectCause
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum DisconnectCause
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Realtime.DisconnectCause">
+  
+  
+  <h1 id="Photon_Realtime_DisconnectCause" data-uid="Photon.Realtime.DisconnectCause" class="text-break">Enum DisconnectCause
+  </h1>
+  <div class="markdown level0 summary"><p>Enumeration of causes for Disconnects (used in LoadBalancingClient.DisconnectedCause).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Realtime.html">Photon.Realtime</a></h6>
+  <h6><strong>Assembly</strong>: PhotonRealtime.dll</h6>
+  <h5 id="Photon_Realtime_DisconnectCause_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum DisconnectCause</code></pre>
+  </div>
+  <h5 id="Photon_Realtime_DisconnectCause_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Read the individual descriptions to find out what to do about this type of disconnect.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_AuthenticationTicketExpired">AuthenticationTicketExpired</td>
+        <td><p>The authentication ticket should provide access to any Photon Cloud server without doing another authentication-service call. However, the ticket expired.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_ClientTimeout">ClientTimeout</td>
+        <td><p>OnStatusChanged: This client detected that the server&apos;s responses are not received in due time.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_CustomAuthenticationFailed">CustomAuthenticationFailed</td>
+        <td><p>OnOperationResponse: Authenticate in the Photon Cloud with invalid client values or custom authentication setup in Cloud Dashboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_DisconnectByClientLogic">DisconnectByClientLogic</td>
+        <td><p>OnStatusChanged: The client disconnected from within the logic (the C# code).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_DisconnectByDisconnectMessage">DisconnectByDisconnectMessage</td>
+        <td><p>The client received a &quot;Disconnect Message&quot; from the server. Check the debug logs for details.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_DisconnectByOperationLimit">DisconnectByOperationLimit</td>
+        <td><p>The client called an operation too frequently and got disconnected due to hitting the OperationLimit. This triggers a client-side disconnect, too.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_DisconnectByServerLogic">DisconnectByServerLogic</td>
+        <td><p>OnStatusChanged: The server disconnected this client from within the room&apos;s logic (the C# code).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_DisconnectByServerReasonUnknown">DisconnectByServerReasonUnknown</td>
+        <td><p>OnStatusChanged: The server disconnected this client for unknown reasons.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_DnsExceptionOnConnect">DnsExceptionOnConnect</td>
+        <td><p>OnStatusChanged: Dns resolution for a hostname failed. The exception for this is being catched and logged with error level.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_Exception">Exception</td>
+        <td><p>OnStatusChanged: Some internal exception caused the socket code to fail. This may happen if you attempt to connect locally but the server is not available. In doubt: Contact Exit Games.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_ExceptionOnConnect">ExceptionOnConnect</td>
+        <td><p>OnStatusChanged: The server is not available or the address is wrong. Make sure the port is provided and the server is up.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_InvalidAuthentication">InvalidAuthentication</td>
+        <td><p>OnOperationResponse: Authenticate in the Photon Cloud with invalid AppId. Update your subscription or contact Exit Games.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_InvalidRegion">InvalidRegion</td>
+        <td><p>OnOperationResponse: Authenticate when the app&apos;s Photon Cloud subscription is locked to some (other) region(s). Update your subscription or master server address.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_MaxCcuReached">MaxCcuReached</td>
+        <td><p>OnOperationResponse: Authenticate (temporarily) failed when using a Photon Cloud subscription without CCU Burst. Update your subscription.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_None">None</td>
+        <td><p>No error was tracked.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_OperationNotAllowedInCurrentState">OperationNotAllowedInCurrentState</td>
+        <td><p>OnOperationResponse: Operation that&apos;s (currently) not available for this client (not authorized usually). Only tracked for op Authenticate.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_ServerAddressInvalid">ServerAddressInvalid</td>
+        <td><p>OnStatusChanged: The server address was parsed as IPv4 illegally. An illegal address would be e.g. 192.168.1.300. IPAddress.TryParse() will let this pass but our check won&apos;t.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Photon_Realtime_DisconnectCause_ServerTimeout">ServerTimeout</td>
+        <td><p>OnStatusChanged: The server disconnected this client due to timing out (missing acknowledgement from the client).</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Realtime_DisconnectCause.md&amp;value=---%0Auid%3A%20Photon.Realtime.DisconnectCause%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonRealtime/Code/LoadBalancingClient.cs/#L138" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

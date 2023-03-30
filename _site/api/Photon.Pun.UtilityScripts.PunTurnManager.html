@@ -1,0 +1,1079 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PunTurnManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PunTurnManager
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Photon.Pun.UtilityScripts.PunTurnManager">
+  
+  
+  <h1 id="Photon_Pun_UtilityScripts_PunTurnManager" data-uid="Photon.Pun.UtilityScripts.PunTurnManager" class="text-break">Class PunTurnManager
+  </h1>
+  <div class="markdown level0 summary"><p>Pun turnBased Game manager.
+Provides an Interface (IPunTurnManagerCallbacks) for the typical turn flow and logic, between players
+Provides Extensions for Player, Room and RoomInfo to feature dedicated api for TurnBased Needs</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="Photon.Pun.MonoBehaviourPun.html">MonoBehaviourPun</a></div>
+    <div class="level6"><a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html">MonoBehaviourPunCallbacks</a></div>
+    <div class="level7"><span class="xref">PunTurnManager</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a></div>
+    <div><a class="xref" href="Photon.Realtime.IWebRpcCallback.html">IWebRpcCallback</a></div>
+    <div><a class="xref" href="Photon.Realtime.IErrorInfoCallback.html">IErrorInfoCallback</a></div>
+    <div><a class="xref" href="Photon.Realtime.IOnEventCallback.html">IOnEventCallback</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnEnable">MonoBehaviourPunCallbacks.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnDisable">MonoBehaviourPunCallbacks.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnConnected">MonoBehaviourPunCallbacks.OnConnected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnLeftRoom">MonoBehaviourPunCallbacks.OnLeftRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnMasterClientSwitched_Photon_Realtime_Player_">MonoBehaviourPunCallbacks.OnMasterClientSwitched(Player)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCreateRoomFailed_System_Int16_System_String_">MonoBehaviourPunCallbacks.OnCreateRoomFailed(Int16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRoomFailed_System_Int16_System_String_">MonoBehaviourPunCallbacks.OnJoinRoomFailed(Int16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCreatedRoom">MonoBehaviourPunCallbacks.OnCreatedRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedLobby">MonoBehaviourPunCallbacks.OnJoinedLobby()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnLeftLobby">MonoBehaviourPunCallbacks.OnLeftLobby()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnDisconnected_Photon_Realtime_DisconnectCause_">MonoBehaviourPunCallbacks.OnDisconnected(DisconnectCause)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnRegionListReceived_Photon_Realtime_RegionHandler_">MonoBehaviourPunCallbacks.OnRegionListReceived(RegionHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnRoomListUpdate_System_Collections_Generic_List_Photon_Realtime_RoomInfo__">MonoBehaviourPunCallbacks.OnRoomListUpdate(List&lt;RoomInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinedRoom">MonoBehaviourPunCallbacks.OnJoinedRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_Photon_Realtime_Player_">MonoBehaviourPunCallbacks.OnPlayerEnteredRoom(Player)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerLeftRoom_Photon_Realtime_Player_">MonoBehaviourPunCallbacks.OnPlayerLeftRoom(Player)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnJoinRandomFailed_System_Int16_System_String_">MonoBehaviourPunCallbacks.OnJoinRandomFailed(Int16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnConnectedToMaster">MonoBehaviourPunCallbacks.OnConnectedToMaster()</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_Photon_Realtime_Player_ExitGames_Client_Photon_Hashtable_">MonoBehaviourPunCallbacks.OnPlayerPropertiesUpdate(Player, Hashtable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__">MonoBehaviourPunCallbacks.OnFriendListUpdate(List&lt;FriendInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__">MonoBehaviourPunCallbacks.OnCustomAuthenticationResponse(Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_System_String_">MonoBehaviourPunCallbacks.OnCustomAuthenticationFailed(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnWebRpcResponse_ExitGames_Client_Photon_OperationResponse_">MonoBehaviourPunCallbacks.OnWebRpcResponse(OperationResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnLobbyStatisticsUpdate_System_Collections_Generic_List_Photon_Realtime_TypedLobbyInfo__">MonoBehaviourPunCallbacks.OnLobbyStatisticsUpdate(List&lt;TypedLobbyInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnErrorInfo_Photon_Realtime_ErrorInfo_">MonoBehaviourPunCallbacks.OnErrorInfo(ErrorInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Photon.Pun.MonoBehaviourPun.html#Photon_Pun_MonoBehaviourPun_photonView">MonoBehaviourPun.photonView</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Photon.Pun.UtilityScripts.html">Photon.Pun.UtilityScripts</a></h6>
+  <h6><strong>Assembly</strong>: PhotonUnityNetworking.Utilities.dll</h6>
+  <h5 id="Photon_Pun_UtilityScripts_PunTurnManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PunTurnManager : MonoBehaviourPunCallbacks, IConnectionCallbacks, IMatchmakingCallbacks, IInRoomCallbacks, ILobbyCallbacks, IWebRpcCallback, IErrorInfoCallback, IOnEventCallback</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_EvFinalMove.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.EvFinalMove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L129">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_EvFinalMove" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.EvFinalMove">EvFinalMove</h4>
+  <div class="markdown level1 summary"><p>The Final Move event message byte. Used internaly for saving data in Room Custom Properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte EvFinalMove = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_EvMove.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.EvMove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L124">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_EvMove" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.EvMove">EvMove</h4>
+  <div class="markdown level1 summary"><p>The Move event message byte. Used internaly for saving data in Room Custom Properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte EvMove = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_TurnDuration.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.TurnDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_TurnDuration" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.TurnDuration">TurnDuration</h4>
+  <div class="markdown level1 summary"><p>The duration of the turn in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurnDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_TurnManagerEventOffset.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.TurnManagerEventOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L119">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_TurnManagerEventOffset" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.TurnManagerEventOffset">TurnManagerEventOffset</h4>
+  <div class="markdown level1 summary"><p>The turn manager event offset event message byte. Used internaly for defining data in Room Custom Properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte TurnManagerEventOffset = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_TurnManagerListener.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.TurnManagerListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L108">View Source</a>
+  </span>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_TurnManagerListener" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.TurnManagerListener">TurnManagerListener</h4>
+  <div class="markdown level1 summary"><p>The turn manager listener. Set this to your own script instance to catch Callbacks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPunTurnManagerCallbacks TurnManagerListener</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Pun.UtilityScripts.IPunTurnManagerCallbacks.html">IPunTurnManagerCallbacks</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_ElapsedTimeInTurn.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.ElapsedTimeInTurn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L62">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_ElapsedTimeInTurn_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.ElapsedTimeInTurn*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_ElapsedTimeInTurn" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.ElapsedTimeInTurn">ElapsedTimeInTurn</h4>
+  <div class="markdown level1 summary"><p>Gets the elapsed time in the current turn in seconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ElapsedTimeInTurn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The elapsed time in the turn.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_IsCompletedByAll.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.IsCompletedByAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L82">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_IsCompletedByAll_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.IsCompletedByAll*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_IsCompletedByAll" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.IsCompletedByAll">IsCompletedByAll</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the turn is completed by all.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompletedByAll { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this turn is completed by all; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_IsFinishedByMe.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.IsFinishedByMe%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L91">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_IsFinishedByMe_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.IsFinishedByMe*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_IsFinishedByMe" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.IsFinishedByMe">IsFinishedByMe</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current turn is finished by me.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinishedByMe { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the current turn is finished by me; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_IsOver.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.IsOver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L100">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_IsOver_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.IsOver*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_IsOver" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.IsOver">IsOver</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the current turn is over. That is the ElapsedTimeinTurn is greater or equal to the TurnDuration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOver { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the current turn is over; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_RemainingSecondsInTurn.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.RemainingSecondsInTurn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L72">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_RemainingSecondsInTurn_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.RemainingSecondsInTurn*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_RemainingSecondsInTurn" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.RemainingSecondsInTurn">RemainingSecondsInTurn</h4>
+  <div class="markdown level1 summary"><p>Gets the remaining seconds for the current turn. Ranges from 0 to TurnDuration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RemainingSecondsInTurn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The remaining seconds fo the current turn</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_Turn.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.Turn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L40">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_Turn_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.Turn*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_Turn" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.Turn">Turn</h4>
+  <div class="markdown level1 summary"><p>Wraps accessing the &quot;turn&quot; custom properties of a room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Turn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The turn index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_BeginTurn.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.BeginTurn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L155">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_BeginTurn_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.BeginTurn*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_BeginTurn" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.BeginTurn">BeginTurn()</h4>
+  <div class="markdown level1 summary"><p>Tells the TurnManager to begins a new turn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginTurn()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_GetPlayerFinishedTurn_Photon_Realtime_Player_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.GetPlayerFinishedTurn(Photon.Realtime.Player)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L197">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_GetPlayerFinishedTurn_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.GetPlayerFinishedTurn*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_GetPlayerFinishedTurn_Photon_Realtime_Player_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.GetPlayerFinishedTurn(Photon.Realtime.Player)">GetPlayerFinishedTurn(Player)</h4>
+  <div class="markdown level1 summary"><p>Gets if the player finished the current turn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetPlayerFinishedTurn(Player player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Photon.Realtime.Player.html">Player</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The Player to check for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if player finished the current turn, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_OnEvent_ExitGames_Client_Photon_EventData_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.OnEvent(ExitGames.Client.Photon.EventData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L257">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_OnEvent_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.OnEvent*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_OnEvent_ExitGames_Client_Photon_EventData_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.OnEvent(ExitGames.Client.Photon.EventData)">OnEvent(EventData)</h4>
+  <div class="markdown level1 summary"><p>Called by PhotonNetwork.OnEventCall registration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEvent(EventData photonEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ExitGames.Client.Photon.EventData</span></td>
+        <td><span class="parametername">photonEvent</span></td>
+        <td><p>Photon event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L266">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_OnRoomPropertiesUpdate_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.OnRoomPropertiesUpdate*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)">OnRoomPropertiesUpdate(Hashtable)</h4>
+  <div class="markdown level1 summary"><p>Called by PhotonNetwork</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ExitGames.Client.Photon.Hashtable</span></td>
+        <td><span class="parametername">propertiesThatChanged</span></td>
+        <td><p>Properties that changed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Photon.Pun.MonoBehaviourPunCallbacks.html#Photon_Pun_MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_ExitGames_Client_Photon_Hashtable_">MonoBehaviourPunCallbacks.OnRoomPropertiesUpdate(Hashtable)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager_SendMove_System_Object_System_Boolean_.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager.SendMove(System.Object%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L167">View Source</a>
+  </span>
+  <a id="Photon_Pun_UtilityScripts_PunTurnManager_SendMove_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.SendMove*"></a>
+  <h4 id="Photon_Pun_UtilityScripts_PunTurnManager_SendMove_System_Object_System_Boolean_" data-uid="Photon.Pun.UtilityScripts.PunTurnManager.SendMove(System.Object,System.Boolean)">SendMove(Object, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Call to send an action. Optionally finish the turn, too.
+The move object can be anything. Try to optimize though and only send the strict minimum set of information to define the turn move.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMove(object move, bool finished)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">move</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">finished</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Photon.Realtime.IConnectionCallbacks.html">IConnectionCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IMatchmakingCallbacks.html">IMatchmakingCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IInRoomCallbacks.html">IInRoomCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.ILobbyCallbacks.html">ILobbyCallbacks</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IWebRpcCallback.html">IWebRpcCallback</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IErrorInfoCallback.html">IErrorInfoCallback</a>
+  </div>
+  <div>
+      <a class="xref" href="Photon.Realtime.IOnEventCallback.html">IOnEventCallback</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/new/master/apiSpec/new?filename=Photon_Pun_UtilityScripts_PunTurnManager.md&amp;value=---%0Auid%3A%20Photon.Pun.UtilityScripts.PunTurnManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Towich/CS_Card/blob/master/Assets/Photon/PhotonUnityNetworking/UtilityScripts/TurnBased/PunTurnManager.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

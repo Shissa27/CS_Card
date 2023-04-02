@@ -412,11 +412,13 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 {
                     if (Math.Abs(transform.position.x - ourFigure.transform.position.x) +
                         Math.Abs(transform.position.y - ourFigure.transform.position.y) <=
-                        ourFigure.GetComponent<TapCharacter>().radiusView) // if enemy in our radiusView
+                        ourFigure.GetComponent<TapCharacter>().radiusView) // if enemy in our radiusView ===> shoot!
                     {
-                        int localDmg = _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().damage;
-                        _photonView.RPC("TakeDamage", RpcTarget.All, localDmg);
-                        ourFigure.GetComponent<TapCharacter>().SetMovementPoints(0);
+                        
+                        
+                        // creating a projectile
+                        ProjectileScript projectile = ourFigure.AddComponent<ProjectileScript>();
+                        projectile.SetPositions(ourFigure.transform, transform);
                     }
                 }
                 
@@ -578,5 +580,13 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     {
         this._movementPoints = _movementPoints;
         _textMp.text = _movementPoints.ToString();
+    }
+
+    public void OnProjectiveHit()
+    {
+        GameObject ourFigure = _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj();
+        int localDmg = ourFigure.GetComponent<TapCharacter>().damage;
+        _photonView.RPC("TakeDamage", RpcTarget.All, localDmg);
+        ourFigure.GetComponent<TapCharacter>().SetMovementPoints(0);
     }
 }

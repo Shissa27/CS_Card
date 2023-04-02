@@ -105,13 +105,13 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) // if players in room == 2
         {
             _teamCt = false; // ==> we playing on T side
-            _myTurn = true;
+            _myTurn = false;
             Debug.Log("Second player is joined the room!");
         }
         else // if players in room == 1
         {
             _teamCt = true; // ==> we playing on CT side
-            _myTurn = false;
+            _myTurn = true;
         }
     }
 

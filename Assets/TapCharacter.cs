@@ -414,17 +414,9 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                         Math.Abs(transform.position.y - ourFigure.transform.position.y) <=
                         ourFigure.GetComponent<TapCharacter>().radiusView) // if enemy in our radiusView ===> shoot!
                     {
-                        
-                        
                         // creating a projectile
-                        ProjectileScript projectile = ourFigure.AddComponent<ProjectileScript>();
-                        projectile.SetPositions(ourFigure.transform, transform);
+                        CreateProjective(ourFigure);
                     }
-                }
-                
-                if (hp <= 0) // Enemy is dead
-                {
-                    RemoveFigure();
                 }
             }
             else{
@@ -576,17 +568,28 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         return _movementPoints;
     }
 
-    public void SetMovementPoints(int _movementPoints)
+    public void SetMovementPoints(int movementPoints)
     {
-        this._movementPoints = _movementPoints;
+        _movementPoints = movementPoints;
         _textMp.text = _movementPoints.ToString();
     }
 
-    public void OnProjectiveHit()
+    private void CreateProjective(GameObject ourFigure)
     {
-        GameObject ourFigure = _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj();
-        int localDmg = ourFigure.GetComponent<TapCharacter>().damage;
+        var projectile = ourFigure.AddComponent<ProjectileScript>();
+        projectile.SetPositions(ourFigure.transform, transform);
+    } 
+    
+    public void OnProjectiveHit(GameObject ourFigure)
+    {
+        TapCharacter tapCharacter = ourFigure.GetComponent<TapCharacter>();
+        int localDmg = tapCharacter.damage;
         _photonView.RPC("TakeDamage", RpcTarget.All, localDmg);
-        ourFigure.GetComponent<TapCharacter>().SetMovementPoints(0);
+        tapCharacter.SetMovementPoints(0);
+        
+        if (hp <= 0) // Enemy is dead
+        {
+            RemoveFigure();
+        }
     }
 }

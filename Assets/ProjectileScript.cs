@@ -23,12 +23,12 @@ public class ProjectileScript : MonoBehaviour
         _projectile.transform.position += _direction * (Speed * Time.deltaTime);
 
         var curPos = _projectile.transform.position;
-        if (Math.Abs(curPos.x - _destination.position.x) < 0.1f && 
-            Math.Abs(curPos.y - _destination.position.y) < 0.1f)
+        if (Math.Abs(curPos.x - _destination.position.x) < 0.3f && 
+            Math.Abs(curPos.y - _destination.position.y) < 0.3f)
         {
-            _destination.gameObject.GetComponent<TapCharacter>().OnProjectiveHit();
             Destroy(_projectile);
             Destroy(this);
+            _destination.gameObject.GetComponent<TapCharacter>().OnProjectiveHit(_startPosition.gameObject);
         }
         
     }

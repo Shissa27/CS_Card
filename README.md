@@ -34,7 +34,7 @@
 ## Создатели
 
 > - [Towich](https://github.com/Towich) - Teamlead, Game Designer, Main Developer;
-> - [Shissa27](https://github.com/Shissa27) - Junior Developer, Artist;
+> - [Shissa](https://github.com/Shissa27) - Junior Developer, Artist;
 > - [Maria](https://github.com/Masha5rubivasha) - Project Manager;
 
 Отдельная благодарность следующим людям:

@@ -35,7 +35,7 @@
 
 > - [Towich](https://github.com/Towich) - Teamlead, Game Designer, Main Developer;
 > - [Shissa](https://github.com/Shissa27) - Junior Developer, Artist;
-> - [Maria](https://github.com/Masha5rubivasha) - Project Manager;
+> - [Maria](https://github.com/Masha5rubivasha) - Project Manager, Tester, The most beautiful part of project;
 
 Отдельная благодарность следующим людям:
 > - Leo York - совместное создание идеи;

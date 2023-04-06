@@ -423,7 +423,7 @@ public class TapCharacter : MonoBehaviour, IPunObservable
                 return;
             }
             _chosenObj.GetComponent<ChoosenCardScript>().GetChoosenObj().GetComponent<TapCharacter>().ClearChoosenCard();
-            return;
+            return; 
         }
 
         
@@ -470,9 +470,11 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         {
             if (cellColor == new Color(0f, 255f, 0f)) // if color of cell is 'green'
             {
+                // moving figure
                 GetComponent<BoxCollider>().enabled = false;
-                transform.position = newPos;                    // moving figure
+                transform.position = newPos;                    
                 GetComponent<BoxCollider>().enabled = true;
+                
                 _gameManager.GetComponent<GameManager>().UpdateFogOfWarForAll();
                 
                 SetMovementPoints(_movementPoints - 1);
@@ -521,20 +523,21 @@ public class TapCharacter : MonoBehaviour, IPunObservable
     // check if we pickup the bomb on T side
     private void CheckPickUpBomb()
     {
-        if (_gameManager.GetComponent<GameManager>().GetIsBombDropped())
+        if (_gameManager.GetComponent<GameManager>().GetIsBombDropped()) // if bomb dropped
         {
-            Vector3 posDroppedBomb = _gameManager.GetComponent<GameManager>().GetPosDroppedBomb();
+            Vector3 posDroppedBomb = _gameManager.GetComponent<GameManager>().GetPosDroppedBomb(); // pos of dropped bomb
             if (Math.Abs(transform.position.x - posDroppedBomb.x) < 0.1f &&
-                Math.Abs(transform.position.y - posDroppedBomb.y) < 0.1f)
+                Math.Abs(transform.position.y - posDroppedBomb.y) < 0.1f) // if our pos == pos pf dropped bomb
             {
                 _bomber = true;
-                _gameManager.GetComponent<GameManager>().PickUpBomb(gameObject);
+                _gameManager.GetComponent<GameManager>().PickUpBomb(gameObject); // pick up the bomb to this figure
                 _bomb = GameObject.Find("Bomb");
-                _photonView.RPC("DestroyBombOnField", RpcTarget.All);
+                _photonView.RPC("DestroyBombOnField", RpcTarget.All); // destroy bomb on the field
             }
         }
     }
 
+    // removing dropped bomb on both clients
     [PunRPC]
     void DestroyBombOnField()
     {
@@ -574,12 +577,14 @@ public class TapCharacter : MonoBehaviour, IPunObservable
         _textMp.text = _movementPoints.ToString();
     }
 
+    // create a projectile from %ourFigure%
     private void CreateProjective(GameObject ourFigure)
     {
         var projectile = ourFigure.AddComponent<ProjectileScript>();
         projectile.SetPositions(ourFigure.transform, transform);
     } 
     
+    // callback for the hit of projectile
     public void OnProjectiveHit(GameObject ourFigure)
     {
         TapCharacter tapCharacter = ourFigure.GetComponent<TapCharacter>();

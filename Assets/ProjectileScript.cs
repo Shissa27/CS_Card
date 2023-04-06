@@ -11,17 +11,10 @@ public class ProjectileScript : MonoBehaviour
     private Transform _startPosition;
     private Transform _destination;
     private Vector3 _direction;
-    
-    private bool _toMove;
-    
-    private void Start()
-    {
-        _toMove = true;
-    }
 
     private void Update()
     {
-        // moving the projectile
+        // moving the projectile every tick
         _projectile.transform.position += _direction * (_speed * Time.deltaTime);
 
         // check if projectile hit the enemy
@@ -35,9 +28,9 @@ public class ProjectileScript : MonoBehaviour
             // call method "OnProjectiveHit"
             _destination.gameObject.GetComponent<TapCharacter>().OnProjectiveHit(_startPosition.gameObject);
         }
-        
     }
 
+	// setting a start and end positions of projectile
     public void SetPositions(Transform startPos, Transform endPos)
     {
         _startPosition = startPos;
@@ -45,14 +38,17 @@ public class ProjectileScript : MonoBehaviour
         CreateProjectile();
     }
 
+	// create a projectile when positions are setted
     private void CreateProjectile()
     {
-        _projectilePrefab = (GameObject)Resources.Load("Prefabs/Projectile", typeof(GameObject));
-        _projectile = Instantiate(_projectilePrefab);
+        _projectilePrefab = (GameObject)Resources.Load("Prefabs/Projectile", typeof(GameObject)); // found prefab of projectile
+        _projectile = Instantiate(_projectilePrefab); // Instatiate projectile
         
+		// moving the projectile to start position
         var position = _startPosition.position;
         _projectile.transform.position = new Vector3(position.x, position.y, -0.5f);
 
+		// rotating the projectile to end position
         _direction = _destination.position - position;
         var angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
         _projectile.transform.rotation = Quaternion.Euler(0, 0, angle);

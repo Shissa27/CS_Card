@@ -6,6 +6,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Class of the game manager
+/// </summary>
 public class GameManager : MonoBehaviourPunCallbacks
 {
     public GameObject canvasEndTurnButton;

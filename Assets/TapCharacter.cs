@@ -7,6 +7,9 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Main script for figure.
+/// </summary>
 public class TapCharacter : MonoBehaviour, IPunObservable
 {
     private PhotonView _photonView;
